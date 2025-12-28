@@ -1,0 +1,336 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text;
+using BepInEx;
+using BepInEx.Configuration;
+using BepInEx.Logging;
+using HarmonyLib;
+using PEAKLib.UI;
+using TMPro;
+using UnityEngine;
+using UnityEngine.Experimental.Rendering;
+using UnityEngine.TextCore;
+using UnityEngine.TextCore.LowLevel;
+using UnityEngine.UI;
+using UnityEngine.UI.Extensions;
+
+namespace PeakNeptunian;
+
+[BepInDependency(UIPlugin.Id)]
+[BepInAutoPlugin]
+public partial class Plugin : BaseUnityPlugin
+{
+    // Plugin stuff
+    private static ManualLogSource Log { get; set; } = null!;
+
+    // Config
+    private static ConfigEntry<LocalizationType> _localizationType = null!;
+
+    // Loaded assets
+    private static TMP_FontAsset? _neptunianShpreFont;
+    private static readonly Dictionary<string, SFX_Instance> LoadedSoundEffects = new();
+    private static readonly Dictionary<string, TexturePatch> TexturePatches = new();
+
+    // Static state
+    private static readonly Dictionary<string, string> NahnyaToKey = new();
+
+    // Dynamic state
+    private static readonly HashSet<int> PatchedGameObjects = new();
+
+    private void Awake()
+    {
+        Log = Logger;
+
+        _localizationType = Config.Bind("General", "LocalizationSetting", LocalizationType.Nahnya);
+
+        try
+        {
+            LoadTextures();
+            LoadFont();
+            LoadSfx();
+
+            // We can apply our hooks here.
+            // See https://lethal.wiki/dev/fundamentals/patching-code
+            Harmony.CreateAndPatchAll(typeof(Plugin));
+        }
+        catch (Exception ex)
+        {
+            Log.LogError($"Failed to init, got exception {ex}");
+        }
+
+        // Create a backwards table so we can more performantly detect localized Nahnya in strings
+        // (for when things bypass the LocalizedText component)
+        foreach (var (key, (nahnya, _)) in Localization.NeptunianLocalizations)
+            NahnyaToKey[nahnya] = key;
+
+        Log.LogInfo($"Plugin {Name} is loaded!");
+    }
+
+    [HarmonyPostfix]
+    [HarmonyPatch(typeof(DevMessageUI), nameof(DevMessageUI.Update))]
+    public static void Update(DevMessageUI __instance)
+    {
+        if (!__instance) return;
+
+        __instance.parent.SetActive(false);
+    }
+
+    private string LocalPath(string name)
+    {
+        return Path.Join(Path.GetDirectoryName(Info.Location), name);
+    }
+
+    private void LoadTexture(string name, LocalizationType localizationThreshold)
+    {
+        var tex = new Texture2D(2, 2, GraphicsFormat.R8G8B8A8_SRGB, TextureCreationFlags.None);
+
+        tex.LoadImage(File.ReadAllBytes(LocalPath($"{name}.png")));
+
+        TexturePatches[name] = new TexturePatch
+        {
+            Texture = tex,
+            LocalizationThreshold = localizationThreshold,
+        };
+
+        Log.LogDebug($"Loaded texture {name}");
+    }
+
+    private void LoadTextures()
+    {
+        LoadTexture("Logo", LocalizationType.Roman);
+        LoadTexture("LogoBlack", LocalizationType.Roman);
+        LoadTexture("Logo_Blurred", LocalizationType.Roman);
+    }
+
+    private void LoadFont()
+    {
+        _neptunianShpreFont =
+            TMP_FontAsset.CreateFontAsset(
+                LocalPath("NeptunianShpre.ttf"),
+                0,
+                56,
+                1,
+                GlyphRenderMode.SDF,
+                4096,
+                4096);
+
+        _neptunianShpreFont.getFontFeatures = true;
+    }
+
+    private void LoadSoundEffect(string soundName, string key)
+    {
+        var sfx = ScriptableObject.CreateInstance<SFX_Instance>();
+
+#pragma warning disable CS0618 // Type or member is obsolete
+        var clip = new WWW(LocalPath($"{soundName}.ogg")).GetAudioClip();
+#pragma warning restore CS0618 // Type or member is obsolete
+
+        sfx.clips = [clip];
+        sfx.settings = new SFX_Settings
+        {
+            volume = 0.5f,
+            volume_Variation = 0,
+            pitch = 1,
+            pitch_Variation = 0.1f,
+            spatialBlend = 1,
+            dopplerLevel = 0.125f,
+            range = 60,
+            cooldown = 0.02f,
+            maxInstances_NOT_IMPLEMENTED = 5
+        };
+        sfx.name = soundName;
+
+        LoadedSoundEffects[key] = sfx;
+    }
+
+    private void LoadSfx()
+    {
+        LoadSoundEffect("ImBingBong", "ImBingBong");
+    }
+
+    [HarmonyPatch(typeof(GameObject), nameof(GameObject.SetActive))]
+    [HarmonyPrefix]
+    private static void GameObject_SetActive(GameObject __instance, bool value)
+    {
+        if (!__instance) return;
+
+        lock (PatchedGameObjects)
+        {
+            if (!PatchedGameObjects.Add(__instance.GetInstanceID())) return;
+        }
+
+        try
+        {
+            // Manually patch out some strings
+            var textComponents = __instance.GetComponentsInChildren<TMP_Text>();
+            foreach (var textComponent in textComponents)
+            {
+                if (!textComponent)
+                {
+                    continue;
+                }
+                
+                if (textComponent.text.ToUpper().Contains("CRABLAND"))
+                {
+                    Localization.GetLocalizedString(_localizationType.Value, "__NATIONALITY", out var localized);
+                    textComponent.SetText(localized!);
+                }
+            }
+
+            var renderers = __instance.GetComponentsInChildren<Renderer>();
+
+            foreach (var renderer in renderers)
+            {
+                if (!renderer) continue;
+
+                var materials = renderer.materials;
+                foreach (var material in materials)
+                {
+                    if (!material) continue;
+
+                    var textureNameIds = material.GetTexturePropertyNameIDs();
+                    foreach (var textureNameId in textureNameIds)
+                    {
+                        var texture = material.GetTexture(textureNameId);
+
+                        // Wrong texture type, we can't patch non Texture2D
+                        if (texture is not Texture2D texture2D) continue;
+
+                        // Log.LogDebug($"Seen texture {texture2D.name}");
+
+                        if (TexturePatches.TryGetValue(texture2D.name, out var patchedTexture) &&
+                            _localizationType.Value >= patchedTexture.LocalizationThreshold)
+                            material.SetTexture(textureNameId, patchedTexture.Texture);
+                    }
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            Log.LogError($"Failed to patch textures, got error {ex}");
+        }
+    }
+
+    [HarmonyPatch(typeof(Image), "OnEnable")]
+    [HarmonyPostfix]
+    public static void Image_OnEnable(Image __instance)
+    {
+        if (!__instance) return;
+
+        // Log.LogDebug($"Seen Image {__instance.mainTexture.name}");
+
+        if (TexturePatches.TryGetValue(__instance.mainTexture.name, out var patchedTexture))
+        {
+            __instance.sprite = Sprite.Create(patchedTexture.Texture,
+                new Rect(0, 0, patchedTexture.Texture.width, patchedTexture.Texture.height), new Vector2(0.5f, 0.5f));
+        }
+    }
+
+    private static void SetFont(GameObject gameObject, bool neptunian)
+    {
+        // We only modify the font if we are localizing into Nahnya
+        if (_localizationType.Value != LocalizationType.Nahnya) return;
+
+        if (neptunian)
+        {
+            var cacheComponent = gameObject.GetOrAddComponent<FontCacheComponent>();
+            var textComponent = gameObject.GetComponent<TMP_Text>();
+
+            if (!cacheComponent.cached)
+            {
+                cacheComponent.font = textComponent.font;
+                cacheComponent.lineSpacing = textComponent.lineSpacing;
+                cacheComponent.fontStyle = textComponent.fontStyle;
+                cacheComponent.cached = true;
+            }
+
+            textComponent.font = _neptunianShpreFont;
+            textComponent.lineSpacing = cacheComponent.lineSpacing + 24.0f;
+            textComponent.fontStyle &= ~FontStyles.LowerCase;
+            if (!textComponent.fontFeatures.Contains(OTL_FeatureTag.liga))
+                textComponent.fontFeatures.Add(OTL_FeatureTag.liga);
+        }
+        else
+        {
+            var cacheComponent = gameObject.GetComponent<FontCacheComponent>();
+            var textComponent = gameObject.GetComponent<TMP_Text>();
+
+            if (!cacheComponent || !cacheComponent.cached) return;
+
+            textComponent.font = cacheComponent.font;
+            textComponent.lineSpacing = cacheComponent.lineSpacing;
+            textComponent.fontStyle = cacheComponent.fontStyle;
+            cacheComponent.cached = false;
+        }
+    }
+
+    [HarmonyPrefix]
+    [HarmonyPatch(typeof(TMP_Text), "PopulateTextBackingArray", typeof(string), typeof(int), typeof(int))]
+    [HarmonyPatch(typeof(TMP_Text), "PopulateTextBackingArray", typeof(StringBuilder), typeof(int), typeof(int))]
+    [HarmonyPatch(typeof(TMP_Text), "PopulateTextBackingArray", typeof(char[]), typeof(int), typeof(int))]
+    public static void TMP_Text_PopulateTextBackingArray(TMP_Text __instance, object[] __args)
+    {
+        if (!__instance) return;
+
+        // We don't need to do hot-font patching when we aren't doing Nahnya in the first place
+        if (_localizationType.Value != LocalizationType.Nahnya) return;
+
+        try
+        {
+            var text = __args[0].ToString();
+
+            // Set the font if this text is supposed to be Nahnya
+            SetFont(__instance.gameObject, NahnyaToKey.ContainsKey(text));
+        }
+        catch (Exception ex)
+        {
+            Log.LogError($"Failed to patch text mesh font, got exception {ex}");
+        }
+    }
+
+    [HarmonyPrefix]
+    [HarmonyPatch(typeof(Action_AskBingBong), nameof(Action_AskBingBong.Ask))]
+    public static void Action_AskBingBong_OnEnable(Action_AskBingBong __instance, int index, bool spamming)
+    {
+        // Don't patch Bing Bong's responses if we aren't localizing into Neptunian
+        if (_localizationType.Value == LocalizationType.Off)
+        {
+            return;
+        }
+
+        __instance.responses =
+        [
+            new Action_AskBingBong.BingBongResponse
+            {
+                subtitleID = "BB_ImBingBong",
+                sfx = LoadedSoundEffects["ImBingBong"],
+                mouthCurve = null,
+                mouthCurveTime = 0
+            }
+        ];
+
+        if (_localizationType.Value == LocalizationType.Nahnya)
+        {
+            __instance.subtitles.font = _neptunianShpreFont;
+            __instance.subtitles.lineSpacing += 24.0f;
+            if (!__instance.subtitles.fontFeatures.Contains(OTL_FeatureTag.liga))
+                __instance.subtitles.fontFeatures.Add(OTL_FeatureTag.liga);
+        }
+    }
+
+    [HarmonyPostfix]
+    [HarmonyPatch(typeof(LocalizedText), nameof(LocalizedText.GetText), typeof(string), typeof(LocalizedText.Language))]
+    [HarmonyPatch(typeof(LocalizedText), nameof(LocalizedText.GetText), typeof(string), typeof(bool))]
+    public static void LocalizedText_GetText(object[] __args, ref string __result)
+    {
+        // Log.LogDebug($"Got arg {__args[0]}");
+
+        if (Localization.GetLocalizedString(_localizationType.Value,
+                ((string)__args[0]).ToUpper(),
+                out var localized))
+        {
+            __result = localized;
+        }
+    }
+}
