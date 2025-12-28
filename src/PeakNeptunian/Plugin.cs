@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
@@ -10,6 +11,7 @@ using PEAKLib.UI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering;
+using UnityEngine.Networking;
 using UnityEngine.TextCore;
 using UnityEngine.TextCore.LowLevel;
 using UnityEngine.UI;
@@ -34,6 +36,7 @@ public partial class Plugin : BaseUnityPlugin
 
     // Static state
     private static readonly Dictionary<string, string> NahnyaToKey = new();
+    private static Action_AskBingBong.BingBongResponse[] _bingBongResponses = [];
 
     // Dynamic state
     private static readonly HashSet<int> PatchedGameObjects = new();
@@ -48,7 +51,7 @@ public partial class Plugin : BaseUnityPlugin
         {
             LoadTextures();
             LoadFont();
-            LoadSfx();
+            StartCoroutine(CreateBingBongResponses());
 
             // We can apply our hooks here.
             // See https://lethal.wiki/dev/fundamentals/patching-code
@@ -117,36 +120,113 @@ public partial class Plugin : BaseUnityPlugin
 
         _neptunianShpreFont.getFontFeatures = true;
     }
-
-    private void LoadSoundEffect(string soundName, string key)
+    
+    private IEnumerator LoadSoundEffect(string path, string key)
     {
         var sfx = ScriptableObject.CreateInstance<SFX_Instance>();
 
+        var url = "file://" + LocalPath(path);
+        
 #pragma warning disable CS0618 // Type or member is obsolete
-        var clip = new WWW(LocalPath($"{soundName}.ogg")).GetAudioClip();
-#pragma warning restore CS0618 // Type or member is obsolete
-
-        sfx.clips = [clip];
-        sfx.settings = new SFX_Settings
+        using var www = UnityWebRequestMultimedia.GetAudioClip(url, AudioType.OGGVORBIS);
+        
+        yield return www.SendWebRequest();
+        
+        if (www.result == UnityWebRequest.Result.Success)
         {
-            volume = 0.5f,
-            volume_Variation = 0,
-            pitch = 1,
-            pitch_Variation = 0.1f,
-            spatialBlend = 1,
-            dopplerLevel = 0.125f,
-            range = 60,
-            cooldown = 0.02f,
-            maxInstances_NOT_IMPLEMENTED = 5
-        };
-        sfx.name = soundName;
+            var clip = DownloadHandlerAudioClip.GetContent(www);
+                
+            clip.name = key;
 
-        LoadedSoundEffects[key] = sfx;
+            sfx.clips = [clip];
+            sfx.settings = new SFX_Settings
+            {
+                volume = 0.5f,
+                volume_Variation = 0,
+                pitch = 1,
+                pitch_Variation = 0.1f,
+                spatialBlend = 1,
+                dopplerLevel = 0.125f,
+                range = 60,
+                cooldown = 0.02f,
+                maxInstances_NOT_IMPLEMENTED = 5
+            };
+            sfx.name = key;
+
+            LoadedSoundEffects[key] = sfx;
+        
+            Log.LogDebug($"Loaded sound effect {path} as {key}, Length: {clip.length}");
+        }
+        else
+        {
+            Log.LogError("Failed to load: " + www.error);
+        }
+#pragma warning restore CS0618 // Type or member is obsolete
     }
 
-    private void LoadSfx()
+    private IEnumerator LoadBingBongSfx()
     {
-        LoadSoundEffect("ImBingBong", "ImBingBong");
+        yield return LoadSoundEffect("audio/pingpangVO_AskFriends.ogg", "BB_AskYourFriends");
+        yield return LoadSoundEffect("audio/pingpangVO_IfYouWanna.ogg", "BB_IfYouWanna");
+        yield return LoadSoundEffect("audio/pingpangVO_IThinkThatsABadIdea.ogg", "BB_BadIdea");
+        yield return LoadSoundEffect("audio/pingpangVO_Nah.ogg", "BB_Nah");
+        yield return LoadSoundEffect("audio/pingpangVO_NoNoNo.ogg", "BB_NoNoNo");
+        yield return LoadSoundEffect("audio/pingpangVO_Sure.ogg", "BB_Sure");
+        yield return LoadSoundEffect("audio/pingpangVO_Yes.ogg", "BB_Yes");
+        yield return LoadSoundEffect("audio/pingpangVO_DefNot.ogg", "BB_DefinitelyNot");
+        yield return LoadSoundEffect("audio/pingpangVO_ImBingBong.ogg", "BB_ImBingBong");
+        yield return LoadSoundEffect("audio/pingpangVO_Maybe.ogg", "BB_Maybe");
+        yield return LoadSoundEffect("audio/pingpangVO_NoShort.ogg", "BB_No");
+        yield return LoadSoundEffect("audio/pingpangVO_TakeMeWith.ogg", "BB_IfISayYes");
+        yield return LoadSoundEffect("audio/pingpangVO_Y..Yeah.ogg", "BB_Yeah");
+        yield return LoadSoundEffect("audio/pingpangVO_IDunno.ogg", "BB_IDunno");
+        yield return LoadSoundEffect("audio/pingpangVO_IThinkItsFine.ogg", "BB_Fine");
+        yield return LoadSoundEffect("audio/pingpangVO_MissesWife.ogg", "BB_IMissMyWife");
+        yield return LoadSoundEffect("audio/pingpangVO_NOLong.ogg", "BB_INTENSENO");
+        yield return LoadSoundEffect("audio/pingpangVO_OK.ogg", "BB_Okay");
+        yield return LoadSoundEffect("audio/pingpangVO_YeahDef.ogg", "BB_Definitely");
+        yield return LoadSoundEffect("audio/pingpangVO_Neptune.ogg", "BB_MayNeptuneBlessUsAll");
+    }
+    
+    private IEnumerator CreateBingBongResponses()
+    {
+        var responses = new List<Action_AskBingBong.BingBongResponse>();
+
+        yield return LoadBingBongSfx();
+        
+        void AddBingBongSoundEffect(string key)
+        {
+            responses.Add(new Action_AskBingBong.BingBongResponse
+            {
+                subtitleID = key,
+                sfx = LoadedSoundEffects[key],
+                mouthCurve = null,
+                mouthCurveTime = 0
+            });
+        }
+
+        AddBingBongSoundEffect("BB_AskYourFriends");
+        AddBingBongSoundEffect("BB_IfYouWanna");
+        AddBingBongSoundEffect("BB_BadIdea");
+        AddBingBongSoundEffect("BB_Nah");
+        AddBingBongSoundEffect("BB_NoNoNo");
+        AddBingBongSoundEffect("BB_Sure");
+        AddBingBongSoundEffect("BB_Yes");
+        AddBingBongSoundEffect("BB_DefinitelyNot");
+        AddBingBongSoundEffect("BB_ImBingBong");
+        AddBingBongSoundEffect("BB_Maybe");
+        AddBingBongSoundEffect("BB_No");
+        AddBingBongSoundEffect("BB_IfISayYes");
+        AddBingBongSoundEffect("BB_Yeah");
+        AddBingBongSoundEffect("BB_IDunno");
+        AddBingBongSoundEffect("BB_Fine");
+        AddBingBongSoundEffect("BB_IMissMyWife");
+        AddBingBongSoundEffect("BB_INTENSENO");
+        AddBingBongSoundEffect("BB_Okay");
+        AddBingBongSoundEffect("BB_Definitely");
+        AddBingBongSoundEffect("BB_MayNeptuneBlessUsAll");
+
+        _bingBongResponses = responses.ToArray();
     }
 
     [HarmonyPatch(typeof(GameObject), nameof(GameObject.SetActive))]
@@ -170,7 +250,7 @@ public partial class Plugin : BaseUnityPlugin
                 {
                     continue;
                 }
-                
+
                 if (textComponent.text.ToUpper().Contains("CRABLAND"))
                 {
                     Localization.GetLocalizedString(_localizationType.Value, "__NATIONALITY", out var localized);
@@ -299,16 +379,7 @@ public partial class Plugin : BaseUnityPlugin
             return;
         }
 
-        __instance.responses =
-        [
-            new Action_AskBingBong.BingBongResponse
-            {
-                subtitleID = "BB_ImBingBong",
-                sfx = LoadedSoundEffects["ImBingBong"],
-                mouthCurve = null,
-                mouthCurveTime = 0
-            }
-        ];
+        __instance.responses = _bingBongResponses;
 
         if (_localizationType.Value == LocalizationType.Nahnya)
         {
