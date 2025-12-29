@@ -29,6 +29,18 @@ public record Localization(string Nahnya, string Roman)
         ["START"] = new Localization("MYH", "MYH"), // start
         ["START2"] = new Localization("MYH", "myh"), // start
         ["OPEN"] = new Localization("FEI", "fei"), // open
+        ["USE"] = new Localization("HAI", "hai"), // use
+        ["ASK"] = new Localization("PYEI", "pyei"), // ask
+        ["DROP"] = new Localization("YA", "ya"), // drop
+        ["THROW"] = new Localization("YADEHEIPI", "ya deheipi"), // drop+push away
+        ["HOLD"] = new Localization("DH", "dah"), // hold
+        ["LUNGE"] = new Localization("PIGWF", "pi ngwv"), // move+fast
+        ["GRAB"] = new Localization("DH", "dah"), // hold
+        ["LOOK"] = new Localization("NYEI", "nyei"), // see
+        ["LICK"] = new Localization("FWMCI", "fwm chi"), // eat+small
+        ["EAT"] = new Localization("FWM", "fwm"), // eat
+        
+        ["ROPE"] = new Localization("DEF", "DEV"), // rope
 
         ["NATIONALITY"] = new Localization("HENMWFHN", "Henmwvaht"), // island+birth eg. starting island/nationality
         ["PASSPORT"] = new Localization("NWRAMPIHEN", "Nwrambihen"), // passport
