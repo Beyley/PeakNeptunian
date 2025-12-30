@@ -186,6 +186,13 @@ public partial class Plugin : BaseUnityPlugin
         yield return LoadSoundEffect("audio/pingpangVO_OK.ogg", "BB_Okay");
         yield return LoadSoundEffect("audio/pingpangVO_YeahDef.ogg", "BB_Definitely");
         yield return LoadSoundEffect("audio/pingpangVO_Neptune.ogg", "BB_MayNeptuneBlessUsAll");
+        yield return LoadSoundEffect("audio/pingpangVO_DontDoIt.ogg", "BB_DontDoIt");
+        yield return LoadSoundEffect("audio/pingpangVO_IGuess.ogg", "BB_IGuessSo");
+        yield return LoadSoundEffect("audio/pingpangVO_NotComfortable.ogg", "BB_NotComfortable");
+        yield return LoadSoundEffect("audio/pingpangVO_NotSure.ogg", "BB_ImNotSure");
+        yield return LoadSoundEffect("audio/pingpangVO_NuhUh.ogg", "BB_NuhUh");
+        yield return LoadSoundEffect("audio/pingpangVO_PleaseDont.ogg", "BB_PleaseDont");
+        yield return LoadSoundEffect("audio/pingpangVO_UHHH.ogg", "BB_Uh");
     }
     
     private IEnumerator CreateBingBongResponses()
@@ -194,7 +201,7 @@ public partial class Plugin : BaseUnityPlugin
 
         yield return LoadBingBongSfx();
         
-        void AddBingBongSoundEffect(string key)
+        void AddBingBongResponse(string key)
         {
             responses.Add(new Action_AskBingBong.BingBongResponse
             {
@@ -204,27 +211,43 @@ public partial class Plugin : BaseUnityPlugin
                 mouthCurveTime = 0
             });
         }
+        
+        Log.LogDebug("Adding repsonses");
 
-        AddBingBongSoundEffect("BB_AskYourFriends");
-        AddBingBongSoundEffect("BB_IfYouWanna");
-        AddBingBongSoundEffect("BB_BadIdea");
-        AddBingBongSoundEffect("BB_Nah");
-        AddBingBongSoundEffect("BB_NoNoNo");
-        AddBingBongSoundEffect("BB_Sure");
-        AddBingBongSoundEffect("BB_Yes");
-        AddBingBongSoundEffect("BB_DefinitelyNot");
-        AddBingBongSoundEffect("BB_ImBingBong");
-        AddBingBongSoundEffect("BB_Maybe");
-        AddBingBongSoundEffect("BB_No");
-        AddBingBongSoundEffect("BB_IfISayYes");
-        AddBingBongSoundEffect("BB_Yeah");
-        AddBingBongSoundEffect("BB_IDunno");
-        AddBingBongSoundEffect("BB_Fine");
-        AddBingBongSoundEffect("BB_IMissMyWife");
-        AddBingBongSoundEffect("BB_INTENSENO");
-        AddBingBongSoundEffect("BB_Okay");
-        AddBingBongSoundEffect("BB_Definitely");
-        AddBingBongSoundEffect("BB_MayNeptuneBlessUsAll");
+        try
+        {
+            AddBingBongResponse("BB_AskYourFriends");
+            AddBingBongResponse("BB_IfYouWanna");
+            AddBingBongResponse("BB_BadIdea");
+            AddBingBongResponse("BB_Nah");
+            AddBingBongResponse("BB_NoNoNo");
+            AddBingBongResponse("BB_Sure");
+            AddBingBongResponse("BB_Yes");
+            AddBingBongResponse("BB_DefinitelyNot");
+            AddBingBongResponse("BB_ImBingBong");
+            AddBingBongResponse("BB_Maybe");
+            AddBingBongResponse("BB_No");
+            AddBingBongResponse("BB_IfISayYes");
+            AddBingBongResponse("BB_Yeah");
+            AddBingBongResponse("BB_IDunno");
+            AddBingBongResponse("BB_Fine");
+            AddBingBongResponse("BB_IMissMyWife");
+            AddBingBongResponse("BB_INTENSENO");
+            AddBingBongResponse("BB_Okay");
+            AddBingBongResponse("BB_Definitely");
+            AddBingBongResponse("BB_MayNeptuneBlessUsAll");
+            AddBingBongResponse("BB_DontDoIt");
+            AddBingBongResponse("BB_IGuessSo");
+            AddBingBongResponse("BB_NotComfortable");
+            AddBingBongResponse("BB_ImNotSure");
+            AddBingBongResponse("BB_NuhUh");
+            AddBingBongResponse("BB_PleaseDont");
+            AddBingBongResponse("BB_Uh");
+        }
+        catch (Exception ex)
+        {
+            Log.LogError($"Got exception adding bing bon response {ex}");
+        }
 
         _bingBongResponses = responses.ToArray();
     }

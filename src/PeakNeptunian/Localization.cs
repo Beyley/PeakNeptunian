@@ -50,10 +50,7 @@ public record Localization(string Nahnya, string Roman)
         ["NAME_BING BONG"] = new Localization("PIGPAG", "PING PANG"), // bing bong
         ["NAME_PASSPORT"] = new Localization("NWRAMPIHEN", "NWRAMBIHEN"), // passport
 
-        // ["BB_IMBINGBONG"] = new("PHPWPIGPAG", "phpw ping pang"), // i'm bing bong
-        // ["BB_IMBINGBONG"] = new Localization("PHPWPHDEGRIMIGI", "phpw pahdegrimi ngi"), // i'm fellow ngi
-
-        ["BB_ASKYOURFRIENDS"] = new Localization("CHAVSHPYEIPHPEDEGSHREFINYADHFHAI", "chav sahbyei pahbedeng shre finya dahf hai!"),
+        ["BB_ASKYOURFRIENDS"] = new Localization("CAVSHPYEIPHPEDEGSHREFINYADHFHAI", "chav sahbyei pahbedeng shre finya dahf hai!"),
         ["BB_IFYOUWANNA"] = new Localization("PEIFHNSHNWG!", "peifaht sahnwng..."),
         ["BB_BADIDEA"] = new Localization("PHGYE,HEIMWHEIKANYAF!", "pahgyw, hei mw heika nyav..."),
         ["BB_NAH"] = new Localization("KRH!", "krah..."),
@@ -66,13 +63,20 @@ public record Localization(string Nahnya, string Roman)
         ["BB_NO"] = new Localization("KRH.", "krh."),
         ["BB_IFISAYYES"] = new Localization("SHRHFPEIPYEIPANIRHSA,PEIHNPHDHFI", "shrahfbei pyei pa nirh sa, peifaht pahdh fi"),
         ["BB_YEAH"] = new Localization("F,FI!", "f.. fi..."),
-        ["BB_IDUNNO"] = new Localization("PHGYEKHR", "pahgywkrh"),
         ["BB_FINE"] = new Localization("PHGYEKAMWNYAI!", "pahgyw ka mw nyai..."),
         ["BB_IMISSMYWIFE"] = new Localization("PHNWGFH", "pahnwng fh"),
         ["BB_INTENSENO"] = new Localization("KRH!", "KRH!!!!!!"),
         ["BB_OKAY"] = new Localization("NYAI!", "nyai..."),
         ["BB_DEFINITELY"] = new Localization("F,FI.NYAN!", "f-fi, nyan!"),
-        ["BB_MAYNEPTUNEBLESSUSALL"] = new Localization("CHAVYHGFINYEMYHFANIVAP!", "chav yhng finyemyh fanivap..."),
+        ["BB_MAYNEPTUNEBLESSUSALL"] = new Localization("CAVYHGFINYEMYHFANIVAP!", "chav yhng finyemyh fanivap..."),
+        ["BB_IDUNNO"] = new Localization("PHGYEGRE!", "pahgywgre"),
+        ["BB_IMNOTSURE"] = new Localization("PHRHGRE,CWMNYH", "phrahgre... chwmnyh"),
+        ["BB_DONTDOIT"] = new Localization("CAVPRAIKRH!", "chav praikrh hei..."),
+        ["BB_PLEASEDONT"] = new Localization("C.CAVPRAIKRH!", "ch...chav praikrh..."),
+        ["BB_UH"] = new Localization("DEI!", "dei..."),
+        ["BB_NUHUH"] = new Localization("F,FIKRH!", "f-fikrh..."),
+        ["BB_IGUESSSO"] = new Localization("HEIMWFI!", "hei mw fi..."),
+        ["BB_NOTCOMFORTABLE"] = new Localization("PHNWNGGREPYEIFI", "pahnwnggre pyeifi"),
         
         ["__NATIONALITY"] = new Localization("YHGNYEM", "YHNGNYEM") // neptunian island
     };
