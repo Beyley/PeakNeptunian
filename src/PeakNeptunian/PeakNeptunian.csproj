@@ -15,6 +15,11 @@
         <PackageReference Include="PEAKModding.PEAKLib.UI" Version="1.6.1"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="translations.csv" />
+      <EmbeddedResource Include="translations.csv" />
+    </ItemGroup>
+
     <!--
     How to include thunderstore mods as dependencies via nuget
   

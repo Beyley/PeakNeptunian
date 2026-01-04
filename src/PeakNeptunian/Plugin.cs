@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
 using System.Text;
 using BepInEx;
 using BepInEx.Configuration;
@@ -24,7 +25,7 @@ namespace PeakNeptunian;
 public partial class Plugin : BaseUnityPlugin
 {
     // Plugin stuff
-    private static ManualLogSource Log { get; set; } = null!;
+    public static ManualLogSource Log { get; set; } = null!;
 
     // Config
     private static ConfigEntry<LocalizationType> _localizationType = null!;
@@ -56,15 +57,17 @@ public partial class Plugin : BaseUnityPlugin
             // We can apply our hooks here.
             // See https://lethal.wiki/dev/fundamentals/patching-code
             Harmony.CreateAndPatchAll(typeof(Plugin));
+            
+            Localizations.Load();
         }
         catch (Exception ex)
         {
             Log.LogError($"Failed to init, got exception {ex}");
         }
-
+        
         // Create a backwards table so we can more performantly detect localized Nahnya in strings
         // (for when things bypass the LocalizedText component)
-        foreach (var (key, (nahnya, _)) in Localization.NeptunianLocalizations)
+        foreach (var (key, (nahnya, _)) in Localizations.Neptunian)
             NahnyaToKey[nahnya] = key;
 
         Log.LogInfo($"Plugin {Name} is loaded!");
