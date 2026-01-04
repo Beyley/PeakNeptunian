@@ -13,6 +13,12 @@ public static class Localizations
         while (reader.ReadLine() is { } line)
         {
             var split = CSVReader.SplitCsvLine(line);
+
+            if (string.IsNullOrEmpty(split[2]) || string.IsNullOrEmpty(split[3]))
+            {
+                continue;
+            }
+            
             Neptunian[split[0]] = new Localization(split[2], split[3]);
         }
     }
