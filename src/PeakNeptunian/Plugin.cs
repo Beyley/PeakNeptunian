@@ -277,7 +277,7 @@ public partial class Plugin : BaseUnityPlugin
                     continue;
                 }
 
-                if (textComponent.text.ToUpper().Contains("CRABLAND"))
+                if (textComponent.text.ToUpperInvariant().Contains("CRABLAND"))
                 {
                     Localization.GetLocalizedString(_localizationType.Value, "__NATIONALITY", out var localized);
                     textComponent.SetText(localized!);
@@ -424,7 +424,7 @@ public partial class Plugin : BaseUnityPlugin
         // Log.LogDebug($"Got arg {__args[0]}");
 
         if (Localization.GetLocalizedString(_localizationType.Value,
-                ((string)__args[0]).ToUpper(),
+                ((string)__args[0]).ToUpperInvariant(),
                 out var localized))
         {
             __result = localized;
