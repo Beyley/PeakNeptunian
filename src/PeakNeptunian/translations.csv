@@ -86,25 +86,25 @@ BONUSRULE,BONUS RULE,,,
 BUGPHOBIAMODE,BUG PHOBIA MODE,,,
 CALDERA,CALDERA,,,
 CAMPFIRE,CAMPFIRE,,,
-CANCEL,CANCEL,,,
+CANCEL,CANCEL,YHP,YAHP,stop
 CANTLIGHT,can't light campfire with friends missing!,,,
-CARRY,carry #,,,
-CHAIN,CHAIN,,,
+CARRY,carry #,DH#,dah #,carry #
+CHAIN,CHAIN,DEFHANNAI,DEVHANNAI,rope+metal
 CHANGE ANGLE,adjust angle,,,
 CINEMA,cinema,,,
-CLIMB,CLIMB,,,
+CLIMB,CLIMB,PRAIHE,PRAIHE,"raise (TODO: figure out which definition of ""raise"" is used on the LP site here, this translation could be wrong)"
 Climbing extra field of view,CLIMBING EXTRA FIELD OF VIEW,,,
 CLIMBUSE,CLIMB / USE ITEM,,,
 CLOSETHEGAME,Close and update the game.,,,
 COLORBLINDNESSMODE,COLOR BLINDNESS MODE,,,
 COMMUNE,commune,,,
-CONNECTING,CONNECTING...,,,
-CONTINUE,CONTINUE,,,
+CONNECTING,CONNECTING...,MYH.,MYH...,starting...
+CONTINUE,CONTINUE,KRICA,KRICHA,remain/wait/continue...
 CONTROLLER ICONS,CONTROLLER ICONS,,,
 CONTROLLER SENSITIVITY,CONTROLLER SENSITIVITY,,,
 CONTROLS,CONTROLS,,,
 CONTROLSNOTSUPPORTED,Controls remapping is not currently supported.\nYou can use Steam Input to remap gamepads.,,,
-COOK,cook,,,
+COOK,cook,FIGFWM,fingvwm,cook
 COOKED_BURNT,BURNT #,,,
 COOKED_COOKED,COOKED #,,,
 COOKED_INCINERATED,INCINERATED #,,,
@@ -113,10 +113,10 @@ CRASHOUT,crashout,,,
 CREDITS,CREDITS,PAPADANWFIG,PABADA NWVING,people+development
 CROSSED ARMS,crossed arms,,,
 CROUCH,CROUCH,,,
-DANCE,dance,,,
+DANCE,dance,NEPYAKEG,nebyageng,dance
 DANCE2,shimmy,,,
-DAY,Day #,,,
-DEAD,DEAD,,,
+DAY,Day #,NYARI#,Nyari #,day #
+DEAD,DEAD,DEGRAFEISE,DEGRAFEISE,lost (from death).PAST
 DEFEAT,it's so over,,,
 DESC_24 KARAT,Offer The Kiln a worthy sacrifice.,,,
 DESC_ADVANCED MYCOLOGY,Try all 5 types of Shroomberry in a single expedition.,,,
@@ -186,7 +186,7 @@ DRINK,drink,,,
 DROP,drop #,YA,ya,drop
 DROPTHROW,DROP / THROW (HOLD),,,
 EAT,eat,FWM,fwm,eat
-EIGHT,Eight,,,
+EIGHT,Eight,HEICH,Heichh,eight
 EMOTE,EMOTE,,,
 ENABLECANNIBALISM,ENABLE CANNIBALISM,,,
 ENABLED,ENABLED,,,
@@ -197,11 +197,11 @@ FAILEDTOCONNECT,Failed to connect to Photon Network,,,
 FEED TO #TARGETCHAR,feed to #targetchar,,,
 FIELD OF VIEW,FIELD OF VIEW,,,
 FIRE,fire,,,
-FIVE,Five,,,
+FIVE,Five,HEINH,Heinah,five
 FLAME,FLAME,,,
 FLEX,flex,,,
 FLIP PAGE,flip page,,,
-FOUR,Four,,,
+FOUR,Four,HEI,Hei,four
 FRIENDS,OPEN TO FRIENDS,,,
 FROM,FROM:,,,
 FULLSCREEN,FULLSCREEN,,,
@@ -466,13 +466,13 @@ NEWISLANDIN,NEW ISLAND IN,HENYHDEI,HEN YH DEI,island+new in
 NEWLOOK,NEW LOOK!,,,
 NEWSASH,NEW SASH!,,,
 NEXT,NEXT,,,
-NINE,Nine,,,
+NINE,Nine,HEICAF,Heichav,nine
 NO-NO,no-no,,,
 NONE,NONE,,,
 OFF,OFF,,,
 OK,OK,,,
 ON,ON,,,
-ONE,One,,,
+ONE,One,FA,Fa,one
 ONLYATMAINMENU,This setting can only be adjusted on the main menu.,,,
 OPEN,open,FEI,fei,open
 OPEN/CLOSE,open/close,,,
@@ -544,14 +544,14 @@ SELECTMIC,SELECT MICROPHONE,,,
 SET,set,,,
 SETPITON,set piton,,,
 SETTINGS,SETTINGS,NWNEG,NWNENG,want.pl
-SEVEN,Seven,,,
+SEVEN,Seven,HEINDI,Heindi,seven
 SFX VOLUME,SFX VOLUME,,,
 SHADOW DISTANCE,SHADOW DISTANCE,,,
 SHOOT,shoot,,,
 SHORE,SHORE,,,
 SHRUG,shrug,,,
-SIX,Six,,,
-SOMEONESBACKPACK,#'S BACKPACK,,,
+SIX,Six,HEINCH,Heinchh,six
+SOMEONESBACKPACK,#'S BACKPACK,#DHCHKHGSEI,# DAH CHHKHNGSEI,# (posessive) container+back
 SPECTATING,spectating:,,,
 SPOOL,spool,,,
 SPRAY,spray,,,
@@ -567,7 +567,7 @@ SWAPITEMLEFT,SWAP ITEM LEFT,,,
 SWAPITEMRIGHT,SWAP ITEM RIGHT,,,
 TADPOLE SCOUT,TADPOLE SCOUT,,,
 TAKEITEM,take<br>#,,,
-TEN,Ten,,,
+TEN,Ten,CASAHEINH,Cha sa heinah,2 by 5
 TENDERFOOT,TENDERFOOT,,,
 TEXTURE QUALITY,TEXTURE QUALITY,,,
 THANKSFORPLAYING,THANKS FOR PLAYING!,,,
@@ -576,7 +576,7 @@ THEFOGRISES,THE FOG RISES...,,,
 THELAVARISES,THE LAVA RISES,,,
 THINK,think,,,
 THISGAMEUSESVOICECHAT,THIS GAME USES VOICE CHAT,,,
-THREE,Three,,,
+THREE,Three,CEI,Chei,three
 THROW,throw,YADEHEIPI,ya deheipi,drop+push away
 THUMBS UP,thumbs up,,,
 TICK,TICK,,,
@@ -609,7 +609,7 @@ TOUCH,touch,,,
 TROPICS,TROPICS,,,
 TRYAGAIN,TRY AGAIN,,,
 TRYCONNECTAGAIN,Try to connect again or play in offline mode?,,,
-TWO,Two,,,
+TWO,Two,CA,Cha,two
 UNLOCKED,# UNLOCKED,,,
 USE,use,HAI,hai,use
 USE ON #TARGETCHAR,use on #targetchar,,,
