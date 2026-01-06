@@ -28,7 +28,7 @@ public static class Localizations
             Neptunian[split[0].ToUpperInvariant()] = new Localization(split[2], split[3]);
         }
         
-        Plugin.Log.LogDebug($"Loaded {total-notTranslated}/{total} translations. {notTranslated} to go.");
+        Plugin.Log.LogDebug($"Loaded {total-notTranslated}/{total} ({(total-notTranslated)/(double)total*100.0:N2}%) translations. {notTranslated} to go.");
     }
 
     public static readonly Dictionary<string, Localization> Neptunian = new();
