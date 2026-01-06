@@ -46,7 +46,7 @@ public partial class Plugin : BaseUnityPlugin
     {
         Log = Logger;
 
-        _localizationType = Config.Bind("General", "LocalizationSetting", LocalizationType.Nahnya);
+        _localizationType = Config.Bind("General", "LocalizationSetting", LocalizationType.Roman);
 
         try
         {
