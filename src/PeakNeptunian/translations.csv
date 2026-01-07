@@ -184,7 +184,7 @@ DESC_WEB SECURITY,Escape a spider's web and survive.,,,
 DONTFORGET,DON'T FORGET<br><size=150%>RULE 0!,,,
 DRINK,drink,FWM,fwm,eat/drink
 DROP,drop #,YA,ya,drop
-DROPTHROW,DROP / THROW (HOLD),YACHEVYASADEHEIPI(DH),YA / YA SA DEHEIPI (DAH),drop / drop+push away (hold)
+DROPTHROW,DROP / THROW (HOLD),YACHEVDEHEIPI(DH),YA / DEHEIPI (DAH),drop / push away (hold)
 EAT,eat,FWM,fwm,eat
 EIGHT,Eight,HEICH,Heichh,eight
 EMOTE,EMOTE,,,
@@ -252,7 +252,7 @@ LOBBY MODE,LOBBY MODE,,,
 LOOK,look,NYEI,nyei,see
 LOW,LOW,YA,YA,down/less
 LUGGAGE,LUGGAGE,CHPINIRH,CHHPINIRH,container+bring
-LUNGE,lunge,PISAGWF,pi sa ngwv,move+(verbal adjective)fast
+LUNGE,lunge,PISAGWF,pi ngwv,move+fast
 MASTER VOLUME,MASTER VOLUME,,,
 MAX FRAMERATE,MAX FRAMERATE,,,
 MEDIUM,MEDIUM,,,
@@ -577,7 +577,7 @@ THELAVARISES,THE LAVA RISES,,,
 THINK,think,CW,chw,think
 THISGAMEUSESVOICECHAT,THIS GAME USES VOICE CHAT,,,
 THREE,Three,CEI,Chei,three
-THROW,throw,YASADEHEIPI,ya sa deheipi,drop+(verbal adjective)push away
+THROW,throw,DEHEIPI,deheipi,push away
 THUMBS UP,thumbs up,,,
 TICK,TICK,,,
 TICKINTERACT,remove tick,,,
