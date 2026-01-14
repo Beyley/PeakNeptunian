@@ -14,6 +14,11 @@ For this translation, new words had to be coined, and words loaned in from Engli
 - hedvwn - Headphone
 - hekwdvwn - Headphones
 - pipan - Piton
+- senw - Snow
+- senwba - Snowball
+- sanvrin - Sunscreen
+- swkerepen - Skeleton
+- fwpw - Photo
 
 ## Compound words
 
