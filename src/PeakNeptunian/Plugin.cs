@@ -29,6 +29,7 @@ public partial class Plugin : BaseUnityPlugin
 
     // Config
     private static ConfigEntry<LocalizationType> _localizationType = null!;
+    private static ConfigEntry<bool> _enablePingPang = null!;
 
     // Loaded assets
     private static TMP_FontAsset? _neptunianShpreFont;
@@ -46,7 +47,8 @@ public partial class Plugin : BaseUnityPlugin
     {
         Log = Logger;
 
-        _localizationType = Config.Bind("General", "LocalizationSetting", LocalizationType.Roman);
+        _localizationType = Config.Bind("General", "LocalizationSetting", LocalizationType.Off);
+        _enablePingPang = Config.Bind("General", "EnablePingPang", true);
 
         try
         {
@@ -400,7 +402,7 @@ public partial class Plugin : BaseUnityPlugin
     public static void Action_AskBingBong_OnEnable(Action_AskBingBong __instance, int index, bool spamming)
     {
         // Don't patch Bing Bong's responses if we aren't localizing into Neptunian
-        if (_localizationType.Value == LocalizationType.Off)
+        if (!_enablePingPang.Value)
         {
             return;
         }
