@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Text;
 using BepInEx;
@@ -286,7 +287,8 @@ public partial class Plugin : BaseUnityPlugin
                 }
             }
 
-            var renderers = __instance.GetComponentsInChildren<Renderer>();
+            var spriteRenderers = __instance.GetComponentsInChildren<SpriteRenderer>(true);
+            var renderers = __instance.GetComponentsInChildren<Renderer>(true).Concat(spriteRenderers);
 
             foreach (var renderer in renderers)
             {
@@ -295,29 +297,47 @@ public partial class Plugin : BaseUnityPlugin
                 var materials = renderer.materials;
                 foreach (var material in materials)
                 {
-                    if (!material) continue;
-
-                    var textureNameIds = material.GetTexturePropertyNameIDs();
-                    foreach (var textureNameId in textureNameIds)
-                    {
-                        var texture = material.GetTexture(textureNameId);
-
-                        // Wrong texture type, we can't patch non Texture2D
-                        if (texture is not Texture2D texture2D) continue;
-
-                        // Log.LogDebug($"Seen texture {texture2D.name}");
-
-                        if (TexturePatches.TryGetValue(texture2D.name, out var patchedTexture) &&
-                            _localizationType.Value >= patchedTexture.LocalizationThreshold)
-                            material.SetTexture(textureNameId, patchedTexture.Texture);
-                    }
+                    PatchMaterial(material);
                 }
+            }
+
+            foreach (var spriteRenderer in spriteRenderers)
+            { 
+                var sprite = spriteRenderer.sprite;
+                var texture2D = sprite.texture;
+
+                if (TexturePatches.TryGetValue(texture2D.name, out var patchedTexture) &&
+                    _localizationType.Value >= patchedTexture.LocalizationThreshold)
+                    spriteRenderer.sprite = Sprite.Create(patchedTexture.Texture,
+                        new Rect(0, 0, patchedTexture.Texture.width, patchedTexture.Texture.height),
+                        new Vector2(0.5f, 0.5f));
             }
         }
         catch (Exception ex)
         {
             Log.LogError($"Failed to patch textures, got error {ex}");
         }
+    }
+
+    private static void PatchMaterial(Material? material)
+    {
+        if (!material) return;
+
+        var textureNameIds = material.GetTexturePropertyNameIDs();
+        foreach (var textureNameId in textureNameIds)
+        {
+            var texture = material.GetTexture(textureNameId);
+
+            // Wrong texture type, we can't patch non Texture2D
+            if (texture is not Texture2D texture2D) continue;
+
+            // Log.LogDebug($"Seen texture {texture2D.name}");
+
+            if (TexturePatches.TryGetValue(texture2D.name, out var patchedTexture) &&
+                _localizationType.Value >= patchedTexture.LocalizationThreshold)
+                material.SetTexture(textureNameId, patchedTexture.Texture);
+        }
+
     }
 
     [HarmonyPatch(typeof(Image), "OnEnable")]
