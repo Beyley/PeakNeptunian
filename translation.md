@@ -6,6 +6,16 @@ For this translation, new words had to be coined, and words loaned in from Engli
 
 - pahdep padanyei - Scoutmaster (leader + scout)
 - nwran heika - guidebook (book+direction/way)
+- nwheinye nya - lantern (tool + light)
+
+- Maikre - Berrynana
+- Clusterberry - Nifwmephp
+- Kreiprev - Shroomberry
+- Kreimnwngyhng - Prickleberry
+- Fafakrei - Crispberry
+- Nyanivwm - Kingberry
+- Kreyyw - Winterberry
+- Kreinkrein - Scorchberry
 
 ## New Loanwords
 
@@ -25,10 +35,26 @@ For this translation, new words had to be coined, and words loaned in from Engli
 - kwkanaht - Coconut
 - kakwtas - Cactus
 - kwnan - Canon
+- feyarain - Airline
+- farwveira - Aloe Vera
+- parwn - Balloon
+- paskeba - Basketball
+- pwgre - Bugle
+- kranwra - Granola
 
 ## Compound words
 
 - krahven\[gre] - Revive (kill.NEG)
 - \[nyei]\[mwngrav] - Spectate (see+spirit)
 - \[pada\]\[nyei\] - Scout (person+see)
-- \[pada\]\[hang\] - Statue
+- \[pada\]\[hang\] - Statue (person+rock)
+- \[nyem\]\[vahnye\] - Antidote (water+heal)
+- \[nwnah\]\[vahnye\] - Bandage (paper+heal)
+- \[krei\]\[chi\] - Berry (fruit+small)
+- \[fri\]\[krav\] - Skull (head+dead)
+- frinyemyh\[gre\] - Cursed (bless.NEG)
+- \[yehram\]\[grem\] - Dynamite (stick+destroy)
+- \[mwngrav\]\[chi\] - Faerie (spirit+small)
+- \[hanai\]\[yhngpwn\] - Purple (dark+blue-violet)
+- \[hanai\]\[keipwn\] - Orange (dark+yellow)
+- \[yehram\]\[chi\] - Thorn (stick/branch+small)
