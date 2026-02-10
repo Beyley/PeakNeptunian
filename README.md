@@ -4,7 +4,7 @@ Localizes PEAK into Neptunian from Dimension 66A.
 
 ![Screenshot of the title screen](.github/assets/image.png)
 
-#### Progress: ~45.66%
+#### Progress: ~48.50%
 
 ## License
 

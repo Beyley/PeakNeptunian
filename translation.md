@@ -6,16 +6,22 @@ For this translation, new words had to be coined, and words loaned in from Engli
 
 - pahdep padanyei - Scoutmaster (leader + scout)
 - nwran heika - guidebook (book+direction/way)
-- nwheinye nya - lantern (tool + light)
 
 - Maikre - Berrynana
-- Clusterberry - Nifwmephp
+- Nifwmephp - Clusterberry
 - Kreiprev - Shroomberry
 - Kreimnwngyhng - Prickleberry
 - Fafakrei - Crispberry
 - Nyanivwm - Kingberry
 - Kreyyw - Winterberry
 - Kreinkrein - Scorchberry
+
+- Prevkrek - Button Shroom
+- Prevmeiv - Chubby Shroom
+- Prevhanw - Cloud Fungus
+- Prevmwmephp - Cluster shroom
+- Kreihanai - Napberry
+- Prevvahnye - Remedy fungus
 
 ## New Loanwords
 
@@ -41,6 +47,12 @@ For this translation, new words had to be coined, and words loaned in from Engli
 - paskeba - Basketball
 - pwgre - Bugle
 - kranwra - Granola
+- fraripap - Lollipop
+- hakdahk - Hot Dog
+- pin - Bean
+- manvreik - Mandrake
+- paresa - parasol
+- kampas - compass
 
 ## Compound words
 
@@ -58,3 +70,7 @@ For this translation, new words had to be coined, and words loaned in from Engli
 - \[hanai\]\[yhngpwn\] - Purple (dark+blue-violet)
 - \[hanai\]\[keipwn\] - Orange (dark+yellow)
 - \[yehram\]\[chi\] - Thorn (stick/branch+small)
+- \[dahkei\]\[fw\] - Blowgun (push+air)
+- \[krw\]\[nyemnei\] - Honeycomb (house+honey)
+- \[chah\]\[nya\] - lantern (container+light)
+- \[chah\]\[fingvwm\] - Stove (container+cook)
