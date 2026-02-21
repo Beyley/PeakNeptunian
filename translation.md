@@ -74,3 +74,4 @@ For this translation, new words had to be coined, and words loaned in from Engli
 - \[krw\]\[nyemnei\] - Honeycomb (house+honey)
 - \[chah\]\[nya\] - lantern (container+light)
 - \[chah\]\[fingvwm\] - Stove (container+cook)
+- \[fraf\]\[fachachi\] - Volume (loud+count)

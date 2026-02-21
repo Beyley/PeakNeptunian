@@ -18,6 +18,7 @@ using UnityEngine.TextCore;
 using UnityEngine.TextCore.LowLevel;
 using UnityEngine.UI;
 using UnityEngine.UI.Extensions;
+using Random = System.Random;
 
 namespace PeakNeptunian;
 
@@ -40,6 +41,9 @@ public partial class Plugin : BaseUnityPlugin
     // Static state
     private static readonly Dictionary<string, string> NahnyaToKey = new();
     private static Action_AskBingBong.BingBongResponse[] _bingBongResponses = [];
+    private static readonly Dictionary<int, Func<bool>> BingBongResponseConditions = [];
+
+    private static Random _random = new Random();
 
     // Dynamic state
     private static readonly HashSet<int> PatchedGameObjects = new();
@@ -191,7 +195,6 @@ public partial class Plugin : BaseUnityPlugin
         yield return LoadSoundEffect("audio/pingpangVO_NOLong.ogg", "BB_INTENSENO");
         yield return LoadSoundEffect("audio/pingpangVO_OK.ogg", "BB_Okay");
         yield return LoadSoundEffect("audio/pingpangVO_YeahDef.ogg", "BB_Definitely");
-        yield return LoadSoundEffect("audio/pingpangVO_Neptune.ogg", "BB_MayNeptuneBlessUsAll");
         yield return LoadSoundEffect("audio/pingpangVO_DontDoIt.ogg", "BB_DontDoIt");
         yield return LoadSoundEffect("audio/pingpangVO_IGuess.ogg", "BB_IGuessSo");
         yield return LoadSoundEffect("audio/pingpangVO_NotComfortable.ogg", "BB_NotComfortable");
@@ -199,6 +202,8 @@ public partial class Plugin : BaseUnityPlugin
         yield return LoadSoundEffect("audio/pingpangVO_NuhUh.ogg", "BB_NuhUh");
         yield return LoadSoundEffect("audio/pingpangVO_PleaseDont.ogg", "BB_PleaseDont");
         yield return LoadSoundEffect("audio/pingpangVO_UHHH.ogg", "BB_Uh");
+        yield return LoadSoundEffect("audio/pingpangVO_Neptune.ogg", "BB_MayNeptuneBlessUsAll");
+        yield return LoadSoundEffect("audio/pingpangVO_TodayIsFriday.ogg", "BB_TodayIsFriday");
     }
     
     private IEnumerator CreateBingBongResponses()
@@ -207,7 +212,7 @@ public partial class Plugin : BaseUnityPlugin
 
         yield return LoadBingBongSfx();
         
-        void AddBingBongResponse(string key)
+        int AddBingBongResponse(string key)
         {
             responses.Add(new Action_AskBingBong.BingBongResponse
             {
@@ -216,6 +221,8 @@ public partial class Plugin : BaseUnityPlugin
                 mouthCurve = null,
                 mouthCurveTime = 0
             });
+
+            return responses.Count - 1;
         }
         
         Log.LogDebug("Adding repsonses");
@@ -249,6 +256,13 @@ public partial class Plugin : BaseUnityPlugin
             AddBingBongResponse("BB_NuhUh");
             AddBingBongResponse("BB_PleaseDont");
             AddBingBongResponse("BB_Uh");
+            BingBongResponseConditions[AddBingBongResponse("BB_TodayIsFriday")] = () =>
+            {
+                var pacificZone = TimeZoneInfo.FindSystemTimeZoneById("Pacific Standard Time");
+                var pacificTime = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, pacificZone);
+
+                return pacificTime.DayOfWeek == DayOfWeek.Friday;
+            };
         }
         catch (Exception ex)
         {
@@ -419,14 +433,23 @@ public partial class Plugin : BaseUnityPlugin
 
     [HarmonyPrefix]
     [HarmonyPatch(typeof(Action_AskBingBong), nameof(Action_AskBingBong.Ask))]
-    public static void Action_AskBingBong_OnEnable(Action_AskBingBong __instance, int index, bool spamming)
+    public static void Action_AskBingBong_OnEnable(Action_AskBingBong __instance, ref int index, bool spamming)
     {
         // Don't patch Bing Bong's responses if we aren't localizing into Neptunian
         if (!_enablePingPang.Value)
         {
             return;
         }
+        
+        Log.LogInfo($"Bing bong index {index}");
 
+        while (BingBongResponseConditions.ContainsKey(index) && !BingBongResponseConditions[index]())
+        {
+            index = _random.Next(0, _bingBongResponses.Length);
+        }
+        
+        Log.LogInfo($"Patched Bing bong index {index}");
+        
         __instance.responses = _bingBongResponses;
 
         if (_localizationType.Value == LocalizationType.Nahnya)
