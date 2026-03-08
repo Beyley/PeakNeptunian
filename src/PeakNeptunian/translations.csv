@@ -25,7 +25,7 @@ AUDIO,AUDIO,NWKYHG,NWGYAHK,audio
 AUTHENTICATING,AUTHENTICATING...,,,
 AUTO,AUTO,,,
 BACK,BACK,HEYA,HEYA,return
-BACKFLIP,backflip,,,
+BACKFLIP,backflip,PHKHGSEI,ph khngsei,wave backwards
 BACKPACK SLOT,BACKPACK SLOT,,,
 BADGELOCKED,You don't have this badge yet!,,,
 BB_AskYourFriends,you should ask your friends for help!,CAFSHPYEIPHPEDEGSHREFINYADHFHAI,chav sahbyei pahbedeng shre finya dahf hai!,
@@ -110,15 +110,15 @@ COOKED_BURNT,BURNT #,#SAFIGFWMCCWF,# SA FINGVWMCCHWV,(verbal adjective) too cook
 COOKED_COOKED,COOKED #,#SAFIGFWM,# SA FINGVWM,(verbal adjective) cooked
 COOKED_INCINERATED,INCINERATED #,#SAFIGFWMNIF,# SA FINGVWMNIV,(verbal adjective) cooked-est
 COOKED_WELLDONE,WELL-DONE #,#SAFIGFWMFFAN,# SA FINGVWMFFAN,(verbal adjective) so cooked
-CRASHOUT,crashout,,,
+CRASHOUT,crashout,FAK,fak,FUCK
 CREDITS,CREDITS,PAPADANWFIG,PABADA NWVING,people+development
-CROSSED ARMS,crossed arms,,,
+CROSSED ARMS,crossed arms,FEFWSADI,fevw sa di,arms as join (join arms)
 CROUCH,CROUCH,,,
 DANCE,dance,NEPYAKEG,nebyageng,dance
-DANCE2,shimmy,,,
+DANCE2,shimmy,YAFWNEPYAKEG,yavw nebyageng,lower arms-dance
 DAY,Day #,NYARI#,Nyari #,day #
 DEAD,DEAD,DEGRAFEISE,DEGRAFEISE,lost (from death).PAST
-DEFEAT,it's so over,,,
+DEFEAT,it's so over,PEKKRAKEFPEI,pekkragevbei,we're going to die
 DESC_24 KARAT,Offer The Kiln a worthy sacrifice.,,,
 DESC_ADVANCED MYCOLOGY,Try all 5 types of Shroomberry in a single expedition.,,,
 DESC_AERONAUTICS,Achieve flight.,,,
@@ -200,7 +200,7 @@ FIELD OF VIEW,FIELD OF VIEW,,,
 FIRE,fire,KEIN,kein,fire
 FIVE,Five,HEINH,Heinah,five
 FLAME,FLAME,KEINCI,KEIN CHI,fire+small
-FLEX,flex,,,
+FLEX,flex,PHDECWF,pahdechwv,strongman
 FLIP PAGE,flip page,YHNWNH,yh nwnah,change page
 FOUR,Four,HEI,Hei,four
 FRIENDS,OPEN TO FRIENDS,FEIKRIREIKEPHPEDENG,FEI KRIREIKE PAHBEDENG,open toward friends
@@ -468,7 +468,7 @@ NEWLOOK,NEW LOOK!,,,
 NEWSASH,NEW SASH!,,,
 NEXT,NEXT,NIS,NIS,after (TODO: there's probably a better way to do this)
 NINE,Nine,HEICAF,Heichav,nine
-NO-NO,no-no,"KRH,KRH",krh-krh,no-no
+NO-NO,no-no,"KRH,KRH",krahgegre,no-no-no
 NONE,NONE,NIKRH,NIKRH,without
 OFF,OFF,,,
 OK,OK,NYAI,NYAI,alright
@@ -493,7 +493,7 @@ PITONPROMPT,PITON,PIPAN,PIPAN,piton(loaned)
 PLACE,place,KRI,kri,place
 PLANT,plant,KRI,kri,place
 PLAY,play,,,
-PLAY DEAD,play dead,FENNYAHEIKRAF,FENNYAHEI KRAV,show-off die
+PLAY DEAD,play dead,DEKRAFEISAPA,degrafei sa pa,i am lost (from death)
 PLAYOFFLINE,PLAY OFFLINE,MYHNIKRHKEI,MYH NIKRKEI,start+alone
 PLEASEUSE,PLEASE USE HEADPHONES AND A MICROPHONE,CAFHAIHEKWDFWNNIMAIK,CHAV HAI HEKWDVWN NI MAIK,please use headphone.PL(loaned) and microphone(loaned)
 PRESSANYBUTTON,PRESS ANY BUTTON TO CONTINUE,,,
@@ -509,7 +509,7 @@ PROMPT_RULE2_3,[SPRINT]WHILE CLIMBING: LUNGE,,,
 PROMPT_RULE3,[USESECONDARY] EMPTY-HANDED: HELP UP FRIEND,,,
 PROMPT_RULE3_1,[CROUCH]CROUCH,,,
 PROMPT_RULE8,[PING]:PING LOCATION,,,
-PUNCHFIST,bully,,,
+PUNCHFIST,bully,NYEINIFENYANEKRH,nyeinifenyanegrh,nice to meet you.NEG
 PUSH TO MUTE,PUSH TO MUTE,DHKEISHKRE,DAHKEI SHGRE,
 PUSH TO TALK,PUSH TO TALK,DHKEISH,DAHKEI SH,
 QUIT,QUIT,PIPI,PIPI,exit
@@ -534,7 +534,7 @@ ROOTS,ROOTS,HEKWRAM,HEKWRAM,root.PL TODO: is this the right pluralization form
 ROPE,ROPE,DEF,DEV,rope
 RULE,RULE,DEHFINEIG,DEHFINEING,law
 RULE0SIGNATURE,-Scoutmaster Myres,-PHDEPPADANYEIKHKE,-Pahdep Padanyei Khke,scoutmaster Khke
-SALUTE,salute,,,
+SALUTE,salute,YESSEN,yessen,yessir
 SCOUT,SCOUT,PADANYEI,PADANYEI,scout(compound word)
 SCOUTCANNONFUSE,FUSE,,,
 SCOUTINGREPORT,SCOUTING REPORT,,,
@@ -550,7 +550,7 @@ SFX VOLUME,SFX VOLUME,,,
 SHADOW DISTANCE,SHADOW DISTANCE,,,
 SHOOT,shoot,DHKEI,dahkei,push
 SHORE,SHORE,YEHEN,YEHEN,shore
-SHRUG,shrug,,,
+SHRUG,shrug,PHCWKRE,phchwkre,i don't know
 SIX,Six,HEINCH,Heinchh,six
 SOMEONESBACKPACK,#'S BACKPACK,#DHCHKHGSEI,# DAH CHHKHNGSEI,# (posessive) container+back
 SPECTATING,spectating:,NYEIMWNKRAF,nyeimwngrav:,see+spirit (compound word)
@@ -579,7 +579,7 @@ THINK,think,CW,chw,think
 THISGAMEUSESVOICECHAT,THIS GAME USES VOICE CHAT,,,
 THREE,Three,CEI,Chei,three
 THROW,throw,DEHEIPI,deheipi,push away
-THUMBS UP,thumbs up,,,
+THUMBS UP,thumbs up,FAHA,faha,uh-huh
 TICK,TICK,HANIG,HANING,beetle
 TICKINTERACT,remove tick,DHFHANIG,DAHF HANING,take beetle
 TIE KNOT,tie knot,,,
@@ -621,7 +621,7 @@ VOICES VOLUME,VOICES VOLUME,,,
 VSYNC,VSYNC,,,
 WAITINGFORALL,waiting for all players...,,,
 WARP,warp,PAIDENKRIREIKE,paiden krireike,portal towards
-WAVE,wave,,,
+WAVE,wave,KRIRIKRIRI,kririkriri,here-here
 WEARBACKPACK,wear backpack,PYAICHKHGSEI,pyai chhkhngsei,wear container+back
 WEMADEIT,"We made it!!<br><br>Even without our scoutmaster's help, we managed to get rescued!<br><br>SněžnýPerník managed to make it up first.<br>Zedorfska made it out without a scratch.<br>CaptainBear was injured but in great spirits.<br>Squdel & Kirpich are a little bruised. Good thing they had each other!<br>Ronokopl kept the team fed and safe.<br><br>Mr. Myres, if you're reading this... We couldn't find you!! I'm sorry!",,,
 WINDOW MODE,WINDOW MODE,,,
