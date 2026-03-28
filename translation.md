@@ -37,7 +37,7 @@ For this translation, new words had to be coined, and words loaned in from Engli
 - senwba - Snowball
 - sanvrin - Sunscreen
 - swkerepen - Skeleton
-- fwpw - Photo
+- pikcha - Photo
 - kwkanaht - Coconut
 - kakwtas - Cactus
 - kwnan - Canon
