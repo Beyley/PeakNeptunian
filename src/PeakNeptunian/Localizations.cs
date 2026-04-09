@@ -1,7 +1,10 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 using Karambolo.PO;
+using Unity.Collections.LowLevel.Unsafe;
 
 namespace PeakNeptunian;
 
@@ -42,8 +45,6 @@ public static class Localizations
 
             if (string.IsNullOrEmpty(singularEntry.Translation))
             {
-                Plugin.Log.LogDebug(
-                    $"Skipping entry with id {id} in language {language} because it has no translation");
                 continue;
             }
 
@@ -63,8 +64,24 @@ public static class Localizations
                 continue;
             }
 
+            string originalTranslation = singularEntry.Translation;
+
+            // Remap U+F1E00..U+F1EFF to U+E000..U+E0FF
+            byte[] utf32 = Encoding.UTF32.GetBytes(originalTranslation);
+            for (int i = 0; i < utf32.Length; i += 4)
+            {
+                uint codepoint = BitConverter.ToUInt32(utf32, i);
+                if (codepoint >= 0xF1E00 && codepoint <= 0xF1EFF)
+                {
+                    codepoint = (codepoint - 0xF1E00) + 0xE000;
+                    byte[] remapped = BitConverter.GetBytes(codepoint);
+                    Array.Copy(remapped, 0, utf32, i, 4);
+                }
+            }
+            string translation = Encoding.UTF32.GetString(utf32);
+
             localizations[key.Text.Substring(KEY_PREFIX.Length)] =
-                new Localization(key.Text, singularEntry.Translation);
+                new Localization(key.Text, translation);
         }
 
         LoadedLocalizations[language] = localizations;

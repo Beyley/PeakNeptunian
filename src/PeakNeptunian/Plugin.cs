@@ -29,10 +29,13 @@ public partial class Plugin : BaseUnityPlugin
     private static ConfigEntry<Language> _language = null!;
     private static ConfigEntry<bool> _enablePingPang = null!;
 
-    // Loaded assets
-    public static readonly Dictionary<Language, TMP_FontAsset> LoadedFonts = [];
-    private static readonly Dictionary<string, SFX_Instance> LoadedSoundEffects = new();
-    private static readonly Dictionary<string, TexturePatch> TexturePatches = new();
+    /// <summary>
+    /// Loaded fonts, indexed by language and original font. We need to keep track of the original font so we can set the fallback on the new font to the old one.
+    /// </summary>
+    public static readonly Dictionary<Language, Dictionary<TMP_FontAsset, TMP_FontAsset>> LanguageFonts = [];
+
+    private static readonly Dictionary<string, SFX_Instance> LoadedSoundEffects = [];
+    private static readonly Dictionary<string, TexturePatch> TexturePatches = [];
 
     // Static state
     private static Action_AskBingBong.BingBongResponse[] _bingBongResponses = [];
@@ -46,8 +49,12 @@ public partial class Plugin : BaseUnityPlugin
     // Plugin stuff
     public static ManualLogSource Log { get; set; } = null!;
 
+    private static Plugin Instance = null!;
+
     private void Awake()
     {
+        Instance = this;
+
         Log = Logger;
 
         _language = Config.Bind("General", "LocalizationSetting", Language.GameLanguage);
@@ -56,7 +63,6 @@ public partial class Plugin : BaseUnityPlugin
         try
         {
             LoadTextures();
-            LoadFonts();
             StartCoroutine(CreateBingBongResponses());
 
             // We can apply our hooks here.
@@ -104,9 +110,9 @@ public partial class Plugin : BaseUnityPlugin
         return false;
     }
 
-    private string LocalPath(string name)
+    private static string LocalPath(string name)
     {
-        return Path.Join(Path.GetDirectoryName(Info.Location), name);
+        return Path.Join(Path.GetDirectoryName(Instance.Info.Location), name);
     }
 
     private void LoadTexture(string name, params Language[] languages)
@@ -131,20 +137,68 @@ public partial class Plugin : BaseUnityPlugin
         LoadTexture("Logo_Blurred", Language.NeptunianRomanized);
     }
 
-    private void LoadFonts()
+    private static TMP_FontAsset GetFont(TMP_FontAsset originalFont)
     {
-        var font = TMP_FontAsset.CreateFontAsset(
-            LocalPath("NeptunianShpre.ttf"),
+        Language language = _language.Value;
+
+        string? fontPath = language switch
+        {
+            Language.NeptunianRomanized => "HekenicUCSUR.otf",
+            Language.NeptunianNahnya => "HekenicUCSUR.otf",
+            _ => null,
+        };
+
+        // Not font transformation taking place
+        if (fontPath == null)
+        {
+            return originalFont;
+        }
+
+        if (string.IsNullOrEmpty(originalFont.name))
+        {
+            // Log.LogDebug($"Original font has no name, skipping.");
+            return originalFont;
+        }
+
+        var fontsForLanguage = LanguageFonts.ContainsKey(language) ? LanguageFonts[language] : null;
+        if (fontsForLanguage == null)
+        {
+            fontsForLanguage = [];
+            LanguageFonts[language] = fontsForLanguage;
+        }
+
+        if (fontsForLanguage.TryGetValue(originalFont, out var loadedFont))
+        {
+            // Log.LogDebug($"Already loaded font for {originalFont.name} in language {language}, returning cached version.");
+            return loadedFont;
+        }
+
+        var newFont = TMP_FontAsset.CreateFontAsset(
+            LocalPath(fontPath),
             0,
-            56,
+            (int)originalFont.faceInfo.pointSize,
             1,
-            GlyphRenderMode.SDF,
+            originalFont.atlasRenderMode,
             4096,
             4096);
+        newFont.getFontFeatures = true;
+        newFont.fallbackFontAssetTable = [originalFont];
 
-        font.getFontFeatures = true;
+        var originalFaceInfo = originalFont.faceInfo;
+        var generatedFaceInfo = newFont.faceInfo;
 
-        LoadedFonts[Language.NeptunianNahnya] = font;
+        if (Mathf.Approximately(generatedFaceInfo.capLine, 0f))
+            generatedFaceInfo.capLine = originalFaceInfo.capLine;
+        if (Mathf.Approximately(generatedFaceInfo.meanLine, 0f))
+            generatedFaceInfo.meanLine = originalFaceInfo.meanLine;
+
+        newFont.faceInfo = generatedFaceInfo;
+
+        fontsForLanguage[originalFont] = newFont;
+
+        Log.LogDebug($"Loaded font {fontPath} for language {language} with original font {originalFont.name} (pointer: {newFont.GetInstanceID()})");
+
+        return newFont;
     }
 
     private IEnumerator LoadSoundEffect(string path, string key)
@@ -373,14 +427,9 @@ public partial class Plugin : BaseUnityPlugin
                 new Rect(0, 0, patchedTexture.Texture.width, patchedTexture.Texture.height), new Vector2(0.5f, 0.5f));
     }
 
-    private static void SetFont(GameObject gameObject, bool neptunian)
+    private static void SetFont(GameObject gameObject, bool prelocalized)
     {
-        // We only modify the font if we are localizing into Nahnya
-        if (!LoadedFonts.ContainsKey(_language.Value)) return;
-
-        var font = LoadedFonts[_language.Value];
-
-        if (neptunian)
+        if (prelocalized)
         {
             var cacheComponent = gameObject.GetOrAddComponent<FontCacheComponent>();
             var textComponent = gameObject.GetComponent<TMP_Text>();
@@ -393,9 +442,8 @@ public partial class Plugin : BaseUnityPlugin
                 cacheComponent.cached = true;
             }
 
-            textComponent.font = font;
+            textComponent.font = GetFont(textComponent.font);
             textComponent.lineSpacing = cacheComponent.lineSpacing + 24.0f;
-            textComponent.fontStyle &= ~FontStyles.LowerCase;
             if (!textComponent.fontFeatures.Contains(OTL_FeatureTag.liga))
                 textComponent.fontFeatures.Add(OTL_FeatureTag.liga);
         }
@@ -456,11 +504,11 @@ public partial class Plugin : BaseUnityPlugin
         __instance.responses = _bingBongResponses;
 
         // enable ligatures
-        if (LoadedFonts.ContainsKey(_language.Value))
+        if (LanguageFonts.ContainsKey(_language.Value))
         {
-            var font = LoadedFonts[_language.Value];
+            var font = LanguageFonts[_language.Value];
 
-            __instance.subtitles.font = font;
+            __instance.subtitles.font = GetFont(__instance.subtitles.font);
             __instance.subtitles.lineSpacing += 24.0f; // @todo: set this per font!!!
             if (!__instance.subtitles.fontFeatures.Contains(OTL_FeatureTag.liga))
                 __instance.subtitles.fontFeatures.Add(OTL_FeatureTag.liga);
@@ -472,11 +520,11 @@ public partial class Plugin : BaseUnityPlugin
     [HarmonyPatch(typeof(LocalizedText), nameof(LocalizedText.GetText), typeof(string), typeof(bool))]
     public static void LocalizedText_GetText(object[] __args, ref string __result)
     {
-        // Log.LogDebug($"Got arg {__args[0]}");
-
         if (GetLocalizedString(
                 ((string)__args[0]).ToUpperInvariant(),
                 out var localized))
             __result = localized;
+
+        Log.LogDebug($"Got arg {__args[0]}, localized into {__result}");
     }
 }
