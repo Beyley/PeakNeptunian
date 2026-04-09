@@ -1,5 +1,5 @@
 #  This file is part of Peak Neptunian.
-#  Copyright (C) Beyley Cardellio 2026
+# SPDX-FileCopyrightText: 2026 Beyley Cardellio 2026
 #  This file is distributed under the same license as the Peak Neptunian mod.
 #
 #  Translators:
@@ -9,12 +9,12 @@ msgstr ""
 "Project-Id-Version: Peak Neptunian\n"
 "Report-Msgid-Bugs-To: <littlegreenmantis@gmail.com>\n"
 "POT-Creation-Date: 2026-04-08 20:55+0000\n"
-"Last-Translator: Beyley Thomas <littlegreenmantis@gmail.com>\n"
+"Last-Translator: Beyley Cardellio <littlegreenmantis@gmail.com>\n"
 "Language-Team: English <>\n"
 "Language: qhe_YH@latin\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2026-04-08 20:14-0400\n"
+"PO-Revision-Date: 2026-04-08 20:51-0400\n"
 "MIME-Version: 1.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 26.07.70\n"
@@ -726,7 +726,7 @@ msgstr "PYEN"
 
 #. Key: NAME_SPORTS DRINK
 msgid "SPORTS DRINK"
-msgstr ""
+msgstr "NYEMGREI PINGWV"
 
 #. Key: NAME_STONE
 msgid "STONE"
@@ -1002,7 +1002,7 @@ msgstr "MYH"
 
 #. Key: LOADING
 msgid "LOADING"
-msgstr ""
+msgstr "SEINGI"
 
 #. Key: NATIONALITY
 msgid "Nationality"
@@ -1130,11 +1130,11 @@ msgstr ""
 
 #. Key: UNLOCKED
 msgid "# UNLOCKED"
-msgstr "# YAHVYEMGRE"
+msgstr "# SEINGISE"
 
 #. Key: ASCENTSUNLOCKED
 msgid "ASCENTS UNLOCKED"
-msgstr ""
+msgstr "PRABEIHE SEINGISE"
 
 #. Key: ASCENTSUNLOCKEDTEXT
 msgid ""
@@ -1153,35 +1153,35 @@ msgstr ""
 
 #. Key: TENDERFOOT
 msgid "TENDERFOOT"
-msgstr ""
+msgstr "HAN KRAHF"
 
 #. Key: ASCENT 1
 msgid "ASCENT 1"
-msgstr ""
+msgstr "PRAIHE FA"
 
 #. Key: ASCENT 2
 msgid "ASCENT 2"
-msgstr ""
+msgstr "PRAIHE CHA"
 
 #. Key: ASCENT 3
 msgid "ASCENT 3"
-msgstr ""
+msgstr "PRAIHE CHEI"
 
 #. Key: ASCENT 4
 msgid "ASCENT 4"
-msgstr ""
+msgstr "PRAIHE HEI"
 
 #. Key: ASCENT 5
 msgid "ASCENT 5"
-msgstr ""
+msgstr "PRAIHE HEINAH"
 
 #. Key: ASCENT 6
 msgid "ASCENT 6"
-msgstr ""
+msgstr "PRAIHE HEINCHH"
 
 #. Key: ASCENT 7
 msgid "ASCENT 7"
-msgstr ""
+msgstr "PRAIHE HEINDI"
 
 #. Key: SCOUT
 msgid "SCOUT"
@@ -1189,7 +1189,7 @@ msgstr "PADANYEI"
 
 #. Key: TADPOLE SCOUT
 msgid "TADPOLE SCOUT"
-msgstr ""
+msgstr "PADANYEI PABAYA"
 
 #. Key: RABBIT SCOUT
 msgid "RABBIT SCOUT"
@@ -1758,11 +1758,11 @@ msgstr ""
 
 #. Key: ON
 msgid "ON"
-msgstr ""
+msgstr "FI"
 
 #. Key: OFF
 msgid "OFF"
-msgstr ""
+msgstr "KRH"
 
 #. Key: WINDOW MODE
 msgid "WINDOW MODE"
@@ -1798,7 +1798,7 @@ msgstr "NIKRH"
 
 #. Key: ENABLED
 msgid "ENABLED"
-msgstr ""
+msgstr "FI"
 
 #. Key: RENDER SCALE
 msgid "RENDER SCALE"
@@ -1826,7 +1826,7 @@ msgstr "YA"
 
 #. Key: MEDIUM
 msgid "MEDIUM"
-msgstr ""
+msgstr "CHWME"
 
 #. Key: HIGH
 msgid "HIGH"
@@ -2046,7 +2046,7 @@ msgstr "KEIN CHI"
 
 #. Key: SPRAY
 msgid "spray"
-msgstr ""
+msgstr "faht"
 
 #. Key: NAME_TORCH
 msgid "TORCH"
@@ -2170,7 +2170,7 @@ msgstr ""
 
 #. Key: ENABLECANNIBALISM
 msgid "ENABLE CANNIBALISM"
-msgstr ""
+msgstr "SAI FWMPADA"
 
 #. Key: REMOVE
 msgid "remove"
@@ -2190,7 +2190,7 @@ msgstr "HANGNWV FRAHF"
 
 #. Key: ENABLETHELOOKER
 msgid "ENABLE <i>THE LOOKER</i>"
-msgstr ""
+msgstr "FAHT <i>PADANYEING</i>"
 
 #. Key: PHOTOSENSITIVEMODE
 msgid "PHOTOSENSITIVE MODE"
@@ -2511,7 +2511,7 @@ msgstr ""
 
 #. Key: NAME_THEBOOKOFBONES
 msgid "THE BOOK OF BONES"
-msgstr ""
+msgstr "NWRAN SWKEREPEN"
 
 #. Key: READ
 msgid "READ"
@@ -2763,7 +2763,7 @@ msgstr ""
 
 #. Key: SCOUTMASTER
 msgid "THE SCOUTMASTER"
-msgstr ""
+msgstr "PAHDEP PADANYEI HEI"
 
 #. Key: HUNGERRATE
 msgid "HUNGER RATE"

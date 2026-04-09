@@ -3,7 +3,7 @@
 <martif type="TBX" xml:lang="en_US">
   <text>
     <body>
-      <termEntry id="beyley_thomas-1">
+      <termEntry id="beyley_cardellio-1">
         <langSet xml:lang="en-US">
           <tig>
             <term>ok</term>
@@ -15,7 +15,7 @@
           </tig>
         </langSet>
       </termEntry>
-      <termEntry id="beyley_thomas-2">
+      <termEntry id="beyley_cardellio-2">
         <langSet xml:lang="en-US">
           <tig>
             <term>move</term>
@@ -27,7 +27,7 @@
           </tig>
         </langSet>
       </termEntry>
-      <termEntry id="beyley_thomas-3">
+      <termEntry id="beyley_cardellio-3">
         <langSet xml:lang="en-US">
           <tig>
             <term>leave</term>
@@ -42,7 +42,7 @@
           </tig>
         </langSet>
       </termEntry>
-      <termEntry id="beyley_thomas-4">
+      <termEntry id="beyley_cardellio-4">
         <langSet xml:lang="en-US">
           <tig>
             <term>climb</term>
@@ -54,7 +54,7 @@
           </tig>
         </langSet>
       </termEntry>
-      <termEntry id="beyley_thomas-5">
+      <termEntry id="beyley_cardellio-5">
         <langSet xml:lang="en-US">
           <tig>
             <term>helping hand</term>
@@ -66,7 +66,7 @@
           </tig>
         </langSet>
       </termEntry>
-      <termEntry id="beyley_thomas-6">
+      <termEntry id="beyley_cardellio-6">
         <langSet xml:lang="en-US">
           <tig>
             <term>interact</term>
@@ -78,7 +78,7 @@
           </tig>
         </langSet>
       </termEntry>
-      <termEntry id="beyley_thomas-7">
+      <termEntry id="beyley_cardellio-7">
         <langSet xml:lang="en-US">
           <tig>
             <term>mode</term>
@@ -90,7 +90,7 @@
           </tig>
         </langSet>
       </termEntry>
-      <termEntry id="beyley_thomas-8">
+      <termEntry id="beyley_cardellio-8">
         <langSet xml:lang="en-US">
           <tig>
             <term>skeleton</term>
@@ -99,6 +99,66 @@
         <langSet xml:lang="xh">
           <tig>
             <term>swkerepen</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_cardellio-9">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>ascent</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>praihe</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_cardellio-10">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>scout</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>padanyei</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_cardellio-11">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>scoutmaster</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>pahdep padanyei</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_cardellio-12">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>spray</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>faht</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_cardellio-0">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>enabled</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>fi</term>
           </tig>
         </langSet>
       </termEntry>
