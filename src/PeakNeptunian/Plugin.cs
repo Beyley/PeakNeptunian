@@ -423,7 +423,12 @@ public partial class Plugin : BaseUnityPlugin
 
         try
         {
-            var text = __args[0].ToString();
+            var text = __args[0]?.ToString();
+
+            if (text == null)
+            {
+                return;
+            }
 
             // Set the font if this text is supposed to be set
             SetFont(__instance.gameObject, IsPrelocalized(text));
