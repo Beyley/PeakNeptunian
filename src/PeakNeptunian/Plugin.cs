@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Reflection;
 using System.Text;
 using BepInEx;
 using BepInEx.Configuration;
@@ -26,56 +25,50 @@ namespace PeakNeptunian;
 [BepInAutoPlugin]
 public partial class Plugin : BaseUnityPlugin
 {
-    // Plugin stuff
-    public static ManualLogSource Log { get; set; } = null!;
-
     // Config
-    private static ConfigEntry<LocalizationType> _localizationType = null!;
+    private static ConfigEntry<Language> _language = null!;
     private static ConfigEntry<bool> _enablePingPang = null!;
 
     // Loaded assets
-    private static TMP_FontAsset? _neptunianShpreFont;
+    public static readonly Dictionary<Language, TMP_FontAsset> LoadedFonts = [];
     private static readonly Dictionary<string, SFX_Instance> LoadedSoundEffects = new();
     private static readonly Dictionary<string, TexturePatch> TexturePatches = new();
 
     // Static state
-    private static readonly Dictionary<string, string> NahnyaToKey = new();
     private static Action_AskBingBong.BingBongResponse[] _bingBongResponses = [];
     private static readonly Dictionary<int, Func<bool>> BingBongResponseConditions = [];
 
-    private static Random _random = new Random();
+    private static readonly Random _random = new();
 
     // Dynamic state
     private static readonly HashSet<int> PatchedGameObjects = new();
+
+    // Plugin stuff
+    public static ManualLogSource Log { get; set; } = null!;
 
     private void Awake()
     {
         Log = Logger;
 
-        _localizationType = Config.Bind("General", "LocalizationSetting", LocalizationType.Off);
+        _language = Config.Bind("General", "LocalizationSetting", Language.GameLanguage);
         _enablePingPang = Config.Bind("General", "EnablePingPang", true);
 
         try
         {
             LoadTextures();
-            LoadFont();
+            LoadFonts();
             StartCoroutine(CreateBingBongResponses());
 
             // We can apply our hooks here.
             // See https://lethal.wiki/dev/fundamentals/patching-code
             Harmony.CreateAndPatchAll(typeof(Plugin));
-            
-            Localizations.Load();
+
+            Localizations.LoadLanguages();
         }
         catch (Exception ex)
         {
             Log.LogError($"Failed to init, got exception {ex}");
         }
-        
-        // Create a backwards table so we can more performantly detect localized Nahnya in strings
-        // (for when things bypass the LocalizedText component)
-        foreach (var (key, (nahnya, _)) in Localizations.Neptunian)
-            NahnyaToKey[nahnya] = key;
 
         Log.LogInfo($"Plugin {Name} is loaded!");
     }
@@ -89,12 +82,34 @@ public partial class Plugin : BaseUnityPlugin
         __instance.parent.SetActive(false);
     }
 
+    private static bool GetLocalizedString(string key, out string localized)
+    {
+        if (Localizations.LoadedLocalizations.TryGetValue(_language.Value, out var localizations) &&
+            localizations.TryGetValue(key, out var localization))
+        {
+            localized = localization.Str;
+            return true;
+        }
+
+        localized = null!;
+        return false;
+    }
+
+    private static bool IsPrelocalized(string key)
+    {
+        if (Localizations.BackwardsLocalizations.ContainsKey(_language.Value) &&
+            Localizations.BackwardsLocalizations[_language.Value].Contains(key))
+            return true;
+
+        return false;
+    }
+
     private string LocalPath(string name)
     {
         return Path.Join(Path.GetDirectoryName(Info.Location), name);
     }
 
-    private void LoadTexture(string name, LocalizationType localizationThreshold)
+    private void LoadTexture(string name, params Language[] languages)
     {
         var tex = new Texture2D(2, 2, GraphicsFormat.R8G8B8A8_SRGB, TextureCreationFlags.None);
 
@@ -103,7 +118,7 @@ public partial class Plugin : BaseUnityPlugin
         TexturePatches[name] = new TexturePatch
         {
             Texture = tex,
-            LocalizationThreshold = localizationThreshold,
+            Languages = languages
         };
 
         Log.LogDebug($"Loaded texture {name}");
@@ -111,41 +126,42 @@ public partial class Plugin : BaseUnityPlugin
 
     private void LoadTextures()
     {
-        LoadTexture("Logo", LocalizationType.Roman);
-        LoadTexture("LogoBlack", LocalizationType.Roman);
-        LoadTexture("Logo_Blurred", LocalizationType.Roman);
+        LoadTexture("Logo", Language.NeptunianRomanized);
+        LoadTexture("LogoBlack", Language.NeptunianRomanized);
+        LoadTexture("Logo_Blurred", Language.NeptunianRomanized);
     }
 
-    private void LoadFont()
+    private void LoadFonts()
     {
-        _neptunianShpreFont =
-            TMP_FontAsset.CreateFontAsset(
-                LocalPath("NeptunianShpre.ttf"),
-                0,
-                56,
-                1,
-                GlyphRenderMode.SDF,
-                4096,
-                4096);
+        var font = TMP_FontAsset.CreateFontAsset(
+            LocalPath("NeptunianShpre.ttf"),
+            0,
+            56,
+            1,
+            GlyphRenderMode.SDF,
+            4096,
+            4096);
 
-        _neptunianShpreFont.getFontFeatures = true;
+        font.getFontFeatures = true;
+
+        LoadedFonts[Language.NeptunianNahnya] = font;
     }
-    
+
     private IEnumerator LoadSoundEffect(string path, string key)
     {
         var sfx = ScriptableObject.CreateInstance<SFX_Instance>();
 
         var url = "file://" + LocalPath(path);
-        
+
 #pragma warning disable CS0618 // Type or member is obsolete
         using var www = UnityWebRequestMultimedia.GetAudioClip(url, AudioType.OGGVORBIS);
-        
+
         yield return www.SendWebRequest();
-        
+
         if (www.result == UnityWebRequest.Result.Success)
         {
             var clip = DownloadHandlerAudioClip.GetContent(www);
-                
+
             clip.name = key;
 
             sfx.clips = [clip];
@@ -164,7 +180,7 @@ public partial class Plugin : BaseUnityPlugin
             sfx.name = key;
 
             LoadedSoundEffects[key] = sfx;
-        
+
             Log.LogDebug($"Loaded sound effect {path} as {key}, Length: {clip.length}");
         }
         else
@@ -205,13 +221,13 @@ public partial class Plugin : BaseUnityPlugin
         yield return LoadSoundEffect("audio/pingpangVO_Neptune.ogg", "BB_MayNeptuneBlessUsAll");
         yield return LoadSoundEffect("audio/pingpangVO_TodayIsFriday.ogg", "BB_TodayIsFriday");
     }
-    
+
     private IEnumerator CreateBingBongResponses()
     {
         var responses = new List<Action_AskBingBong.BingBongResponse>();
 
         yield return LoadBingBongSfx();
-        
+
         int AddBingBongResponse(string key)
         {
             responses.Add(new Action_AskBingBong.BingBongResponse
@@ -224,7 +240,7 @@ public partial class Plugin : BaseUnityPlugin
 
             return responses.Count - 1;
         }
-        
+
         Log.LogDebug("Adding repsonses");
 
         try
@@ -289,16 +305,10 @@ public partial class Plugin : BaseUnityPlugin
             var textComponents = __instance.GetComponentsInChildren<TMP_Text>();
             foreach (var textComponent in textComponents)
             {
-                if (!textComponent)
-                {
-                    continue;
-                }
+                if (!textComponent) continue;
 
-                if (textComponent.text.ToUpperInvariant().Contains("CRABLAND"))
-                {
-                    Localization.GetLocalizedString(_localizationType.Value, "__NATIONALITY", out var localized);
-                    textComponent.SetText(localized!);
-                }
+                if (textComponent.text.ToUpperInvariant().Contains("CRABLAND") &&
+                    GetLocalizedString("__NATIONALITY", out var localized)) textComponent.SetText(localized);
             }
 
             var spriteRenderers = __instance.GetComponentsInChildren<SpriteRenderer>(true);
@@ -309,19 +319,16 @@ public partial class Plugin : BaseUnityPlugin
                 if (!renderer) continue;
 
                 var materials = renderer.materials;
-                foreach (var material in materials)
-                {
-                    PatchMaterial(material);
-                }
+                foreach (var material in materials) PatchMaterial(material);
             }
 
             foreach (var spriteRenderer in spriteRenderers)
-            { 
+            {
                 var sprite = spriteRenderer.sprite;
                 var texture2D = sprite.texture;
 
                 if (TexturePatches.TryGetValue(texture2D.name, out var patchedTexture) &&
-                    _localizationType.Value >= patchedTexture.LocalizationThreshold)
+                    patchedTexture.Languages.Contains(_language.Value))
                     spriteRenderer.sprite = Sprite.Create(patchedTexture.Texture,
                         new Rect(0, 0, patchedTexture.Texture.width, patchedTexture.Texture.height),
                         new Vector2(0.5f, 0.5f));
@@ -348,10 +355,9 @@ public partial class Plugin : BaseUnityPlugin
             // Log.LogDebug($"Seen texture {texture2D.name}");
 
             if (TexturePatches.TryGetValue(texture2D.name, out var patchedTexture) &&
-                _localizationType.Value >= patchedTexture.LocalizationThreshold)
+                patchedTexture.Languages.Contains(_language.Value))
                 material.SetTexture(textureNameId, patchedTexture.Texture);
         }
-
     }
 
     [HarmonyPatch(typeof(Image), "OnEnable")]
@@ -363,16 +369,16 @@ public partial class Plugin : BaseUnityPlugin
         // Log.LogDebug($"Seen Image {__instance.mainTexture.name}");
 
         if (TexturePatches.TryGetValue(__instance.mainTexture.name, out var patchedTexture))
-        {
             __instance.sprite = Sprite.Create(patchedTexture.Texture,
                 new Rect(0, 0, patchedTexture.Texture.width, patchedTexture.Texture.height), new Vector2(0.5f, 0.5f));
-        }
     }
 
     private static void SetFont(GameObject gameObject, bool neptunian)
     {
         // We only modify the font if we are localizing into Nahnya
-        if (_localizationType.Value != LocalizationType.Nahnya) return;
+        if (!LoadedFonts.ContainsKey(_language.Value)) return;
+
+        var font = LoadedFonts[_language.Value];
 
         if (neptunian)
         {
@@ -387,7 +393,7 @@ public partial class Plugin : BaseUnityPlugin
                 cacheComponent.cached = true;
             }
 
-            textComponent.font = _neptunianShpreFont;
+            textComponent.font = font;
             textComponent.lineSpacing = cacheComponent.lineSpacing + 24.0f;
             textComponent.fontStyle &= ~FontStyles.LowerCase;
             if (!textComponent.fontFeatures.Contains(OTL_FeatureTag.liga))
@@ -415,15 +421,12 @@ public partial class Plugin : BaseUnityPlugin
     {
         if (!__instance) return;
 
-        // We don't need to do hot-font patching when we aren't doing Nahnya in the first place
-        if (_localizationType.Value != LocalizationType.Nahnya) return;
-
         try
         {
             var text = __args[0].ToString();
 
-            // Set the font if this text is supposed to be Nahnya
-            SetFont(__instance.gameObject, NahnyaToKey.ContainsKey(text));
+            // Set the font if this text is supposed to be set
+            SetFont(__instance.gameObject, IsPrelocalized(text));
         }
         catch (Exception ex)
         {
@@ -435,27 +438,25 @@ public partial class Plugin : BaseUnityPlugin
     [HarmonyPatch(typeof(Action_AskBingBong), nameof(Action_AskBingBong.Ask))]
     public static void Action_AskBingBong_OnEnable(Action_AskBingBong __instance, ref int index, bool spamming)
     {
-        // Don't patch Bing Bong's responses if we aren't localizing into Neptunian
-        if (!_enablePingPang.Value)
-        {
-            return;
-        }
-        
+        // Don't patch Bing Bong's responses if we aren't wanting to
+        if (!_enablePingPang.Value) return;
+
         Log.LogInfo($"Bing bong index {index}");
 
         while (BingBongResponseConditions.ContainsKey(index) && !BingBongResponseConditions[index]())
-        {
             index = _random.Next(0, _bingBongResponses.Length);
-        }
-        
+
         Log.LogInfo($"Patched Bing bong index {index}");
-        
+
         __instance.responses = _bingBongResponses;
 
-        if (_localizationType.Value == LocalizationType.Nahnya)
+        // enable ligatures
+        if (LoadedFonts.ContainsKey(_language.Value))
         {
-            __instance.subtitles.font = _neptunianShpreFont;
-            __instance.subtitles.lineSpacing += 24.0f;
+            var font = LoadedFonts[_language.Value];
+
+            __instance.subtitles.font = font;
+            __instance.subtitles.lineSpacing += 24.0f; // @todo: set this per font!!!
             if (!__instance.subtitles.fontFeatures.Contains(OTL_FeatureTag.liga))
                 __instance.subtitles.fontFeatures.Add(OTL_FeatureTag.liga);
         }
@@ -468,11 +469,9 @@ public partial class Plugin : BaseUnityPlugin
     {
         // Log.LogDebug($"Got arg {__args[0]}");
 
-        if (Localization.GetLocalizedString(_localizationType.Value,
+        if (GetLocalizedString(
                 ((string)__args[0]).ToUpperInvariant(),
                 out var localized))
-        {
             __result = localized;
-        }
     }
 }

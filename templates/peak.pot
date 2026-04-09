@@ -1,0 +1,2905 @@
+# This file is part of Peak Neptunian.
+# Copyright (C) YEAR THE COPYRIGHT OWNER
+# This file is distributed under the same license as the Peak Neptunian mod.
+# 
+# Translators:
+# - FIRST AUTHOR <EMAIL@ADDRESS>, YEAR
+msgid ""
+msgstr ""
+"Project-Id-Version: Peak Neptunian\n"
+"Report-Msgid-Bugs-To: <littlegreenmantis@gmail.com>\n"
+"POT-Creation-Date: 2026-04-08 20:55+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>, YEAR\n"
+"Language-Team: LANGUAGE\n"
+"Language: LANGUAGE_REGION@VARIANT\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Key: CURRENT_LANGUAGE
+msgid "English"
+msgstr ""
+
+#. Key: HOSTGAME
+msgid "HOST GAME"
+msgstr ""
+
+#. Key: PLAYOFFLINE
+msgid "PLAY OFFLINE"
+msgstr ""
+
+#. Key: SETTINGS
+msgid "SETTINGS"
+msgstr ""
+
+#. Key: CREDITS
+msgid "CREDITS"
+msgstr ""
+
+#. Key: QUIT
+msgid "QUIT"
+msgstr ""
+
+#. Key: NEWISLANDIN
+msgid "NEW ISLAND IN"
+msgstr ""
+
+#. Key: AGAMEMADEBY
+msgid "A GAME MADE BY"
+msgstr ""
+
+#. Key: ACOLLABBETWEEN
+msgid "A COLLAB BETWEEN"
+msgstr ""
+
+#. Key: THANKSFORPLAYING
+msgid "THANKS FOR PLAYING!"
+msgstr ""
+
+#. Key: THISGAMEUSESVOICECHAT
+msgid "THIS GAME USES VOICE CHAT"
+msgstr ""
+
+#. Key: PLEASEUSE
+msgid "PLEASE USE HEADPHONES AND A MICROPHONE"
+msgstr ""
+
+#. Key: SELECTMIC
+msgid "SELECT MICROPHONE"
+msgstr ""
+
+#. Key: CONTINUE
+msgid "CONTINUE"
+msgstr ""
+
+#. Key: VERSIONOUTOFDATE
+msgid "VERSION OUT OF DATE"
+msgstr ""
+
+#. Key: CLOSETHEGAME
+msgid "Close and update the game."
+msgstr ""
+
+#. Key: OK
+msgid "OK"
+msgstr ""
+
+#. Key: RESUME
+msgid "RESUME"
+msgstr ""
+
+#. Key: INVITEFRIENDS
+msgid "INVITE FRIENDS"
+msgstr ""
+
+#. Key: ACCOLADES
+msgid "ACCOLADES"
+msgstr ""
+
+#. Key: CONTROLS
+msgid "CONTROLS"
+msgstr ""
+
+#. Key: LEAVEGAME
+msgid "LEAVE GAME"
+msgstr ""
+
+#. Key: MOVE
+msgid "MOVE"
+msgstr ""
+
+#. Key: AIM
+msgid "AIM"
+msgstr ""
+
+#. Key: CLIMB
+msgid "CLIMB"
+msgstr ""
+
+#. Key: HELPINGHAND
+msgid "HELPING HAND"
+msgstr ""
+
+#. Key: INTERACT
+msgid "INTERACT"
+msgstr ""
+
+#. Key: DROPTHROW
+msgid "DROP / THROW (HOLD)"
+msgstr ""
+
+#. Key: JUMP
+msgid "JUMP"
+msgstr ""
+
+#. Key: CROUCH
+msgid "CROUCH"
+msgstr ""
+
+#. Key: SPRINTLEAP
+msgid "SPRINT / LEAP (WHILE CLIMBING)"
+msgstr ""
+
+#. Key: PING
+msgid "PING LOCATION"
+msgstr ""
+
+#. Key: EMOTE
+msgid "EMOTE"
+msgstr ""
+
+#. Key: BACK
+msgid "BACK"
+msgstr ""
+
+#. Key: CONTROLSNOTSUPPORTED
+msgid "Controls remapping is not currently supported.\nYou can use Steam Input to remap gamepads."
+msgstr ""
+
+#. Key: PEAKSSUMMITTTED
+msgid "PEAKS SUMMITTED: #"
+msgstr ""
+
+#. Key: NAME_PARTICIPATION
+msgid "PARTICIPATION BADGE"
+msgstr ""
+
+#. Key: DESC_PARTICIPATION
+msgid "Have a friend escape the island without you."
+msgstr ""
+
+#. Key: NAME_BEACHCOMBER
+msgid "BEACHCOMBER BADGE"
+msgstr ""
+
+#. Key: DESC_BEACHCOMBER
+msgid "Climb past the SHORE."
+msgstr ""
+
+#. Key: NAME_TRAILBLAZER
+msgid "TRAILBLAZER BADGE"
+msgstr ""
+
+#. Key: DESC_TRAILBLAZER
+msgid "Climb past the TROPICS."
+msgstr ""
+
+#. Key: NAME_ALPINIST
+msgid "ALPINIST BADGE"
+msgstr ""
+
+#. Key: DESC_ALPINIST
+msgid "Climb past the ALPINE."
+msgstr ""
+
+#. Key: NAME_VOLCANOLOGY
+msgid "VOLCANOLOGY BADGE"
+msgstr ""
+
+#. Key: DESC_VOLCANOLOGY
+msgid "Climb past the CALDERA."
+msgstr ""
+
+#. Key: NAME_PEAKBADGE
+msgid "PEAK BADGE"
+msgstr ""
+
+#. Key: DESC_PEAKBADGE
+msgid "Reach the PEAK."
+msgstr ""
+
+#. Key: NAME_COOKING
+msgid "COOKING BADGE"
+msgstr ""
+
+#. Key: DESC_COOKING
+msgid "Cook 20 meals at campfires."
+msgstr ""
+
+#. Key: NAME_HAPPY CAMPER
+msgid "HAPPY CAMPER BADGE"
+msgstr ""
+
+#. Key: DESC_HAPPY CAMPER
+msgid "Receive 5 Morale Boosts from campfires."
+msgstr ""
+
+#. Key: NAME_BOULDERING
+msgid "BOULDERING BADGE"
+msgstr ""
+
+#. Key: DESC_BOULDERING
+msgid "Place 10 pitons."
+msgstr ""
+
+#. Key: NAME_TOXICOLOGY
+msgid "TOXICOLOGY BADGE"
+msgstr ""
+
+#. Key: DESC_TOXICOLOGY
+msgid "Restore 200 total poison by using items."
+msgstr ""
+
+#. Key: NAME_FORAGING
+msgid "FORAGING BADGE"
+msgstr ""
+
+#. Key: DESC_FORAGING
+msgid "Eat 5 different berries in a single expedition."
+msgstr ""
+
+#. Key: NAME_ESOTERICA
+msgid "ESOTERICA BADGE"
+msgstr ""
+
+#. Key: DESC_ESOTERICA
+msgid "Obtain a mystical item."
+msgstr ""
+
+#. Key: NAME_LONE WOLF
+msgid "LONE WOLF BADGE"
+msgstr ""
+
+#. Key: DESC_LONE WOLF
+msgid "Escape the island in a solo expedition."
+msgstr ""
+
+#. Key: NAME_CLUTCH
+msgid "CLUTCH BADGE"
+msgstr ""
+
+#. Key: DESC_CLUTCH
+msgid "Resurrect 3 scouts in a single expedition."
+msgstr ""
+
+#. Key: NAME_BALLOONBADGE
+msgid "BALLOON BADGE"
+msgstr ""
+
+#. Key: DESC_BALLOONBADGE
+msgid "Escape the island without taking fall damage."
+msgstr ""
+
+#. Key: NAME_LEAVE NO TRACE
+msgid "LEAVE NO TRACE BADGE"
+msgstr ""
+
+#. Key: DESC_LEAVE NO TRACE
+msgid "Escape the island without placing anything on the mountain."
+msgstr ""
+
+#. Key: NAME_HASTY
+msgid "HASTY BADGE"
+msgstr ""
+
+#. Key: DESC_HASTY
+msgid "Escape the island in under an hour."
+msgstr ""
+
+#. Key: NAME_BINGBONGBADGE
+msgid "BING BONG BADGE"
+msgstr ""
+
+#. Key: DESC_BINGBONGBADGE
+msgid "Help Bing Bong escape the island."
+msgstr ""
+
+#. Key: NAME_NATURALIST
+msgid "NATURALIST BADGE"
+msgstr ""
+
+#. Key: DESC_NATURALIST
+msgid "Escape the island without eating any packaged food."
+msgstr ""
+
+#. Key: NAME_GOURMAND
+msgid "GOURMAND BADGE"
+msgstr ""
+
+#. Key: DESC_GOURMAND
+msgid ""
+"Escape the island after cooking and eating a coconut half, a honeycomb, a yellow winterberry, and "
+"an egg."
+msgstr ""
+
+#. Key: NAME_MYCOLOGY
+msgid "MYCOLOGY BADGE"
+msgstr ""
+
+#. Key: DESC_MYCOLOGY
+msgid "Eat four different non-toxic mushrooms in a single expedition."
+msgstr ""
+
+#. Key: NAME_FIRST AID
+msgid "FIRST AID BADGE"
+msgstr ""
+
+#. Key: DESC_FIRST AID
+msgid "Heal your friends for 100 points of injury in a single expedition."
+msgstr ""
+
+#. Key: NAME_SURVIVALIST
+msgid "SURVIVALIST BADGE"
+msgstr ""
+
+#. Key: DESC_SURVIVALIST
+msgid "Escape the island without ever losing consciousness."
+msgstr ""
+
+#. Key: NAME_ANIMAL SERENADING
+msgid "ANIMAL SERENADING BADGE"
+msgstr ""
+
+#. Key: DESC_ANIMAL SERENADING
+msgid "Play the bugle for a capybara."
+msgstr ""
+
+#. Key: NAME_ARBORIST
+msgid "ARBORIST BADGE"
+msgstr ""
+
+#. Key: DESC_ARBORIST
+msgid "Reach the top of a really big tree."
+msgstr ""
+
+#. Key: NAME_MENTORSHIP
+msgid "MENTORSHIP BADGE"
+msgstr ""
+
+#. Key: DESC_MENTORSHIP
+msgid "Have a 1-on-1 with the Scoutmaster."
+msgstr ""
+
+#. Key: NAME_KNOT TYING
+msgid "KNOT TYING BADGE"
+msgstr ""
+
+#. Key: DESC_KNOT TYING
+msgid "Place 100m of rope in a single expedition."
+msgstr ""
+
+#. Key: NAME_EMERGENCY PREPAREDNESS
+msgid "EMERGENCY PREPAREDNESS BADGE"
+msgstr ""
+
+#. Key: DESC_EMERGENCY PREPAREDNESS
+msgid "Heal an unconscious friend with an item to save them from death."
+msgstr ""
+
+#. Key: NAME_HIGH ALTITUDE
+msgid "HIGH ALTITUDE BADGE"
+msgstr ""
+
+#. Key: DESC_HIGH ALTITUDE
+msgid "Climb 5000m total."
+msgstr ""
+
+#. Key: NAME_PLUNDERER
+msgid "PLUNDERER BADGE"
+msgstr ""
+
+#. Key: DESC_PLUNDERER
+msgid "Open 15 luggages in a single expedition."
+msgstr ""
+
+#. Key: NAME_BOOKWORM
+msgid "BOOKWORM BADGE"
+msgstr ""
+
+#. Key: DESC_BOOKWORM
+msgid "Read all of Scoutmaster Myres's journal entries."
+msgstr ""
+
+#. Key: NAME_ENDURANCE
+msgid "ENDURANCE BADGE"
+msgstr ""
+
+#. Key: DESC_ENDURANCE
+msgid "Climb 50m upwards without touching the ground."
+msgstr ""
+
+#. Key: BADGELOCKED
+msgid "You don't have this badge yet!"
+msgstr ""
+
+#. Key: NAME_AIRLINE FOOD
+msgid "AIRLINE FOOD"
+msgstr ""
+
+#. Key: NAME_ANTI-ROPE SPOOL
+msgid "ANTI-ROPE SPOOL"
+msgstr ""
+
+#. Key: NAME_ANTIDOTE
+msgid "ANTIDOTE"
+msgstr ""
+
+#. Key: NAME_GREEN CRISPBERRY
+msgid "GREEN CRISPBERRY"
+msgstr ""
+
+#. Key: NAME_RED CRISPBERRY
+msgid "RED CRISPBERRY"
+msgstr ""
+
+#. Key: NAME_YELLOW CRISPBERRY
+msgid "YELLOW CRISPBERRY"
+msgstr ""
+
+#. Key: NAME_BACKPACK
+msgid "BACKPACK"
+msgstr ""
+
+#. Key: NAME_BANDAGES
+msgid "BANDAGES"
+msgstr ""
+
+#. Key: NAME_BEEHIVE
+msgid "BEEHIVE"
+msgstr ""
+
+#. Key: NAME_BLUE BERRYNANA
+msgid "BLUE BERRYNANA"
+msgstr ""
+
+#. Key: NAME_BROWN BERRYNANA
+msgid "BROWN BERRYNANA"
+msgstr ""
+
+#. Key: NAME_BERRYNANA PEEL
+msgid "BERRYNANA PEEL"
+msgstr ""
+
+#. Key: NAME_PINK BERRYNANA
+msgid "PINK BERRYNANA"
+msgstr ""
+
+#. Key: NAME_YELLOW BERRYNANA
+msgid "YELLOW BERRYNANA"
+msgstr ""
+
+#. Key: NAME_BING BONG
+msgid "BING BONG"
+msgstr ""
+
+#. Key: NAME_BINOCULARS
+msgid "BINOCULARS"
+msgstr ""
+
+#. Key: NAME_BOUNCE FUNGUS
+msgid "BOUNCE FUNGUS"
+msgstr ""
+
+#. Key: NAME_TICK
+msgid "TICK"
+msgstr ""
+
+#. Key: NAME_BUGLE
+msgid "BUGLE"
+msgstr ""
+
+#. Key: NAME_BUGLE OF FRIENDSHIP
+msgid "BUGLE OF FRIENDSHIP"
+msgstr ""
+
+#. Key: NAME_SCOUTMASTER'S BUGLE
+msgid "SCOUTMASTER'S BUGLE"
+msgstr ""
+
+#. Key: NAME_CHAIN LAUNCHER
+msgid "CHAIN LAUNCHER"
+msgstr ""
+
+#. Key: NAME_PITON
+msgid "PITON"
+msgstr ""
+
+#. Key: NAME_BLACK CLUSTERBERRY
+msgid "BLACK CLUSTERBERRY"
+msgstr ""
+
+#. Key: NAME_RED CLUSTERBERRY
+msgid "RED CLUSTERBERRY"
+msgstr ""
+
+#. Key: NAME_YELLOW CLUSTERBERRY
+msgid "YELLOW CLUSTERBERRY"
+msgstr ""
+
+#. Key: NAME_GREEN CLUSTERBERRY
+msgid "GREEN CLUSTERBERRY"
+msgstr ""
+
+#. Key: NAME_COMPASS
+msgid "COMPASS"
+msgstr ""
+
+#. Key: NAME_CURE-ALL
+msgid "CURE-ALL"
+msgstr ""
+
+#. Key: NAME_CURSED SKULL
+msgid "CURSED SKULL"
+msgstr ""
+
+#. Key: NAME_EGG
+msgid "EGG"
+msgstr ""
+
+#. Key: NAME_ENERGY DRINK
+msgid "ENERGY DRINK"
+msgstr ""
+
+#. Key: NAME_STICK
+msgid "STICK"
+msgstr ""
+
+#. Key: NAME_FIRST AID KIT
+msgid "FIRST AID KIT"
+msgstr ""
+
+#. Key: NAME_FLARE
+msgid "FLARE"
+msgstr ""
+
+#. Key: NAME_GRANOLA BAR
+msgid "GRANOLA BAR"
+msgstr ""
+
+#. Key: NAME_GUIDEBOOK
+msgid "GUIDEBOOK"
+msgstr ""
+
+#. Key: NAME_TORN PAGE
+msgid "TORN PAGE"
+msgstr ""
+
+#. Key: NAME_SCROLL
+msgid "SCROLL"
+msgstr ""
+
+#. Key: NAME_BLOWGUN
+msgid "BLOWGUN"
+msgstr ""
+
+#. Key: NAME_REMEDY FUNGUS
+msgid "REMEDY FUNGUS"
+msgstr ""
+
+#. Key: NAME_HEAT PACK
+msgid "HEAT PACK"
+msgstr ""
+
+#. Key: NAME_COCONUT
+msgid "COCONUT"
+msgstr ""
+
+#. Key: NAME_COCONUT HALF
+msgid "COCONUT HALF"
+msgstr ""
+
+#. Key: NAME_HONEYCOMB
+msgid "HONEYCOMB"
+msgstr ""
+
+#. Key: NAME_GREEN KINGBERRY
+msgid "GREEN KINGBERRY"
+msgstr ""
+
+#. Key: NAME_PURPLE KINGBERRY
+msgid "PURPLE KINGBERRY"
+msgstr ""
+
+#. Key: NAME_YELLOW KINGBERRY
+msgid "YELLOW KINGBERRY"
+msgstr ""
+
+#. Key: NAME_LANTERN
+msgid "LANTERN"
+msgstr ""
+
+#. Key: NAME_FAERIE LANTERN
+msgid "FAERIE LANTERN"
+msgstr ""
+
+#. Key: NAME_BIG LOLLIPOP
+msgid "BIG LOLLIPOP"
+msgstr ""
+
+#. Key: NAME_MAGIC BEAN
+msgid "MAGIC BEAN"
+msgstr ""
+
+#. Key: NAME_MARSHMALLOW
+msgid "MARSHMALLOW"
+msgstr ""
+
+#. Key: NAME_MEDICINAL ROOT
+msgid "MEDICINAL ROOT"
+msgstr ""
+
+#. Key: NAME_MEGAPHONE
+msgid "MEGAPHONE"
+msgstr ""
+
+#. Key: NAME_CHUBBY SHROOM
+msgid "CHUBBY SHROOM"
+msgstr ""
+
+#. Key: NAME_CLUSTER SHROOM
+msgid "CLUSTER SHROOM"
+msgstr ""
+
+#. Key: NAME_WEIRD SHROOM
+msgid "WEIRD SHROOM"
+msgstr ""
+
+#. Key: NAME_BUGLE SHROOM
+msgid "BUGLE SHROOM"
+msgstr ""
+
+#. Key: NAME_BUTTON SHROOM
+msgid "BUTTON SHROOM"
+msgstr ""
+
+#. Key: NAME_NAPBERRY
+msgid "NAPBERRY"
+msgstr ""
+
+#. Key: NAME_BIG EGG
+msgid "BIG EGG"
+msgstr ""
+
+#. Key: NAME_PANDORA'S LUNCHBOX
+msgid "PANDORA'S LUNCHBOX"
+msgstr ""
+
+#. Key: NAME_PASSPORT
+msgid "PASSPORT"
+msgstr ""
+
+#. Key: NAME_SCORCHBERRY
+msgid "SCORCHBERRY"
+msgstr ""
+
+#. Key: NAME_PIRATE'S COMPASS
+msgid "PIRATE'S COMPASS"
+msgstr ""
+
+#. Key: NAME_PORTABLE STOVE
+msgid "PORTABLE STOVE"
+msgstr ""
+
+#. Key: NAME_ROPE CANNON
+msgid "ROPE CANNON"
+msgstr ""
+
+#. Key: NAME_ANTI-ROPE CANNON
+msgid "ANTI-ROPE CANNON"
+msgstr ""
+
+#. Key: NAME_ROPE SPOOL
+msgid "ROPE SPOOL"
+msgstr ""
+
+#. Key: NAME_SCOUT COOKIES
+msgid "SCOUT COOKIES"
+msgstr ""
+
+#. Key: NAME_SCOUT EFFIGY
+msgid "SCOUT EFFIGY"
+msgstr ""
+
+#. Key: NAME_SHELF FUNGUS
+msgid "SHELF FUNGUS"
+msgstr ""
+
+#. Key: NAME_CONCH
+msgid "CONCH"
+msgstr ""
+
+#. Key: NAME_SPORTS DRINK
+msgid "SPORTS DRINK"
+msgstr ""
+
+#. Key: NAME_STONE
+msgid "STONE"
+msgstr ""
+
+#. Key: NAME_TRAIL MIX
+msgid "TRAIL MIX"
+msgstr ""
+
+#. Key: NAME_WARP COMPASS
+msgid "WARP COMPASS"
+msgstr ""
+
+#. Key: NAME_ORANGE WINTERBERRY
+msgid "ORANGE WINTERBERRY"
+msgstr ""
+
+#. Key: NAME_YELLOW WINTERBERRY
+msgid "YELLOW WINTERBERRY"
+msgstr ""
+
+#. Key: EAT
+msgid "eat"
+msgstr ""
+
+#. Key: FEED TO #TARGETCHAR
+msgid "feed to #targetchar"
+msgstr ""
+
+#. Key: TIE KNOT
+msgid "tie knot"
+msgstr ""
+
+#. Key: SPOOL
+msgid "spool"
+msgstr ""
+
+#. Key: DRINK
+msgid "drink"
+msgstr ""
+
+#. Key: HEAL INJURIES
+msgid "heal injuries"
+msgstr ""
+
+#. Key: HEAL #TARGETCHAR
+msgid "heal #targetchar"
+msgstr ""
+
+#. Key: LOOK
+msgid "look"
+msgstr ""
+
+#. Key: USE
+msgid "use"
+msgstr ""
+
+#. Key: PLAY
+msgid "play"
+msgstr ""
+
+#. Key: SHOOT
+msgid "shoot"
+msgstr ""
+
+#. Key: SET
+msgid "set"
+msgstr ""
+
+#. Key: COMMUNE
+msgid "commune"
+msgstr ""
+
+#. Key: PLANT
+msgid "plant"
+msgstr ""
+
+#. Key: LIGHT
+msgid "light"
+msgstr ""
+
+#. Key: OPEN/CLOSE
+msgid "open/close"
+msgstr ""
+
+#. Key: FLIP PAGE
+msgid "flip page"
+msgstr ""
+
+#. Key: INSPECT
+msgid "inspect"
+msgstr ""
+
+#. Key: OPEN
+msgid "open"
+msgstr ""
+
+#. Key: FIRE
+msgid "fire"
+msgstr ""
+
+#. Key: HEAT UP
+msgid "heat up"
+msgstr ""
+
+#. Key: HEAT UP #TARGETCHAR
+msgid "heat up #targetchar"
+msgstr ""
+
+#. Key: LICK
+msgid "lick"
+msgstr ""
+
+#. Key: OPEN?
+msgid "open?"
+msgstr ""
+
+#. Key: PLACE
+msgid "place"
+msgstr ""
+
+#. Key: REVIVE
+msgid "revive"
+msgstr ""
+
+#. Key: WARP
+msgid "warp"
+msgstr ""
+
+#. Key: USE ON #TARGETCHAR
+msgid "use on #targetchar"
+msgstr ""
+
+#. Key: DROP
+msgid "drop"
+msgstr ""
+
+#. Key: THROW
+msgid "throw"
+msgstr ""
+
+#. Key: HOLD
+msgid "hold"
+msgstr ""
+
+#. Key: LUNGE
+msgid "lunge"
+msgstr ""
+
+#. Key: SETPITON
+msgid "set piton"
+msgstr ""
+
+#. Key: MORALEBOOST
+msgid "MORALE BOOST!!"
+msgstr ""
+
+#. Key: GIVEUP
+msgid "give up"
+msgstr ""
+
+#. Key: DEAD
+msgid "DEAD"
+msgstr ""
+
+#. Key: GHOSTMESSAGE
+msgid "you are a ghost"
+msgstr ""
+
+#. Key: RESURRECTMESSAGE
+msgid "get resurrected at the statue!"
+msgstr ""
+
+#. Key: SPECTATING
+msgid "spectating:"
+msgstr ""
+
+#. Key: CROSSED ARMS
+msgid "crossed arms"
+msgstr ""
+
+#. Key: DANCE
+msgid "dance"
+msgstr ""
+
+#. Key: PLAY DEAD
+msgid "play dead"
+msgstr ""
+
+#. Key: NO-NO
+msgid "no-no"
+msgstr ""
+
+#. Key: SALUTE
+msgid "salute"
+msgstr ""
+
+#. Key: SHRUG
+msgid "shrug"
+msgstr ""
+
+#. Key: THINK
+msgid "think"
+msgstr ""
+
+#. Key: THUMBS UP
+msgid "thumbs up"
+msgstr ""
+
+#. Key: WEARBACKPACK
+msgid "wear backpack"
+msgstr ""
+
+#. Key: STASHITEM
+msgid "stash<br>#"
+msgstr ""
+
+#. Key: TAKEITEM
+msgid "take<br>#"
+msgstr ""
+
+#. Key: COOKED_COOKED
+msgid "COOKED #"
+msgstr ""
+
+#. Key: COOKED_WELLDONE
+msgid "WELL-DONE #"
+msgstr ""
+
+#. Key: COOKED_BURNT
+msgid "BURNT #"
+msgstr ""
+
+#. Key: COOKED_INCINERATED
+msgid "INCINERATED #"
+msgstr ""
+
+#. Key: THEFOGRISES
+msgid "THE FOG RISES..."
+msgstr ""
+
+#. Key: BOARDINGPASS
+msgid "BOARDING PASS"
+msgstr ""
+
+#. Key: PASSENGER
+msgid "PASSENGER:"
+msgstr ""
+
+#. Key: GATE
+msgid "GATE:"
+msgstr ""
+
+#. Key: FROM
+msgid "FROM:"
+msgstr ""
+
+#. Key: TO
+msgid "TO:"
+msgstr ""
+
+#. Key: REWARD
+msgid "REWARD:"
+msgstr ""
+
+#. Key: ANDALLOTHER
+msgid "And all previous modifiers."
+msgstr ""
+
+#. Key: START
+msgid "START"
+msgstr ""
+
+#. Key: LOADING
+msgid "LOADING"
+msgstr ""
+
+#. Key: PASSPORT
+msgid "PASSPORT"
+msgstr ""
+
+#. Key: NATIONALITY
+msgid "Nationality"
+msgstr ""
+
+#. Key: NAME
+msgid "Name"
+msgstr ""
+
+#. Key: PASSPORTNO
+msgid "Passport no."
+msgstr ""
+
+#. Key: SHORE
+msgid "SHORE"
+msgstr ""
+
+#. Key: TROPICS
+msgid "TROPICS"
+msgstr ""
+
+#. Key: ALPINE
+msgid "ALPINE"
+msgstr ""
+
+#. Key: CALDERA
+msgid "CALDERA"
+msgstr ""
+
+#. Key: THE KILN
+msgid "THE KILN"
+msgstr ""
+
+#. Key: PEAK
+msgid "PEAK"
+msgstr ""
+
+#. Key: DAY
+msgid "Day #"
+msgstr ""
+
+#. Key: ONE
+msgid "One"
+msgstr ""
+
+#. Key: TWO
+msgid "Two"
+msgstr ""
+
+#. Key: THREE
+msgid "Three"
+msgstr ""
+
+#. Key: FOUR
+msgid "Four"
+msgstr ""
+
+#. Key: FIVE
+msgid "Five"
+msgstr ""
+
+#. Key: SIX
+msgid "Six"
+msgstr ""
+
+#. Key: SEVEN
+msgid "Seven"
+msgstr ""
+
+#. Key: EIGHT
+msgid "Eight"
+msgstr ""
+
+#. Key: NINE
+msgid "Nine"
+msgstr ""
+
+#. Key: TEN
+msgid "Ten"
+msgstr ""
+
+#. Key: YOUPEAKED
+msgid "YOU PEAKED"
+msgstr ""
+
+#. Key: LEFTTODIE
+msgid "<size=125%>YOUR FRIENDS<br>LEFT YOU TO DIE"
+msgstr ""
+
+#. Key: BODYNEVERFOUND
+msgid "YOUR BODY WAS<br><size=125%>NEVER FOUND"
+msgstr ""
+
+#. Key: SCOUTINGREPORT
+msgid "SCOUTING REPORT"
+msgstr ""
+
+#. Key: TIME
+msgid "TIME"
+msgstr ""
+
+#. Key: TIMELINE
+msgid "TIMELINE"
+msgstr ""
+
+#. Key: NEWBADGES
+msgid "NEW BADGES"
+msgstr ""
+
+#. Key: NEXT
+msgid "NEXT"
+msgstr ""
+
+#. Key: NEWHAT
+msgid "NEW HAT!"
+msgstr ""
+
+#. Key: NEWLOOK
+msgid "NEW LOOK!"
+msgstr ""
+
+#. Key: NEWFIT
+msgid "NEW FIT!"
+msgstr ""
+
+#. Key: UNLOCKED
+msgid "# UNLOCKED"
+msgstr ""
+
+#. Key: ASCENTSUNLOCKED
+msgid "ASCENTS UNLOCKED"
+msgstr ""
+
+#. Key: ASCENTSUNLOCKEDTEXT
+msgid ""
+"Ready for a greater challenge? Ascents add modifiers that make summiting the PEAK more "
+"difficult.<br><br>Set your Ascent Level at the Airport Kiosk!"
+msgstr ""
+
+#. Key: PROMOTEDTO
+msgid "PROMOTED TO:"
+msgstr ""
+
+#. Key: NEWSASH
+msgid "NEW SASH!"
+msgstr ""
+
+#. Key: TENDERFOOT
+msgid "TENDERFOOT"
+msgstr ""
+
+#. Key: ASCENT 1
+msgid "ASCENT 1"
+msgstr ""
+
+#. Key: ASCENT 2
+msgid "ASCENT 2"
+msgstr ""
+
+#. Key: ASCENT 3
+msgid "ASCENT 3"
+msgstr ""
+
+#. Key: ASCENT 4
+msgid "ASCENT 4"
+msgstr ""
+
+#. Key: ASCENT 5
+msgid "ASCENT 5"
+msgstr ""
+
+#. Key: ASCENT 6
+msgid "ASCENT 6"
+msgstr ""
+
+#. Key: ASCENT 7
+msgid "ASCENT 7"
+msgstr ""
+
+#. Key: SCOUT
+msgid "SCOUT"
+msgstr ""
+
+#. Key: TADPOLE SCOUT
+msgid "TADPOLE SCOUT"
+msgstr ""
+
+#. Key: RABBIT SCOUT
+msgid "RABBIT SCOUT"
+msgstr ""
+
+#. Key: RACCOON SCOUT
+msgid "RACCOON SCOUT"
+msgstr ""
+
+#. Key: MULE SCOUT
+msgid "MULE SCOUT"
+msgstr ""
+
+#. Key: KANGAROO SCOUT
+msgid "KANGAROO SCOUT"
+msgstr ""
+
+#. Key: OWL SCOUT
+msgid "OWL SCOUT"
+msgstr ""
+
+#. Key: WOLF SCOUT
+msgid "WOLF SCOUT"
+msgstr ""
+
+#. Key: GOAT SCOUT
+msgid "GOAT SCOUT"
+msgstr ""
+
+#. Key: DESC_TENDERFOOT
+msgid "CLIMBING TAKES LESS STAMINA. HUNGER GROWS MORE SLOWLY. NO TIME LIMIT."
+msgstr ""
+
+#. Key: DESC_PEAK
+msgid "THE ISLAND'S DEFAULT DIFFICULTY."
+msgstr ""
+
+#. Key: DESC_ASCENT 1
+msgid "FALL DAMAGE IS GREATER."
+msgstr ""
+
+#. Key: DESC_ASCENT 2
+msgid "HUNGER GROWS FASTER."
+msgstr ""
+
+#. Key: DESC_ASCENT 3
+msgid "ITEMS HAVE INCREASED WEIGHT."
+msgstr ""
+
+#. Key: DESC_ASCENT 4
+msgid "THERE ARE NO FLARES ATOP THE PEAK."
+msgstr ""
+
+#. Key: DESC_ASCENT 5
+msgid "THE NIGHT IS COLD."
+msgstr ""
+
+#. Key: DESC_ASCENT 6
+msgid "CLIMBING TAKES ADDITIONAL STAMINA."
+msgstr ""
+
+#. Key: DESC_ASCENT 7
+msgid "YOU CANNOT REVIVE THE DEAD."
+msgstr ""
+
+#. Key: YOURSELF
+msgid "YOURSELF"
+msgstr ""
+
+#. Key: WAITINGFORALL
+msgid "waiting for all players..."
+msgstr ""
+
+#. Key: BOARDFLIGHT
+msgid "board flight"
+msgstr ""
+
+#. Key: GATEKIOSK
+msgid "GATE KIOSK"
+msgstr ""
+
+#. Key: INVITEKIOSK
+msgid "INVITE KIOSK"
+msgstr ""
+
+#. Key: INVITEFRIENDS_LOWER
+msgid "invite friends"
+msgstr ""
+
+#. Key: SOMEONESBACKPACK
+msgid "#'S BACKPACK"
+msgstr ""
+
+#. Key: TICK
+msgid "TICK"
+msgstr ""
+
+#. Key: TICKINTERACT
+msgid "remove tick"
+msgstr ""
+
+#. Key: CAMPFIRE
+msgid "CAMPFIRE"
+msgstr ""
+
+#. Key: COOK
+msgid "cook"
+msgstr ""
+
+#. Key: CANTLIGHT
+msgid "can't light campfire with friends missing!"
+msgstr ""
+
+#. Key: CARRY
+msgid "carry #"
+msgstr ""
+
+#. Key: PITONPROMPT
+msgid "PITON"
+msgstr ""
+
+#. Key: GRAB
+msgid "grab"
+msgstr ""
+
+#. Key: PICKUP
+msgid "pick up"
+msgstr ""
+
+#. Key: REVIVESCOUTS
+msgid "revive scouts"
+msgstr ""
+
+#. Key: TOUCH
+msgid "touch"
+msgstr ""
+
+#. Key: LUGGAGE
+msgid "LUGGAGE"
+msgstr ""
+
+#. Key: BIG LUGGAGE
+msgid "BIG LUGGAGE"
+msgstr ""
+
+#. Key: EXPLORER'S LUGGAGE
+msgid "EXPLORER'S LUGGAGE"
+msgstr ""
+
+#. Key: ANCIENT LUGGAGE
+msgid "ANCIENT LUGGAGE"
+msgstr ""
+
+#. Key: ANCIENT STATUE
+msgid "ANCIENT STATUE"
+msgstr ""
+
+#. Key: CHAIN
+msgid "CHAIN"
+msgstr ""
+
+#. Key: VINE
+msgid "VINE"
+msgstr ""
+
+#. Key: ROPE
+msgid "ROPE"
+msgstr ""
+
+#. Key: ANTI-ROPE
+msgid "ANTI-ROPE"
+msgstr ""
+
+#. Key: HOWTONOTDIE
+msgid "HOW TO NOT DIE"
+msgstr ""
+
+#. Key: AGUIDEBY
+msgid "A Guide by<br>Scoutmaster Myres"
+msgstr ""
+
+#. Key: TITLE_PREFACE
+msgid "PREFACE"
+msgstr ""
+
+#. Key: BODY_PREFACE
+msgid ""
+"<br>Ahh............................................................................................."
+".......................................................................... nature.<br><br>	What "
+"greater ecstacy in this life than crunching down on a succulent granola bar while the wind blows "
+"across your scalp atop one of this world's many miraculous mountaintops?<br><br>	But of course, "
+"nature is not just some fairground amusement, some attraction we might enjoy leisurely from behind "
+"glass! Indeed, nature is as dangerous as it is beautiful. And the view is much better from 10,000 "
+"feet up than 6 feet under! (Dead)<br><br>	In my 40 years as a Scoutmaster, I've accumulated a "
+"variety of rules for surviving dangerous wilderness situations that should help you out in the "
+"unlikely event one of your scout outings goes horribly wrong. But of course, all of these rules "
+"pale in comparison to the guiding rule of all scoutdom..."
+msgstr ""
+
+#. Key: TITLE_RULE0
+msgid "NEVER ABANDON A FRIEND IN NEED!"
+msgstr ""
+
+#. Key: RULE0SIGNATURE
+msgid "-Scoutmaster Myres"
+msgstr ""
+
+#. Key: RULE
+msgid "RULE"
+msgstr ""
+
+#. Key: TITLE_RULE1
+msgid "KEEP MOVING!"
+msgstr ""
+
+#. Key: BODY_RULE1
+msgid ""
+"	First things first: you've gotta get to HIGH GROUND if you wanna be spotted. Nobody ever got "
+"rescued off of a mysterious island by loitering around on the beach. So find the nearest peak, and "
+"start making your way there."
+msgstr ""
+
+#. Key: BODY_RULE1_1
+msgid "	Time is of the essence in the wilderness, so get running towards your destination!"
+msgstr ""
+
+#. Key: PROMPT_RULE1_1
+msgid "[AIM]LOOK AROUND"
+msgstr ""
+
+#. Key: PROMPT_RULE1_2
+msgid "[MOVE]WALK"
+msgstr ""
+
+#. Key: PROMPT_RULE1_3
+msgid "[SPRINT]SPRINT"
+msgstr ""
+
+#. Key: BODY_RULE1_2
+msgid "	See a gap in the trail, or a prickly thorn? Go ahead and JUMP over it!"
+msgstr ""
+
+#. Key: PROMPT_RULE1_4
+msgid "[JUMP]JUMP"
+msgstr ""
+
+#. Key: BODY_RULE1_3
+msgid ""
+"Keep in mind that jumping while sprinting will tire you out quickly! Take a quick rest if you need "
+"to - you won't do anyone any favors by passing out on the mountain!"
+msgstr ""
+
+#. Key: TITLE_RULE2
+msgid "KEEP MOVING (UP)!"
+msgstr ""
+
+#. Key: BODY_RULE2
+msgid ""
+"	Obviously, you're not going to make it up a mountain without climbing.<br><br>	You can climb "
+"almost any surface, so long as you have the stamina!"
+msgstr ""
+
+#. Key: PROMPT_RULE2_1
+msgid "HOLD[USEPRIMARY]EMPTY-HANDED: GRAB WALL"
+msgstr ""
+
+#. Key: PROMPT_RULE2_2
+msgid "[JUMP]IN AIR: GRAB WALL"
+msgstr ""
+
+#. Key: PROMPT_RULE2_3
+msgid "[SPRINT]WHILE CLIMBING: LUNGE"
+msgstr ""
+
+#. Key: TITLE_RULE3
+msgid "ALWAYS LEND A HAND!"
+msgstr ""
+
+#. Key: BODY_RULE3
+msgid ""
+"	Nothing is more important than sticking together as a team!<br><br>	When your hands are empty, "
+"reach out to a friend who's mid-climb and help them reach the next ledge safely!"
+msgstr ""
+
+#. Key: PROMPT_RULE3
+msgid "[USESECONDARY] EMPTY-HANDED: HELP UP FRIEND"
+msgstr ""
+
+#. Key: BODY_RULE3_1
+msgid ""
+"	You can help from below, too! Crouch down and let a fellow scout stand on your head, then jump to "
+"give them a boost!"
+msgstr ""
+
+#. Key: PROMPT_RULE3_1
+msgid "[CROUCH]CROUCH"
+msgstr ""
+
+#. Key: TITLE_RULE4
+msgid "STAY ALERT, STAY ALIVE!"
+msgstr ""
+
+#. Key: BODY_RULE4
+msgid ""
+"	An effective scout keeps an eye on their <color=#0f7f00>Stamina Bar</color> at all times. If it "
+"runs out, you'll be temporarily unable to run, jump, and most importantly, climb. <br><br>	Worst "
+"case scenario, you could fall off the mountain to your death, which is the worst thing to fall off "
+"to!"
+msgstr ""
+
+#. Key: TITLE_RULE5
+msgid "LIFE IS PAIN!"
+msgstr ""
+
+#. Key: BODY_RULE5
+msgid ""
+"	As you make your way through the untamed wilderness, it's inevitable that you'll get some "
+"scratches and bumps.<br><br>	The more hurt you get, the less <color=#0f7f00>Stamina</color> you'll "
+"have to run and climb, so tend to your injuries as soon as possible with a bandage or a healing "
+"herb!"
+msgstr ""
+
+#. Key: TITLE_RULE6
+msgid "STAY HUNGRY"
+msgstr ""
+
+#. Key: TITLE_RULE6_1
+msgid "<BR><SIZE=30>(ACTUALLY, DON'T!)"
+msgstr ""
+
+#. Key: BODY_RULE6
+msgid ""
+"	Getting hurt isn't the only way for your <color=#0f7f00>Stamina</color> to go downhill fast. As "
+"you climb, you'll find yourself experiencing <color=#b58200>Hunger</color>, for which 10/10 experts "
+"recommend eating food.<br><br>	Be cautious of eating plants from the wilderness! They could poison "
+"you and really mess up your day. If you have the option, choose a packaged snack from a corporation "
+"you trust!"
+msgstr ""
+
+#. Key: TITLE_RULE7
+msgid "DON'T OVERPACK!"
+msgstr ""
+
+#. Key: BODY_RULE7
+msgid ""
+"	Putting a backpack on is a great way to carry additional items, which can make the difference "
+"between life and death!<br><br>	HOWEVER, the more <color=#61380a>Weight</color> you carry, the less "
+"stamina you'll have to climb! An experienced scout knows to pack everything they need... and "
+"nothing more!"
+msgstr ""
+
+#. Key: BODY_RULE8
+msgid ""
+"	In a survival situation, one of the worst things that can happen is getting separated from the "
+"group. <br><br>	Maintain constant communication whenever possible, and point out your next route in "
+"advance to avoid leaving a friend behind!"
+msgstr ""
+
+#. Key: TITLE_RULE8
+msgid "KEEP AN EYE OUT!"
+msgstr ""
+
+#. Key: PROMPT_RULE8
+msgid "[PING]:PING LOCATION"
+msgstr ""
+
+#. Key: BODY_CONCLUSION
+msgid ""
+"	Exploring the wilderness is a dangerous activity that can kill you instantly - but so is "
+"everything in this world worth doing, like falling in love.<br><br>	Never forget to be a good "
+"steward towards our beautiful world, and once again, never forget:"
+msgstr ""
+
+#. Key: TITLE_CONCLUSION
+msgid "IN CONCLUSION"
+msgstr ""
+
+#. Key: BODY_BONUSPAGE0
+msgid ""
+"Dear Diary, bad news!!!<br><br>	The ship captain made an oopsy, and we've wound up crashed on this "
+"mysterious island! Thankfully, mysterious islands are my specialty.<br><br>	With our whole troop "
+"working together, we'll reach the top of the PEAK and signal for help in no time!<br><br>	In the "
+"meantime, I'll take this opportunity to add some additional pages to my famous guidebook.<br><br>	"
+"<align=right>-Scoutmaster Myres"
+msgstr ""
+
+#. Key: BONUSRULE
+msgid "BONUS RULE"
+msgstr ""
+
+#. Key: TITLE_BONUSRULE1
+msgid "SCAN YOUR SHROOMS!"
+msgstr ""
+
+#. Key: BODY_BONUSRULE1
+msgid ""
+"	Mushrooms can be a valuable source of nutrition in the wilderness. But watch out!! Some of them "
+"can kill you, or even make you poop your pants.<br><br>	There's always a way to tell the poisonous "
+"ones apart, though. Here's just one example!"
+msgstr ""
+
+#. Key: TITLE_BONUSRULE2
+msgid "GATHER 'ROUND THE FIRE!"
+msgstr ""
+
+#. Key: BODY_BONUSRULE2
+msgid ""
+"	If you find a nice place to light a campfire, make sure to bring your friends close by first! The "
+"fire brings something even better than heat and cooked food... and that's motivation!"
+msgstr ""
+
+#. Key: TITLE_BONUSRULE3
+msgid "EMBRACE THE OCCULT!"
+msgstr ""
+
+#. Key: BODY_BONUSRULE3
+msgid ""
+"	Wuh woh! One of our scouts stepped on a sea urchin and died!!! I was about to get really sad... "
+"but one of the other kids touched a weird statue, and brought their friend back to life!"
+msgstr ""
+
+#. Key: BODY_BONUSRULE3_1
+msgid ""
+"Seems like this island bends the rules of mortality itself... how wacky! Perhaps something else "
+"interesting might happen if we use a statue when everyone is still alive..."
+msgstr ""
+
+#. Key: TITLE_BONUSRULE4
+msgid "HUDDLE UP!"
+msgstr ""
+
+#. Key: BODY_BONUSRULE4
+msgid ""
+"	As we approach the PEAK, the temperature has begun dropping dramatically. Seeking constant cover "
+"is a must, and getting caught out in the open when the wind is strong can be a death sentence."
+msgstr ""
+
+#. Key: BODY_BONUSRULE4_1
+msgid ""
+"	If all else fails, huddling with your friends to share body heat might just save you from an icy "
+"grave."
+msgstr ""
+
+#. Key: TITLE_BONUSRULE5
+msgid "I JUST NEED A NAP..."
+msgstr ""
+
+#. Key: BODY_BONUSRULE5
+msgid ""
+"	I saw such a pretty sight... a beautiful moon-shaped fruit, surrounded by fireflies...<br><br>	I "
+"feel so relaxed now... maybe a nap wouldn't be so bad..."
+msgstr ""
+
+#. Key: TITLE_BONUSRULE?
+msgid "WHERE'D EVERYONE GO?"
+msgstr ""
+
+#. Key: BODY_BONUSRULE?
+msgid ""
+"	I had such a wonderful nap, but when I woke up the rest of the troop was gone!<br><br>	I'm sure "
+"they're just around the corner. They wouldn't be so foolish as to break <color=red>Rule 0</color> "
+"just because I needed a little lie-down!"
+msgstr ""
+
+#. Key: TITLE_CRAZY
+msgid "RULE 0 RULE 0 RULE 0 RULE 0"
+msgstr ""
+
+#. Key: DONTFORGET
+msgid "DON'T FORGET<br><size=150%>RULE 0!"
+msgstr ""
+
+#. Key: NEVERABANDON
+msgid "Never Abandon a Friend in Need!"
+msgstr ""
+
+#. Key: WEMADEIT
+msgid ""
+"We made it!!<br><br>Even without our scoutmaster's help, we managed to get "
+"rescued!<br><br>SněžnýPerník managed to make it up first.<br>Zedorfska made it out without a "
+"scratch.<br>CaptainBear was injured but in great spirits.<br>Squdel & Kirpich are a little bruised. "
+"Good thing they had each other!<br>Ronokopl kept the team fed and safe.<br><br>Mr. Myres, if you're "
+"reading this... We couldn't find you!! I'm sorry!"
+msgstr ""
+
+#. Key: GENERAL
+msgid "GENERAL"
+msgstr ""
+
+#. Key: GRAPHICS
+msgid "GRAPHICS"
+msgstr ""
+
+#. Key: AUDIO
+msgid "AUDIO"
+msgstr ""
+
+#. Key: FIELD OF VIEW
+msgid "FIELD OF VIEW"
+msgstr ""
+
+#. Key: MOUSE SENSITIVITY
+msgid "MOUSE SENSITIVITY"
+msgstr ""
+
+#. Key: CONTROLLER SENSITIVITY
+msgid "CONTROLLER SENSITIVITY"
+msgstr ""
+
+#. Key: INVERT X
+msgid "INVERT X"
+msgstr ""
+
+#. Key: INVERT Y
+msgid "INVERT Y"
+msgstr ""
+
+#. Key: ON
+msgid "ON"
+msgstr ""
+
+#. Key: OFF
+msgid "OFF"
+msgstr ""
+
+#. Key: WINDOW MODE
+msgid "WINDOW MODE"
+msgstr ""
+
+#. Key: WINDOWED
+msgid "WINDOWED"
+msgstr ""
+
+#. Key: FULLSCREEN
+msgid "FULLSCREEN"
+msgstr ""
+
+#. Key: WINDOWED FULLSCREEN
+msgid "WINDOWED FULLSCREEN"
+msgstr ""
+
+#. Key: RESOLUTION
+msgid "RESOLUTION"
+msgstr ""
+
+#. Key: MAX FRAMERATE
+msgid "MAX FRAMERATE"
+msgstr ""
+
+#. Key: VSYNC
+msgid "VSYNC"
+msgstr ""
+
+#. Key: NONE
+msgid "NONE"
+msgstr ""
+
+#. Key: ENABLED
+msgid "ENABLED"
+msgstr ""
+
+#. Key: RENDER SCALE
+msgid "RENDER SCALE"
+msgstr ""
+
+#. Key: SHADOW DISTANCE
+msgid "SHADOW DISTANCE"
+msgstr ""
+
+#. Key: WORLD QUALITY
+msgid "WORLD QUALITY"
+msgstr ""
+
+#. Key: AMBIENT OCCLUSION
+msgid "AMBIENT OCCLUSION"
+msgstr ""
+
+#. Key: NATIVE
+msgid "NATIVE"
+msgstr ""
+
+#. Key: LOW
+msgid "LOW"
+msgstr ""
+
+#. Key: MEDIUM
+msgid "MEDIUM"
+msgstr ""
+
+#. Key: HIGH
+msgid "HIGH"
+msgstr ""
+
+#. Key: MICROPHONE
+msgid "MICROPHONE"
+msgstr ""
+
+#. Key: MICROPHONE MODE
+msgid "MICROPHONE MODE"
+msgstr ""
+
+#. Key: MASTER VOLUME
+msgid "MASTER VOLUME"
+msgstr ""
+
+#. Key: SFX VOLUME
+msgid "SFX VOLUME"
+msgstr ""
+
+#. Key: MUSIC VOLUME
+msgid "MUSIC VOLUME"
+msgstr ""
+
+#. Key: VOICES VOLUME
+msgid "VOICES VOLUME"
+msgstr ""
+
+#. Key: VOICE ACTIVATION
+msgid "VOICE ACTIVATION"
+msgstr ""
+
+#. Key: PUSH TO TALK
+msgid "PUSH TO TALK"
+msgstr ""
+
+#. Key: CONNECTING
+msgid "CONNECTING..."
+msgstr ""
+
+#. Key: AUTHENTICATING
+msgid "AUTHENTICATING..."
+msgstr ""
+
+#. Key: FAILEDTOCONNECT
+msgid "Failed to connect to Photon Network"
+msgstr ""
+
+#. Key: TRYCONNECTAGAIN
+msgid "Try to connect again or play in offline mode?"
+msgstr ""
+
+#. Key: LANGUAGE
+msgid "LANGUAGE"
+msgstr ""
+
+#. Key: CONTROLLER ICONS
+msgid "CONTROLLER ICONS"
+msgstr ""
+
+#. Key: LOBBY MODE
+msgid "LOBBY MODE"
+msgstr ""
+
+#. Key: INVITE ONLY
+msgid "INVITE ONLY"
+msgstr ""
+
+#. Key: FRIENDS
+msgid "OPEN TO FRIENDS"
+msgstr ""
+
+#. Key: NAME_FRISBEE
+msgid "FLYING DISC"
+msgstr ""
+
+#. Key: NAME_PARASOL
+msgid "PARASOL"
+msgstr ""
+
+#. Key: AUTO
+msgid "AUTO"
+msgstr ""
+
+#. Key: MODAL_MISMATCH_TITLE
+msgid "GAME VERSION MISMATCH"
+msgstr ""
+
+#. Key: MODAL_MISMATCH_BODY
+msgid "Host has different game version: [#] while you have [&]."
+msgstr ""
+
+#. Key: MODAL_CANTFINDLOBBY_TITLE
+msgid "FAILED TO FIND LOBBY"
+msgstr ""
+
+#. Key: MODAL_CANTFINDLOBBY_BODY
+msgid "This invite might be out of date."
+msgstr ""
+
+#. Key: MODAL_FAILEDTOFETCH_BODY
+msgid "Failed to fetch lobby data."
+msgstr ""
+
+#. Key: MODAL_CANTJOINLOBBY_TITLE
+msgid "FAILED TO JOIN LOBBY"
+msgstr ""
+
+#. Key: MODAL_CANTCREATELOBBY_TITLE
+msgid "FAILED TO CREATE LOBBY"
+msgstr ""
+
+#. Key: MODAL_INVALIDLOBBY_BODY
+msgid "Steam lobby doesn't seem valid."
+msgstr ""
+
+#. Key: MODAL_OUTOFDATE_TITLE
+msgid "VERSION OUT OF DATE"
+msgstr ""
+
+#. Key: MODAL_OUTOFDATE_BODY
+msgid "Close the game, and update the game on steam..."
+msgstr ""
+
+#. Key: MODAL_FAILEDPHOTON_TITLE
+msgid "FAILED TO FIND PHOTON ROOM"
+msgstr ""
+
+#. Key: MODAL_DISCONNECTEDPHOTON_TITLE
+msgid "DISCONNECTED FROM PHOTON"
+msgstr ""
+
+#. Key: MODAL_DISCONNECTEDPHOTON_BODY
+msgid "You disconnected from Photon, reason: #"
+msgstr ""
+
+#. Key: TRYAGAIN
+msgid "TRY AGAIN"
+msgstr ""
+
+#. Key: NAME_RED PRICKLEBERRY
+msgid "RED PRICKLEBERRY"
+msgstr ""
+
+#. Key: NAME_GOLD PRICKLEBERRY
+msgid "GOLD PRICKLEBERRY"
+msgstr ""
+
+#. Key: NAME_SUNSCREEN
+msgid "SUNSCREEN"
+msgstr ""
+
+#. Key: NAME_ALOE VERA
+msgid "ALOE VERA"
+msgstr ""
+
+#. Key: NAME_CACTUS
+msgid "CACTUS"
+msgstr ""
+
+#. Key: NAME_BALLOON
+msgid "BALLOON"
+msgstr ""
+
+#. Key: JOINEDTHEEXPEDITION
+msgid "# joined the expedition."
+msgstr ""
+
+#. Key: LEFTTHEEXPEDITION
+msgid "# left the expedition."
+msgstr ""
+
+#. Key: NAME_SCOUT CANNON
+msgid "SCOUT CANNON"
+msgstr ""
+
+#. Key: SCOUTCANNONFUSE
+msgid "FUSE"
+msgstr ""
+
+#. Key: CHANGE ANGLE
+msgid "adjust angle"
+msgstr ""
+
+#. Key: PRESSANYBUTTON
+msgid "PRESS ANY BUTTON TO CONTINUE"
+msgstr ""
+
+#. Key: REDUCE CAMERA BOBBING
+msgid "REDUCE CAMERA BOBBING"
+msgstr ""
+
+#. Key: EXTINGUISH
+msgid "extinguish"
+msgstr ""
+
+#. Key: ZOOM
+msgid "zoom"
+msgstr ""
+
+#. Key: ONLYATMAINMENU
+msgid "This setting can only be adjusted on the main menu."
+msgstr ""
+
+#. Key: CLIMBING EXTRA FIELD OF VIEW
+msgid "CLIMBING EXTRA FIELD OF VIEW"
+msgstr ""
+
+#. Key: PUSH TO MUTE
+msgid "PUSH TO MUTE"
+msgstr ""
+
+#. Key: MESA
+msgid "MESA"
+msgstr ""
+
+#. Key: FLAME
+msgid "FLAME"
+msgstr ""
+
+#. Key: SPRAY
+msgid "spray"
+msgstr ""
+
+#. Key: NAME_TORCH
+msgid "TORCH"
+msgstr ""
+
+#. Key: TOMB
+msgid "TOMB"
+msgstr ""
+
+#. Key: NAME_BALLOON BUNCH
+msgid "BALLOON BUNCH"
+msgstr ""
+
+#. Key: NAME_ANCIENT IDOL
+msgid "ANCIENT IDOL"
+msgstr ""
+
+#. Key: NAME_THORN
+msgid "THORN"
+msgstr ""
+
+#. Key: NAME_NOMAD
+msgid "NOMAD BADGE"
+msgstr ""
+
+#. Key: DESC_NOMAD
+msgid "Climb past the MESA."
+msgstr ""
+
+#. Key: NAME_ULTIMATE
+msgid "ULTIMATE BADGE"
+msgstr ""
+
+#. Key: DESC_ULTIMATE
+msgid "Catch a Flying Disc from 100m away."
+msgstr ""
+
+#. Key: NAME_COOL CUCUMBER
+msgid "COOL CUCUMBER BADGE"
+msgstr ""
+
+#. Key: DESC_COOL CUCUMBER
+msgid "Climb past the MESA without ever having more than 10% Heat."
+msgstr ""
+
+#. Key: NAME_NEEDLEPOINT
+msgid "NEEDLEPOINT BADGE"
+msgstr ""
+
+#. Key: DESC_NEEDLEPOINT
+msgid "Have a lot of cactuses stuck to you."
+msgstr ""
+
+#. Key: NAME_AERONAUTICS
+msgid "AERONAUTICS BADGE"
+msgstr ""
+
+#. Key: DESC_AERONAUTICS
+msgid "Achieve flight."
+msgstr ""
+
+#. Key: NAME_24 KARAT
+msgid "24 KARAT BADGE"
+msgstr ""
+
+#. Key: DESC_24 KARAT
+msgid "Offer The Kiln a worthy sacrifice."
+msgstr ""
+
+#. Key: NAME_RESOURCEFULNESS
+msgid "RESOURCEFULNESS BADGE"
+msgstr ""
+
+#. Key: DESC_RESOURCEFULNESS
+msgid "Give in to your hunger."
+msgstr ""
+
+#. Key: NAME_DAREDEVIL
+msgid "DAREDEVIL BADGE"
+msgstr ""
+
+#. Key: DESC_DAREDEVIL
+msgid "Shoot across the MESA canyon in a Scout Cannon."
+msgstr ""
+
+#. Key: NAME_MEGAENTOMOLOGY
+msgid "MEGAENTOMOLOGY BADGE"
+msgstr ""
+
+#. Key: DESC_MEGAENTOMOLOGY
+msgid "Survive an Antlion attack."
+msgstr ""
+
+#. Key: NAME_ASTRONOMY
+msgid "ASTRONOMY BADGE"
+msgstr ""
+
+#. Key: DESC_ASTRONOMY
+msgid "Look a little too closely at the blazing sun."
+msgstr ""
+
+#. Key: NAME_DYNAMITE
+msgid "DYNAMITE"
+msgstr ""
+
+#. Key: PICKAXE
+msgid "PICKAXE"
+msgstr ""
+
+#. Key: ACCESSIBILITY
+msgid "ACCESSIBILITY"
+msgstr ""
+
+#. Key: THELAVARISES
+msgid "THE LAVA RISES"
+msgstr ""
+
+#. Key: NAME_SCORPION
+msgid "SCORPION"
+msgstr ""
+
+#. Key: ENABLECANNIBALISM
+msgid "ENABLE CANNIBALISM"
+msgstr ""
+
+#. Key: REMOVE
+msgid "remove"
+msgstr ""
+
+#. Key: NAME_BIRD
+msgid "BIRD"
+msgstr ""
+
+#. Key: BUGPHOBIAMODE
+msgid "BUG PHOBIA MODE"
+msgstr ""
+
+#. Key: NAME_STRANGE GEM
+msgid "STRANGE GEM"
+msgstr ""
+
+#. Key: ENABLETHELOOKER
+msgid "ENABLE <i>THE LOOKER</i>"
+msgstr ""
+
+#. Key: PHOTOSENSITIVEMODE
+msgid "PHOTOSENSITIVE MODE"
+msgstr ""
+
+#. Key: COLORBLINDNESSMODE
+msgid "COLOR BLINDNESS MODE"
+msgstr ""
+
+#. Key: NAME_RED SHROOMBERRY
+msgid "RED SHROOMBERRY"
+msgstr ""
+
+#. Key: NAME_YELLOW SHROOMBERRY
+msgid "YELLOW SHROOMBERRY"
+msgstr ""
+
+#. Key: NAME_GREEN SHROOMBERRY
+msgid "GREEN SHROOMBERRY"
+msgstr ""
+
+#. Key: NAME_BLUE SHROOMBERRY
+msgid "BLUE SHROOMBERRY"
+msgstr ""
+
+#. Key: NAME_FORTIFIED MILK
+msgid "FORTIFIED MILK"
+msgstr ""
+
+#. Key: NAME_HOT DOG
+msgid "HOT DOG"
+msgstr ""
+
+#. Key: NAME_CHECKPOINT FLAG
+msgid "CHECKPOINT FLAG"
+msgstr ""
+
+#. Key: ROOTS
+msgid "ROOTS"
+msgstr ""
+
+#. Key: TEXTURE QUALITY
+msgid "TEXTURE QUALITY"
+msgstr ""
+
+#. Key: RESET
+msgid "Reset"
+msgstr ""
+
+#. Key: REBIND
+msgid "REBIND"
+msgstr ""
+
+#. Key: MOVE FORWARD
+msgid "MOVE FORWARD"
+msgstr ""
+
+#. Key: MOVE BACKWARD
+msgid "MOVE BACKWARD"
+msgstr ""
+
+#. Key: MOVE LEFT
+msgid "MOVE LEFT"
+msgstr ""
+
+#. Key: MOVE RIGHT
+msgid "MOVE RIGHT"
+msgstr ""
+
+#. Key: INVENTORY SLOT
+msgid "ITEM SLOT"
+msgstr ""
+
+#. Key: BACKPACK SLOT
+msgid "BACKPACK SLOT"
+msgstr ""
+
+#. Key: SCROLL
+msgid "SCROLL"
+msgstr ""
+
+#. Key: SCROLL FORWARD
+msgid "SCROLL FORWARD"
+msgstr ""
+
+#. Key: SCROLL BACKWARD
+msgid "SCROLL BACKWARD"
+msgstr ""
+
+#. Key: SWAPITEMLEFT
+msgid "SWAP ITEM LEFT"
+msgstr ""
+
+#. Key: SWAPITEMRIGHT
+msgid "SWAP ITEM RIGHT"
+msgstr ""
+
+#. Key: SWAPITEMDOWN
+msgid "STASH ITEM"
+msgstr ""
+
+#. Key: RESTOREDEFAULTS
+msgid "RESTORE DEFAULTS"
+msgstr ""
+
+#. Key: CLIMBUSE
+msgid "CLIMB / USE ITEM"
+msgstr ""
+
+#. Key: HELPINGHANDUSE
+msgid "HELPING HAND / ALT USE ITEM"
+msgstr ""
+
+#. Key: REBINDCONTROLS
+msgid "REBIND CONTROLS"
+msgstr ""
+
+#. Key: INPUTICONS
+msgid "INPUT ICONS"
+msgstr ""
+
+#. Key: KBM
+msgid "KEYBOARD & MOUSE"
+msgstr ""
+
+#. Key: STYLE1
+msgid "GAMEPAD STYLE 1"
+msgstr ""
+
+#. Key: STYLE2
+msgid "GAMEPAD STYLE 2"
+msgstr ""
+
+#. Key: GAMEPAD
+msgid "GAMEPAD"
+msgstr ""
+
+#. Key: CANCEL
+msgid "CANCEL"
+msgstr ""
+
+#. Key: ASK
+msgid "ask"
+msgstr ""
+
+#. Key: NAME_ROOK
+msgid "ROOK"
+msgstr ""
+
+#. Key: NAME_BISHOP
+msgid "BISHOP"
+msgstr ""
+
+#. Key: NAME_KNIGHT
+msgid "KNIGHT"
+msgstr ""
+
+#. Key: NAME_KING
+msgid "KING"
+msgstr ""
+
+#. Key: NAME_QUEEN
+msgid "QUEEN"
+msgstr ""
+
+#. Key: NAME_PAWN
+msgid "PAWN"
+msgstr ""
+
+#. Key: NAME_BASKETBALL
+msgid "BASKETBALL"
+msgstr ""
+
+#. Key: PROMPT_REBIND
+msgid "PRESS AN INPUT TO ASSIGN TO<br><size=125%><color=#DDBE55>@</color></size>"
+msgstr ""
+
+#. Key: NAME_BUNDLED UP
+msgid "BUNDLED UP BADGE"
+msgstr ""
+
+#. Key: DESC_BUNDLED UP
+msgid "Climb past the ALPINE without ever having more than 20% Cold."
+msgstr ""
+
+#. Key: BB_YES
+msgid "yes!"
+msgstr ""
+
+#. Key: BB_YEAH
+msgid "y...yeah..."
+msgstr ""
+
+#. Key: BB_IGUESSSO
+msgid "i guess so..."
+msgstr ""
+
+#. Key: BB_SURE
+msgid "s...sure"
+msgstr ""
+
+#. Key: BB_IFYOUWANNA
+msgid "if you wanna..."
+msgstr ""
+
+#. Key: BB_OKAY
+msgid "okay..."
+msgstr ""
+
+#. Key: BB_IFISAYYES
+msgid "if i say yes, will you take me with you?"
+msgstr ""
+
+#. Key: BB_DEFINITELY
+msgid "y-yeah,  definitely!"
+msgstr ""
+
+#. Key: BB_FINE
+msgid "i think it's fine..."
+msgstr ""
+
+#. Key: BB_PLEASEDONT
+msgid "p...please don't..."
+msgstr ""
+
+#. Key: BB_NAH
+msgid "nah..."
+msgstr ""
+
+#. Key: BB_INTENSENO
+msgid "NO!!!!!!"
+msgstr ""
+
+#. Key: BB_DONTDOIT
+msgid "don't do it..."
+msgstr ""
+
+#. Key: BB_BADIDEA
+msgid "i think that's a bad idea..."
+msgstr ""
+
+#. Key: BB_NO
+msgid "no."
+msgstr ""
+
+#. Key: BB_NUHUH
+msgid "n-nuh uh..."
+msgstr ""
+
+#. Key: BB_DEFINITELYNOT
+msgid "d-definitely not..."
+msgstr ""
+
+#. Key: BB_NONONO
+msgid "no no no no no"
+msgstr ""
+
+#. Key: BB_IMNOTSURE
+msgid "i'm... not sure..."
+msgstr ""
+
+#. Key: BB_IDUNNO
+msgid "i dunno"
+msgstr ""
+
+#. Key: BB_NOTCOMFORTABLE
+msgid "i'm not comfortable answering that..."
+msgstr ""
+
+#. Key: BB_UH
+msgid "uh...uhhhhh..."
+msgstr ""
+
+#. Key: BB_IMBINGBONG
+msgid "i'm bing bong"
+msgstr ""
+
+#. Key: BB_IMISSMYWIFE
+msgid "i miss my wife"
+msgstr ""
+
+#. Key: BB_MAYBE
+msgid "maaaaaaaaybe"
+msgstr ""
+
+#. Key: BB_ASKYOURFRIENDS
+msgid "you should ask your friends for help!"
+msgstr ""
+
+#. Key: PHOTOBOOTH
+msgid "PHOTOBOOTH"
+msgstr ""
+
+#. Key: START2
+msgid "start"
+msgstr ""
+
+#. Key: JUMPTOCLIMB
+msgid "JUMP TO GRAB WALL"
+msgstr ""
+
+#. Key: NAME_CLOUD FUNGUS
+msgid "CLOUD FUNGUS"
+msgstr ""
+
+#. Key: NAME_RESCUE CLAW
+msgid "RESCUE CLAW"
+msgstr ""
+
+#. Key: NAME_PURPLE SHROOMBERRY
+msgid "PURPLE SHROOMBERRY"
+msgstr ""
+
+#. Key: GEM_ACTIVATED
+msgid "Gem Activated"
+msgstr ""
+
+#. Key: GEM_DEACTIVATED
+msgid "Gem Deactivated"
+msgstr ""
+
+#. Key: NAME_THEBOOKOFBONES
+msgid "THE BOOK OF BONES"
+msgstr ""
+
+#. Key: READ
+msgid "READ"
+msgstr ""
+
+#. Key: STRUGGLE
+msgid "struggle"
+msgstr ""
+
+#. Key: BACKFLIP
+msgid "backflip"
+msgstr ""
+
+#. Key: CINEMA
+msgid "cinema"
+msgstr ""
+
+#. Key: CRASHOUT
+msgid "crashout"
+msgstr ""
+
+#. Key: DANCE2
+msgid "shimmy"
+msgstr ""
+
+#. Key: DEFEAT
+msgid "it's so over"
+msgstr ""
+
+#. Key: FLEX
+msgid "flex"
+msgstr ""
+
+#. Key: PUNCHFIST
+msgid "bully"
+msgstr ""
+
+#. Key: WAVE
+msgid "wave"
+msgstr ""
+
+#. Key: NAME_FORESTRY
+msgid "FORESTRY BADGE"
+msgstr ""
+
+#. Key: DESC_FORESTRY
+msgid "Climb past the ROOTS."
+msgstr ""
+
+#. Key: NAME_TREAD LIGHTLY
+msgid "TREAD LIGHTLY BADGE"
+msgstr ""
+
+#. Key: DESC_TREAD LIGHTLY
+msgid "Climb past the ROOTS without ever having more than 25% spores."
+msgstr ""
+
+#. Key: NAME_WEB SECURITY
+msgid "WEB SECURITY BADGE"
+msgstr ""
+
+#. Key: DESC_WEB SECURITY
+msgid "Escape a spider's web and survive."
+msgstr ""
+
+#. Key: NAME_UNDEAD ENCOUNTER
+msgid "UNDEAD ENCOUNTER BADGE"
+msgstr ""
+
+#. Key: DESC_UNDEAD ENCOUNTER
+msgid "Cure yourself from a zombie bite."
+msgstr ""
+
+#. Key: NAME_ADVANCED MYCOLOGY
+msgid "ADVANCED MYCOLOGY BADGE"
+msgstr ""
+
+#. Key: DESC_ADVANCED MYCOLOGY
+msgid "Try all 5 types of Shroomberry in a single expedition."
+msgstr ""
+
+#. Key: NAME_DISASTER RESPONSE
+msgid "DISASTER RESPONSE BADGE"
+msgstr ""
+
+#. Key: DESC_DISASTER RESPONSE
+msgid "Pull an unconscious friend 30m with the Rescue Claw."
+msgstr ""
+
+#. Key: NAME_CALCIUM INTAKE
+msgid "CALCIUM INTAKE BADGE"
+msgstr ""
+
+#. Key: DESC_CALCIUM INTAKE
+msgid "Block 100 total damage with the Fortified Milk."
+msgstr ""
+
+#. Key: NAME_COMPETITIVE EATING
+msgid "COMPETITIVE EATING BADGE"
+msgstr ""
+
+#. Key: DESC_COMPETITIVE EATING
+msgid "Eat 3 Hot Dogs in 5 seconds or less."
+msgstr ""
+
+#. Key: NAME_APPLIED ESOTERICA
+msgid "APPLIED ESOTERICA BADGE"
+msgstr ""
+
+#. Key: DESC_APPLIED ESOTERICA
+msgid "Resurrect a friend using unholy means."
+msgstr ""
+
+#. Key: NAME_MYCOACROBATICS
+msgid "MYCOACROBATICS BADGE"
+msgstr ""
+
+#. Key: DESC_MYCOACROBATICS
+msgid "Bounce up 40m off a mushroom."
+msgstr ""
+
+#. Key: NAME_CRYPTOGASTRONOMY
+msgid "CRYPTOGASTRONOMY BADGE"
+msgstr ""
+
+#. Key: DESC_CRYPTOGASTRONOMY
+msgid "Cook and eat a Mandrake."
+msgstr ""
+
+#. Key: NAME_SKELETON
+msgid "SKELETON"
+msgstr ""
+
+#. Key: NAME_SKELETON_PLAYER
+msgid "#'S SKELETON"
+msgstr ""
+
+#. Key: REVIVE_BOOKOFBONES
+msgid "REVIVE?"
+msgstr ""
+
+#. Key: NAME_MANDRAKE
+msgid "MANDRAKE"
+msgstr ""
+
+#. Key: NAME_SNOWPILE
+msgid "SNOW PILE"
+msgstr ""
+
+#. Key: NAME_SNOWBALL
+msgid "SNOWBALL"
+msgstr ""
+
+#. Key: MODAL_KICK_PROMPT
+msgid "Do you want to kick # from the expedition?"
+msgstr ""
+
+#. Key: MODAL_KICKED_TITLE
+msgid "YOU WERE KICKED"
+msgstr ""
+
+#. Key: MODAL_KICKED_BODY
+msgid "The Troop Leader has kicked you from the expedition."
+msgstr ""
+
+#. Key: LEAVE_GAME_CONFIRM
+msgid "Leave the expedition?"
+msgstr ""
+
+#. Key: HOSTCHANGED
+msgid "# is now the Troop Leader."
+msgstr ""
+
+#. Key: YOUARETROOPLEADER
+msgid "You are the Troop Leader."
+msgstr ""
+
+#. Key: JELLYFISH
+msgid "JELLYFISH"
+msgstr ""
+
+#. Key: URCHINS
+msgid "URCHINS"
+msgstr ""
+
+#. Key: SPOREBOMBS
+msgid "SPORE BOMBS"
+msgstr ""
+
+#. Key: BEES
+msgid "BEES"
+msgstr ""
+
+#. Key: RAIN
+msgid "RAIN"
+msgstr ""
+
+#. Key: ZOMBIES
+msgid "ZOMBIES"
+msgstr ""
+
+#. Key: BEETLES
+msgid "BEETLES"
+msgstr ""
+
+#. Key: SPIDERS
+msgid "SPIDERS"
+msgstr ""
+
+#. Key: SPORECLOUDS
+msgid "SPORE CLOUDS"
+msgstr ""
+
+#. Key: WIND
+msgid "WIND"
+msgstr ""
+
+#. Key: BLIZZARD
+msgid "BLIZZARDS"
+msgstr ""
+
+#. Key: GEYSERS
+msgid "GEYSERS"
+msgstr ""
+
+#. Key: FLASHPLANT
+msgid "FLASH BULBS"
+msgstr ""
+
+#. Key: TORNADOES
+msgid "TORNADOES"
+msgstr ""
+
+#. Key: ANTLIONS
+msgid "ANTLIONS"
+msgstr ""
+
+#. Key: CACTUSTHORNS
+msgid "CACTUS THORNS"
+msgstr ""
+
+#. Key: TUMBLEWEEDS
+msgid "TUMBLEWEEDS"
+msgstr ""
+
+#. Key: BLAZINGSUN
+msgid "BLAZING SUN"
+msgstr ""
+
+#. Key: SCOUTMASTER
+msgid "THE SCOUTMASTER"
+msgstr ""
+
+#. Key: HUNGERRATE
+msgid "HUNGER RATE"
+msgstr ""
+
+#. Key: FALLDAMAGE
+msgid "FALL DAMAGE"
+msgstr ""
+
+#. Key: ETCDAMAGE
+msgid "OTHER DAMAGE"
+msgstr ""
+
+#. Key: COLDNIGHT
+msgid "COLD AT NIGHT"
+msgstr ""
+
+#. Key: ITEMWEIGHT
+msgid "ITEM WEIGHT"
+msgstr ""
+
+#. Key: FLARESATPEAK
+msgid "FLARES AT PEAK"
+msgstr ""
+
+#. Key: CLIMBINGSTAMINAUSAGE
+msgid "CLIMBING STAMINA USAGE"
+msgstr ""
+
+#. Key: CUSTOM
+msgid "CUSTOM RUN"
+msgstr ""
+
+#. Key: DESC_CUSTOM
+msgid "Customize your PEAK experience."
+msgstr ""
+
+#. Key: CUSTOMOPTIONS
+msgid "CUSTOM OPTIONS"
+msgstr ""
+
+#. Key: NORMAL
+msgid "NORMAL"
+msgstr ""
+
+#. Key: HAZARDS
+msgid "HAZARDS"
+msgstr ""
+
+#. Key: GAMEPLAY
+msgid "GAMEPLAY"
+msgstr ""
+
+#. Key: SPAWNPOOL
+msgid "SPAWN POOL"
+msgstr ""
+
+#. Key: EXPEDITION
+msgid "EXPEDITION"
+msgstr ""
+
+#. Key: EXPEDITIONTYPE
+msgid "EXPEDITION TYPE"
+msgstr ""
+
+#. Key: EXPEDITIONTYPECLASSIC
+msgid "CLASSIC"
+msgstr ""
+
+#. Key: MINIRUN
+msgid "MINI RUN"
+msgstr ""
+
+#. Key: MINIRUNBIOME
+msgid "MINI RUN BIOME"
+msgstr ""
+
+#. Key: BIOME1
+msgid "BIOME 1"
+msgstr ""
+
+#. Key: BIOME2
+msgid "BIOME 2"
+msgstr ""
+
+#. Key: BIOME3
+msgid "BIOME 3"
+msgstr ""
+
+#. Key: BIOME4
+msgid "BIOME 4"
+msgstr ""
+
+#. Key: TOOLTIP_NORMAL
+msgid "Climb all the way to the PEAK."
+msgstr ""
+
+#. Key: TOOLTIP_MINIRUN
+msgid "Climb a single biome to win."
+msgstr ""
+
+#. Key: BADGESDISABLED
+msgid "Progress towards earning Badges is disabled in Custom Expeditions."
+msgstr ""
+
+#. Key: YOUWIN
+msgid "YOU WIN"
+msgstr ""
+
+#. Key: ZOMBIEPHOBIAMODE
+msgid "ZOMBIE PHOBIA MODE"
+msgstr ""
+
+#. Key: CONTINUERUN
+msgid "CONTINUE RUN"
+msgstr ""
+
+#. Key: STAMINAUSAGE
+msgid "STAMINA USAGE"
+msgstr ""
+
+#. Key: SAVE_DESTROY_ON_JOIN
+msgid "Joining this game will delete your current autosave.<br>Are you sure?"
+msgstr ""
+
+#. Key: SAVE_DESTROY_ON_HOST
+msgid "Hosting a new game will delete your current autosave.<br>Are you sure?"
+msgstr ""
+
+#. Key: GRAPPLEMODE
+msgid "GRAPPLE MODE"
+msgstr ""
+
+#. Key: SPEEDYMODE
+msgid "SPEEDY MODE"
+msgstr ""
+
+#. Key: KICKMODE
+msgid "KICK MODE"
+msgstr ""
+
+#. Key: STUPIDSTUFF
+msgid "STUPID STUFF"
+msgstr ""
+
+#. Key: LEAVE_GAME_CONFIRM_QUICKSAVE
+msgid "Leave the expedition?<br><br>You can continue from the last campfire."
+msgstr ""
+
+#. Key: TOOLTIP_GRAPPLE
+msgid "Start with an infinite-use Rescue Claw...but you suck at climbing."
+msgstr ""
+
+#. Key: TOOLTIP_SPEEDY
+msgid "Everything moves twice as fast!"
+msgstr ""
+
+#. Key: TOOLTIP_KICK
+msgid "Replaces your helping hand with a kick."
+msgstr ""
+
+#. Key: FOG
+msgid "THE FOG RISES"
+msgstr ""
+
+#. Key: LAVA
+msgid "THE LAVA RISES"
+msgstr ""
+
+#. Key: SCORPIONS
+msgid "SCORPIONS"
+msgstr ""
+
+#. Key: BB_MAYNEPTUNEBLESSUSALL
+msgid "may Neptune bless us all..."
+msgstr ""
+
+#. Key: BB_TODAYISFRIDAY
+msgid "today is friday, in california... shoot!"
+msgstr ""
+
+#. Key: __NATIONALITY
+msgid "CRABLAND"
+msgstr ""
+

@@ -1,0 +1,34 @@
+ok:
+
+BB_Yes,yes!,fi! // yes!
+BB_Yeah,y...yeah...,f.. fi... // y...yeah...
+BB_Sure,s...sure,"n...nyai" // o...okay!
+BB_IfYouWanna,if you wanna...,peifaht sahnwng... // if you want...
+BB_Okay,okay...,nyai... // okay...
+BB_IfISayYes,"if i say yes, will you take me with you?", "shrahfbei pyei pa nirh sa, peifaht pahdh fi // will you take me with you? if i say yes" 
+BB_Definitely,"y-yeah,  definitely!", "f-fi, nyan! // y-yeah, definitely!"
+BB_Fine,i think it's fine..., "pahgyw ka mw nyai" // i think it is fine
+BB_Nah,nah...,"krah..." // the actual word here is "krh" but since h and ah are allophones i think it's probably OK to use it as an equivalent to the english slang "nah"
+BB_INTENSENO,NO!!!!!!,"KRH!!!!!!" // NO!!!!!!
+BB_BadIdea,i think that's a bad idea..., "pahgyw, hei mw heika nyav... // i think, this is a bad direction"
+BB_No,no., "krh. // no."
+BB_DefinitelyNot,d-definitely not...,"krh nyan // no+obvious"
+BB_NoNoNo,no no no no no, "krh krh krh krh krh // no no no no no (said in a quick panic-like manner)"
+BB_ImBingBong,i'm bing bong,"phpw ping pang // i'm bing bong"
+BB_IMissMyWife,i miss my wife,"pahnwng fh // i miss my spouse"
+BB_Maybe,maaaaaaaaybe,"meeeeeeeebi"
+BB_AskYourFriends,you should ask your friends for help!,"chav sahbyei pahbedeng shre finya dahf hai // [imperative] you ask your friends in order to get help"
+
+changed:
+BB_IDunno,i dunno,"pahgywgre"
+BB_ImNotSure,i'm... not sure..., "phrahgre... chwmnyh // i don't have confidence
+BB_DontDoit,don't do it...,"chav praikrh hei..." // [imperative] do[negation] this
+BB_PleaseDont,p...please don't...,ch...chav praikrh... // [imperative] do[negation]
+BB_Uh,uh...uhhhhh...,"dei...dein..."
+BB_NuhUh,n-nuh uh...,f-fikrh...
+BB_IGuessSo,i guess so..., "hei mw fi... // this is true..."
+BB_NotComfortable,i'm not comfortable answering that...,"pahnwnggre pyeifi // i don't want to answer"
+
+custom (so there's no reference english clip):
+
+BB_MayNeptuneBlessUsAll,may neptune bless us all...,"chav yhng finyemyh fanivap... [imperative] neptune bless each of us"

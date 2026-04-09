@@ -9,15 +9,34 @@
         <AssemblyTitle>PeakNeptunian</AssemblyTitle>
         <!-- This is the version number of your mod. -->
         <Version>0.1.0</Version>
-    </PropertyGroup>
+    </PropertyGroup>    
 
     <ItemGroup>
         <PackageReference Include="PEAKModding.PEAKLib.UI" Version="1.6.1"/>
     </ItemGroup>
 
     <ItemGroup>
-      <None Remove="translations.csv" />
-      <EmbeddedResource Include="translations.csv" />
+        <None Remove="localizations/qhe_YH@latin.po"/>
+        <EmbeddedResource Include="localizations/qhe_YH@latin.po"/>
+        <None Remove="localizations/peak.pot"/>
+        <EmbeddedResource Include="localizations/peak.pot"/>
+        <EmbeddedResource Remove="external\po\test\**" />
+        
+        <None Remove="external\po\test\**" />
+        
+        <EmbeddedResource Remove="external\po\samples\**" />
+        
+        <None Remove="external\po\samples\**" />
+        
+        <EmbeddedResource Remove="external\po\release\**" />
+        
+        <None Remove="external\po\release\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="external\po\test\**" />
+      <Compile Remove="external\po\samples\**" />
+      <Compile Remove="external\po\release\**" />
     </ItemGroup>
 
     <!--

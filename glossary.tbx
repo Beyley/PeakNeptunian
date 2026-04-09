@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE martif PUBLIC 'ISO 12200:1999A//DTD MARTIF core (DXFcdV04)//EN' 'TBXcdv04.dtd'>
+<martif type="TBX" xml:lang="en_US">
+  <text>
+    <body>
+      <termEntry id="beyley_thomas-1">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>ok</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>nyai</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_thomas-2">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>move</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>pi</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_thomas-3">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>leave</term>
+          </tig>
+          <tig>
+            <term>quit</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>pipi</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_thomas-4">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>climb</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>preiheppihe</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_thomas-5">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>helping hand</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>yhhai</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_thomas-6">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>interact</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>hai</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_thomas-7">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>mode</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>myachevnw</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_thomas-8">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>skeleton</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>swkerepen</term>
+          </tig>
+        </langSet>
+      </termEntry>
+    </body>
+  </text>
+</martif>

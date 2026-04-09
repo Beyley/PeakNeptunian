@@ -1,0 +1,8 @@
+[General]
+GlossaryTbx=glossary.tbx
+LangCode=xh
+MailingList=
+PoBaseDir=src/PeakNeptunian/localizations
+PotBaseDir=./templates
+ProjectID=PeakNeptunian
+TargetLangCode=xh
