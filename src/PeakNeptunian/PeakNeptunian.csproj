@@ -18,18 +18,14 @@
     <ItemGroup>
         <None Remove="localizations/qhe_YH@latin.po"/>
         <EmbeddedResource Include="localizations/qhe_YH@latin.po"/>
-        <None Remove="localizations/peak.pot"/>
-        <EmbeddedResource Include="localizations/peak.pot"/>
+
         <EmbeddedResource Remove="external\po\test\**" />
-        
         <None Remove="external\po\test\**" />
         
         <EmbeddedResource Remove="external\po\samples\**" />
-        
         <None Remove="external\po\samples\**" />
         
         <EmbeddedResource Remove="external\po\release\**" />
-        
         <None Remove="external\po\release\**" />
     </ItemGroup>
 
