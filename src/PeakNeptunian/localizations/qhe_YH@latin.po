@@ -658,7 +658,7 @@ msgstr "PREVMWMEPHP"
 
 #. Key: NAME_WEIRD SHROOM
 msgid "WEIRD SHROOM"
-msgstr ""
+msgstr "PREV FRAHF"
 
 #. Key: NAME_BUGLE SHROOM
 msgid "BUGLE SHROOM"
@@ -784,9 +784,11 @@ msgstr "nyei"
 msgid "use"
 msgstr "hai"
 
+# This doesn't appear to be used in-game anywhere, so i'm unsure about what context it is used in to translate it. hai should be general enough to still work.
 #. Key: PLAY
+#, fuzzy
 msgid "play"
-msgstr ""
+msgstr "hai"
 
 #. Key: SHOOT
 msgid "shoot"
@@ -884,9 +886,10 @@ msgstr "kri pipan"
 msgid "MORALE BOOST!!"
 msgstr "CHWMNYH HEI"
 
+# push away life
 #. Key: GIVEUP
 msgid "give up"
-msgstr ""
+msgstr "dahkei mwm"
 
 #. Key: DEAD
 msgid "DEAD"
@@ -972,9 +975,10 @@ msgstr "NW PRAIHE"
 msgid "BOARDING PASS"
 msgstr ""
 
+# person
 #. Key: PASSENGER
 msgid "PASSENGER:"
-msgstr ""
+msgstr "PADA:"
 
 #. Key: GATE
 msgid "GATE:"
@@ -1197,7 +1201,7 @@ msgstr ""
 
 #. Key: RACCOON SCOUT
 msgid "RACCOON SCOUT"
-msgstr ""
+msgstr "PADANYEI FAS"
 
 #. Key: MULE SCOUT
 msgid "MULE SCOUT"
@@ -1205,11 +1209,11 @@ msgstr ""
 
 #. Key: KANGAROO SCOUT
 msgid "KANGAROO SCOUT"
-msgstr ""
+msgstr "PADANYEI PHPENYE"
 
 #. Key: OWL SCOUT
 msgid "OWL SCOUT"
-msgstr ""
+msgstr "PADANYEI FAYAN"
 
 #. Key: WOLF SCOUT
 msgid "WOLF SCOUT"
@@ -2236,13 +2240,15 @@ msgstr "HEKWRAM"
 msgid "TEXTURE QUALITY"
 msgstr ""
 
+# default
 #. Key: RESET
 msgid "Reset"
-msgstr ""
+msgstr "FRING"
 
+# change
 #. Key: REBIND
 msgid "REBIND"
-msgstr ""
+msgstr "YH"
 
 #. Key: MOVE FORWARD
 msgid "MOVE FORWARD"
@@ -2288,9 +2294,10 @@ msgstr ""
 msgid "STASH ITEM"
 msgstr "KRI NW"
 
+# change to default
 #. Key: RESTOREDEFAULTS
 msgid "RESTORE DEFAULTS"
-msgstr ""
+msgstr "YH HEI FRING"
 
 #. Key: CLIMBUSE
 msgid "CLIMB / USE ITEM"
@@ -2300,9 +2307,10 @@ msgstr "PREIHEPPIHE / HAI"
 msgid "HELPING HAND / ALT USE ITEM"
 msgstr "YHHAI / HAI HANE"
 
+# change controls
 #. Key: REBINDCONTROLS
 msgid "REBIND CONTROLS"
-msgstr "YEI HAKEINISE"
+msgstr "YH HAKEINISE"
 
 #. Key: INPUTICONS
 msgid "INPUT ICONS"
