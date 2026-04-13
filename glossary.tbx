@@ -162,6 +162,102 @@
           </tig>
         </langSet>
       </termEntry>
+      <termEntry id="beyley_cardellio-13">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>bugle</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>pwgre</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_cardellio-14">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>cookie</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>kwki</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_cardellio-15">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>cookies</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>kwgeki</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_cardellio-16">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>statue</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>padahang</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_cardellio-17">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>ancient</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>seise</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_cardellio-18">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>pass</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>nwhaneing</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_cardellio-19">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>volume</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>fachachifrav</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_cardellio-20">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>gem</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>hangnwv</term>
+          </tig>
+        </langSet>
+      </termEntry>
     </body>
   </text>
 </martif>

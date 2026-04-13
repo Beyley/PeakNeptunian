@@ -14,7 +14,7 @@ msgstr ""
 "Language: qhe_YH@latin\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2026-04-08 20:51-0400\n"
+"PO-Revision-Date: 2026-04-12 23:07-0400\n"
 "MIME-Version: 1.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 26.07.70\n"
@@ -37,7 +37,7 @@ msgstr "NWNENG"
 
 #. Key: CREDITS
 msgid "CREDITS"
-msgstr "PABADA NWVING"
+msgstr "PAHBEDENE"
 
 #. Key: QUIT
 msgid "QUIT"
@@ -56,8 +56,9 @@ msgid "A COLLAB BETWEEN"
 msgstr ""
 
 #. Key: THANKSFORPLAYING
+#, fuzzy
 msgid "THANKS FOR PLAYING!"
-msgstr ""
+msgstr "KEDAHREKEI!"
 
 #. Key: THISGAMEUSESVOICECHAT
 msgid "THIS GAME USES VOICE CHAT"
@@ -89,7 +90,7 @@ msgstr "NYAI"
 
 #. Key: RESUME
 msgid "RESUME"
-msgstr ""
+msgstr "HEYE"
 
 #. Key: INVITEFRIENDS
 msgid "INVITE FRIENDS"
@@ -113,7 +114,7 @@ msgstr "PI"
 
 #. Key: AIM
 msgid "AIM"
-msgstr ""
+msgstr "NYAI"
 
 #. Key: CLIMB
 msgid "CLIMB"
@@ -510,7 +511,7 @@ msgstr "PWGRE PAHDENG"
 
 #. Key: NAME_SCOUTMASTER'S BUGLE
 msgid "SCOUTMASTER'S BUGLE"
-msgstr ""
+msgstr "PAHDEP PADANYEI DAH PWGRE"
 
 #. Key: NAME_CHAIN LAUNCHER
 msgid "CHAIN LAUNCHER"
@@ -582,7 +583,7 @@ msgstr "NWNAH SA KREM"
 
 #. Key: NAME_SCROLL
 msgid "SCROLL"
-msgstr ""
+msgstr "NWNAH"
 
 #. Key: NAME_BLOWGUN
 msgid "BLOWGUN"
@@ -710,11 +711,12 @@ msgstr "DEV NYEMWN"
 
 #. Key: NAME_SCOUT COOKIES
 msgid "SCOUT COOKIES"
-msgstr ""
+msgstr "KWGEKI PADANYEI"
 
+# small ancient statue
 #. Key: NAME_SCOUT EFFIGY
 msgid "SCOUT EFFIGY"
-msgstr ""
+msgstr "PADAHANG SEISE CHI"
 
 #. Key: NAME_SHELF FUNGUS
 msgid "SHELF FUNGUS"
@@ -734,7 +736,7 @@ msgstr "HANGKEN"
 
 #. Key: NAME_TRAIL MIX
 msgid "TRAIL MIX"
-msgstr ""
+msgstr "NIFWM DIVING PIHEN"
 
 #. Key: NAME_WARP COMPASS
 msgid "WARP COMPASS"
@@ -754,15 +756,16 @@ msgstr "fwm"
 
 #. Key: FEED TO #TARGETCHAR
 msgid "feed to #targetchar"
-msgstr "#targetchar fwm dwren nifwm hei"
+msgstr "chav #targetchar fwm hei"
 
 #. Key: TIE KNOT
 msgid "tie knot"
-msgstr ""
+msgstr "di"
 
+# pull
 #. Key: SPOOL
 msgid "spool"
-msgstr ""
+msgstr "dahke"
 
 #. Key: DRINK
 msgid "drink"
@@ -856,7 +859,7 @@ msgstr "krahvengre"
 
 #. Key: WARP
 msgid "warp"
-msgstr "paiden krireike"
+msgstr "paiden"
 
 #. Key: USE ON #TARGETCHAR
 msgid "use on #targetchar"
@@ -901,7 +904,7 @@ msgstr "SHPW MWNGRAV"
 
 #. Key: RESURRECTMESSAGE
 msgid "get resurrected at the statue!"
-msgstr ""
+msgstr "chav krahvengre nirh padahang!"
 
 #. Key: SPECTATING
 msgid "spectating:"
@@ -969,11 +972,11 @@ msgstr "# SA FINGVWMNIV"
 
 #. Key: THEFOGRISES
 msgid "THE FOG RISES..."
-msgstr "NW PRAIHE"
+msgstr "NW PRAIHE..."
 
 #. Key: BOARDINGPASS
 msgid "BOARDING PASS"
-msgstr ""
+msgstr "NWHANEING PIRI"
 
 # person
 #. Key: PASSENGER
@@ -1034,7 +1037,7 @@ msgstr "FARHPAIN"
 
 #. Key: CALDERA
 msgid "CALDERA"
-msgstr ""
+msgstr "KADERA"
 
 #. Key: THE KILN
 msgid "THE KILN"
@@ -1118,7 +1121,7 @@ msgstr ""
 
 #. Key: NEXT
 msgid "NEXT"
-msgstr "NIS"
+msgstr "FAHEICHE"
 
 #. Key: NEWHAT
 msgid "NEW HAT!"
@@ -1147,9 +1150,10 @@ msgid ""
 "difficult.<br><br>Set your Ascent Level at the Airport Kiosk!"
 msgstr ""
 
+# raised toward:
 #. Key: PROMOTEDTO
 msgid "PROMOTED TO:"
-msgstr ""
+msgstr "PRAIHE HEI:"
 
 #. Key: NEWSASH
 msgid "NEW SASH!"
@@ -1844,29 +1848,31 @@ msgstr "MAIK"
 msgid "MICROPHONE MODE"
 msgstr "CHHNG MAIK"
 
+# volume + every.abstract
 #. Key: MASTER VOLUME
 msgid "MASTER VOLUME"
-msgstr ""
+msgstr "FACHACHIFRAV FANIVAS"
 
 #. Key: SFX VOLUME
 msgid "SFX VOLUME"
-msgstr ""
+msgstr "FACHACHIFRAV NWNEGYAHK"
 
 #. Key: MUSIC VOLUME
 msgid "MUSIC VOLUME"
-msgstr "FRAFFACHACHI PYAGENG"
+msgstr "FACHACHIFRAV PYAGENG"
 
+# volume voice.PL
 #. Key: VOICES VOLUME
 msgid "VOICES VOLUME"
-msgstr ""
+msgstr "FACHACHIFRAV SEDWHMAM"
 
 #. Key: VOICE ACTIVATION
 msgid "VOICE ACTIVATION"
-msgstr ""
+msgstr "CHHNG HEI SEHMAM"
 
 #. Key: PUSH TO TALK
 msgid "PUSH TO TALK"
-msgstr "DAHKEI SH"
+msgstr "KREK SH"
 
 #. Key: CONNECTING
 msgid "CONNECTING..."
@@ -1978,7 +1984,7 @@ msgstr "KREIMNWNGYHNG HANYEM"
 
 #. Key: NAME_SUNSCREEN
 msgid "SUNSCREEN"
-msgstr "SANVRIN"
+msgstr "SANKRIN"
 
 #. Key: NAME_ALOE VERA
 msgid "ALOE VERA"
@@ -1986,7 +1992,7 @@ msgstr "FARWVEIRA"
 
 #. Key: NAME_CACTUS
 msgid "CACTUS"
-msgstr "KAKWTAS"
+msgstr "KAKWKAS"
 
 #. Key: NAME_BALLOON
 msgid "BALLOON"
@@ -2006,7 +2012,7 @@ msgstr "KWNAN PADANYEI"
 
 #. Key: SCOUTCANNONFUSE
 msgid "FUSE"
-msgstr ""
+msgstr "FWD"
 
 #. Key: CHANGE ANGLE
 msgid "adjust angle"
@@ -2022,7 +2028,7 @@ msgstr ""
 
 #. Key: EXTINGUISH
 msgid "extinguish"
-msgstr "keingrh"
+msgstr "kein'grh"
 
 #. Key: ZOOM
 msgid "zoom"
@@ -2056,9 +2062,10 @@ msgstr "faht"
 msgid "TORCH"
 msgstr "YEHRAM KEIN"
 
+# box+die
 #. Key: TOMB
 msgid "TOMB"
-msgstr ""
+msgstr "CHHKRAV"
 
 #. Key: NAME_BALLOON BUNCH
 msgid "BALLOON BUNCH"
@@ -2158,7 +2165,7 @@ msgstr "YEHRAMGREM"
 
 #. Key: PICKAXE
 msgid "PICKAXE"
-msgstr ""
+msgstr "PIKACH"
 
 #. Key: ACCESSIBILITY
 msgid "ACCESSIBILITY"
@@ -2166,11 +2173,11 @@ msgstr ""
 
 #. Key: THELAVARISES
 msgid "THE LAVA RISES"
-msgstr ""
+msgstr "NYEMHA PRAIHE"
 
 #. Key: NAME_SCORPION
 msgid "SCORPION"
-msgstr ""
+msgstr "SHKEPWN"
 
 #. Key: ENABLECANNIBALISM
 msgid "ENABLE CANNIBALISM"
@@ -2178,7 +2185,7 @@ msgstr "SAI FWMPADA"
 
 #. Key: REMOVE
 msgid "remove"
-msgstr "krikrh"
+msgstr "dahf"
 
 #. Key: NAME_BIRD
 msgid "BIRD"
@@ -2511,11 +2518,11 @@ msgstr "KREIPREV HANAIYHNGPWN"
 
 #. Key: GEM_ACTIVATED
 msgid "Gem Activated"
-msgstr ""
+msgstr "HANGNWV DAREINWCHI"
 
 #. Key: GEM_DEACTIVATED
 msgid "Gem Deactivated"
-msgstr ""
+msgstr "HANGNWV DAREINWCHIKRH"
 
 #. Key: NAME_THEBOOKOFBONES
 msgid "THE BOOK OF BONES"
@@ -2903,15 +2910,15 @@ msgstr ""
 
 #. Key: GRAPPLEMODE
 msgid "GRAPPLE MODE"
-msgstr "FRAIHMWKAI MYACHEVNW"
+msgstr "MYACHEVNW FRAIHMWKAI"
 
 #. Key: SPEEDYMODE
 msgid "SPEEDY MODE"
-msgstr "NGWV MYACHEVNW"
+msgstr "MYACHEVNW NGWV"
 
 #. Key: KICKMODE
 msgid "KICK MODE"
-msgstr "NEHW MYACHEVNW"
+msgstr "MYACHEVNW NEHW"
 
 #. Key: STUPIDSTUFF
 msgid "STUPID STUFF"
@@ -2935,11 +2942,11 @@ msgstr ""
 
 #. Key: FOG
 msgid "THE FOG RISES"
-msgstr ""
+msgstr "NW PRAIHE"
 
 #. Key: SCORPIONS
 msgid "SCORPIONS"
-msgstr ""
+msgstr "SAHDEKEPWN"
 
 #. Key: BB_MAYNEPTUNEBLESSUSALL
 msgid "may Neptune bless us all..."

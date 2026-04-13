@@ -39,7 +39,7 @@ For this translation, new words had to be coined, and words loaned in from Engli
 - swkerepen - Skeleton
 - pikcha - Photo
 - kwkanaht - Coconut
-- kakwtas - Cactus
+- kakwkas - Cactus
 - kwnan - Canon
 - feyarain - Airline
 - farwveira - Aloe Vera
