@@ -14,7 +14,7 @@ msgstr ""
 "Language: qhe_YH@latin\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2026-04-12 23:07-0400\n"
+"PO-Revision-Date: 2026-04-13 00:17-0400\n"
 "MIME-Version: 1.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 26.07.70\n"
@@ -1375,6 +1375,10 @@ msgstr "Nwran Heika sa<br>Pahdep Padanyei Khke"
 msgid "PREFACE"
 msgstr "NIFH"
 
+# khngnyei -> glass
+# 10000 base 10 -> 24000 base 8 (10240, close enough)
+# base 8: 40 * 40 * 10 (hekki sa hekki sa heichh)
+# a single foot as in the distance is like... a part. of the whole distance. yeah. i like that logic.
 #. Key: BODY_PREFACE
 msgid ""
 "<br>Ahh......................................................................."
@@ -1397,10 +1401,25 @@ msgid ""
 "f course, all of "
 "these rules pale in comparison to the guiding rule of all scoutdom..."
 msgstr ""
+"<br>Fav󱹲                                      hen.<br><br>"
+"<size=80%>"
+"\tKrahgei fwm sinang kranwnaba nyemgrei dein chwm hen hei dah "
+"heike fen myan dei favahen pahnyeina darev shre fw fwdah, chwm mwm "
+"hei nwsev frh mw dwregrem?<br><br> "
+"\tSanye nyan, hen mwken nginyemwn divi, "
+"mwken fireya penyei pedave pahnyeina khngnyei! "
+"Fi, hen mw nyaikrh sa khpw maht. "
+"Ni nyei mw nyakkrem hechin hei haken hekkichi sa hekki sa heichh krahgei ya ha"
+"ken heichachi! (Degrafei)<br><br> "
+"\tDein keinkw heinivri sa heinah phre sa pahdep, hei chwm krichise "
+"nyaikrh heram fhrmendei dehfineing favas hane sa pa, "
+"ni peifaht pihen nyeiheken sahdere pinirh nyavan feifahgre sanvri, "
+"kehakeipe frhs shs. Sanye nyan, krahgei nyeiheken dah dehfineing nifh, "
+"dehfineinggre hei fanivas nihe mwken dwrenggrh..."
 
 #. Key: TITLE_RULE0
 msgid "NEVER ABANDON A FRIEND IN NEED!"
-msgstr "SEIPEKRH PIPI PAHDENG DEI NWNYEN!"
+msgstr "CHAV PIPI SEIPEKRH PAHDENG NWNYEN SA!"
 
 #. Key: RULE0SIGNATURE
 msgid "-Scoutmaster Myres"
@@ -1439,7 +1458,7 @@ msgstr ""
 
 #. Key: PROMPT_RULE1_3
 msgid "[SPRINT]SPRINT"
-msgstr ""
+msgstr "[SPRINT]PINGWV"
 
 #. Key: BODY_RULE1_2
 msgid ""
@@ -1718,7 +1737,7 @@ msgstr "CHAV FRWCHEGRH<br><size=150%>DEHFINEING NWKRH"
 
 #. Key: NEVERABANDON
 msgid "Never Abandon a Friend in Need!"
-msgstr ""
+msgstr "Chav Pipi Seipekrh Pahdeng Nwnyen Sa!"
 
 #. Key: WEMADEIT
 msgid ""

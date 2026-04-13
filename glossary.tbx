@@ -258,6 +258,18 @@
           </tig>
         </langSet>
       </termEntry>
+      <termEntry id="beyley_cardellio-21">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>glass</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>khngnyei</term>
+          </tig>
+        </langSet>
+      </termEntry>
     </body>
   </text>
 </martif>
