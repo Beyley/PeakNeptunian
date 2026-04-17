@@ -14,7 +14,7 @@ msgstr ""
 "Language: qhe_YH@latin\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2026-04-13 00:17-0400\n"
+"PO-Revision-Date: 2026-04-16 20:08-0400\n"
 "MIME-Version: 1.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 26.07.70\n"
@@ -114,7 +114,7 @@ msgstr "PI"
 
 #. Key: AIM
 msgid "AIM"
-msgstr "NYAI"
+msgstr "NYEI"
 
 #. Key: CLIMB
 msgid "CLIMB"
@@ -571,7 +571,7 @@ msgstr "NYA SA FENNYAHEI"
 
 #. Key: NAME_GRANOLA BAR
 msgid "GRANOLA BAR"
-msgstr "KRANWRA"
+msgstr "KRANWNABA"
 
 #. Key: NAME_GUIDEBOOK
 msgid "GUIDEBOOK"
@@ -879,7 +879,7 @@ msgstr "dah"
 
 #. Key: LUNGE
 msgid "lunge"
-msgstr "pi ngwv"
+msgstr "pihe"
 
 #. Key: SETPITON
 msgid "set piton"
@@ -1431,7 +1431,7 @@ msgstr "DEHFINEING"
 
 #. Key: TITLE_RULE1
 msgid "KEEP MOVING!"
-msgstr "KRICHA PI!"
+msgstr "CHAV KRICHA PI!"
 
 #. Key: BODY_RULE1
 msgid ""
@@ -1441,20 +1441,23 @@ msgid ""
 "he nearest peak, "
 "and start making your way there."
 msgstr ""
+"\tNifh: peifaht sahnwng mw seingise, chav pi krireike HEN HEI. "
+"Pada fahmwkaikredei hechin hen frahf sa chai chwm ye hei. "
+"Dei, chav seingi heike nivniv hei, ni myh pihen krireike ka."
 
 #. Key: BODY_RULE1_1
 msgid ""
 "\tTime is of the essence in the wilderness, so get running towards your destin"
 "ation!"
-msgstr ""
+msgstr "\tSeipe mw nwsev hei, dei heram, chav pingwv krireike heike shre!"
 
 #. Key: PROMPT_RULE1_1
 msgid "[AIM]LOOK AROUND"
-msgstr ""
+msgstr "[AIM]NYEI"
 
 #. Key: PROMPT_RULE1_2
 msgid "[MOVE]WALK"
-msgstr ""
+msgstr "[MOVE]PIHAN"
 
 #. Key: PROMPT_RULE1_3
 msgid "[SPRINT]SPRINT"
@@ -1463,22 +1466,27 @@ msgstr "[SPRINT]PINGWV"
 #. Key: BODY_RULE1_2
 msgid ""
 "\tSee a gap in the trail, or a prickly thorn? Go ahead and JUMP over it!"
-msgstr ""
+msgstr "\tNyei herev dei phng hei, chev yehramchi? Chav PIHE pahnyeina ka!"
 
 #. Key: PROMPT_RULE1_4
 msgid "[JUMP]JUMP"
-msgstr ""
+msgstr "[JUMP]PIHE"
 
+# fivya - sleep+fall ('pass out'/unexpected sleep)
 #. Key: BODY_RULE1_3
 msgid ""
 "Keep in mind that jumping while sprinting will tire you out quickly! Take a qu"
 "ick rest if you "
 "need to - you won't do anyone any favors by passing out on the mountain!"
 msgstr ""
+"<size=85%>"
+"Kricha chw pihe dein pingwv mwv dwren nwsevkrh sa dei krahvi! "
+"Chav yehfen chi peifaht sahnwnyen - sevahtkrebei haingwn ninis hei pada sa fiv"
+"ya chwm hekkanw hei!"
 
 #. Key: TITLE_RULE2
 msgid "KEEP MOVING (UP)!"
-msgstr "KRICHA PREIHEPPIHE!"
+msgstr "CHAV KRICHA PI (HEI)!"
 
 #. Key: BODY_RULE2
 msgid ""
@@ -1486,18 +1494,20 @@ msgid ""
 "r>\tYou can climb "
 "almost any surface, so long as you have the stamina!"
 msgstr ""
+"\tNyan, shpwgrebei piri chwm heike hei nikrh preiheppihe.<br><br> "
+"\tSahbreiheppihe pedave chwm khng favahen, dein shre nwsev hei!"
 
 #. Key: PROMPT_RULE2_1
 msgid "HOLD[USEPRIMARY]EMPTY-HANDED: GRAB WALL"
-msgstr ""
+msgstr "KRICHA KREK[USEPRIMARY]DAHGRE: DAH KHNG"
 
 #. Key: PROMPT_RULE2_2
 msgid "[JUMP]IN AIR: GRAB WALL"
-msgstr ""
+msgstr "[JUMP]DEI FW: DAH KHNG"
 
 #. Key: PROMPT_RULE2_3
 msgid "[SPRINT]WHILE CLIMBING: LUNGE"
-msgstr ""
+msgstr "[SPRINT]DEIN PREIHEPPIHE: PIHE"
 
 #. Key: TITLE_RULE3
 msgid "ALWAYS LEND A HAND!"
@@ -1510,10 +1520,13 @@ msgid ""
 "reach out to a friend who's mid-climb and help them reach the next ledge safel"
 "y!"
 msgstr ""
+"\tKrahnw mw dwrenkkrem krahgei kricha mwmephp sa nwpahde!<br><br>"
+"\tDein fhye shre mw dahgre, faht yh shre hei pahdeng sa preiheppihe ni hai ka "
+"hei!"
 
 #. Key: PROMPT_RULE3
 msgid "[USESECONDARY] EMPTY-HANDED: HELP UP FRIEND"
-msgstr ""
+msgstr "[USESECONDARY]DAHGRE: HAI HEI"
 
 #. Key: BODY_RULE3_1
 msgid ""
@@ -1521,15 +1534,19 @@ msgid ""
 "ur head, then jump "
 "to give them a boost!"
 msgstr ""
+"\tSehai pedave hechin ya, mwp! "
+"Chav ya ni haneing padanyei heiven chwm fri shre, ni pihe faht pihe dw hei ka!"
 
 #. Key: PROMPT_RULE3_1
 msgid "[CROUCH]CROUCH"
-msgstr ""
+msgstr "[CROUCH]YA"
 
 #. Key: TITLE_RULE4
 msgid "STAY ALERT, STAY ALIVE!"
 msgstr "KRICHA HWVE, KRICHA MW!"
 
+# nihai - helpful/useful
+# hwngrh - empty
 #. Key: BODY_RULE4
 msgid ""
 "\tAn effective scout keeps an eye on their <color=#0f7f00>Stamina Bar</color> "
@@ -1540,11 +1557,18 @@ msgid ""
 "st thing to fall "
 "off to!"
 msgstr ""
+"\tPadanyei nihai kricha nyeing chwm khre <color=#0f7f00>Nwsev</color> dein fan"
+"ivari. "
+"Peifaht kahmwvaht hwngrh, sahdaigrebei pingwv, pihe, chev dwrenniv: preiheppih"
+"ekrh. <br><br>"
+"\tDein krise nyavniv, sahdai ya hechin hekkanw hei krav shre, khpw nw nyavniv "
+"ya hei!"
 
 #. Key: TITLE_RULE5
 msgid "LIFE IS PAIN!"
 msgstr "MWM MW KREIM!"
 
+# cuts are natural things.. right?
 #. Key: BODY_RULE5
 msgid ""
 "\tAs you make your way through the untamed wilderness, it's inevitable that yo"
@@ -1555,12 +1579,19 @@ msgid ""
 "h a bandage or a "
 "healing herb!"
 msgstr ""
+"\tDein pipihen pahnyeina heram, khpw nanen serahfbei yahtchi ninaht ni myemwm."
+"<br><br>"
+"\tPeifaht shrahf kreim hei, serah ya <color=#0f7f00>Nwsev</color> hei pingwv n"
+"i preiheppihe, "
+"chav fahnye kreichim shre dein krise deinivniv, nirh nwnahvahnye chev nwram fa"
+"hnye!"
 
 #. Key: TITLE_RULE6
 msgid "STAY HUNGRY"
 msgstr "KRICHA NWNGNIFWM"
 
 #. Key: TITLE_RULE6_1
+#, fuzzy
 msgid "<BR><SIZE=30>(ACTUALLY, DON'T!)"
 msgstr "<BR><SIZE=30>(KRAHGEI HEI, PRAIKRH!)"
 

@@ -270,6 +270,42 @@
           </tig>
         </langSet>
       </termEntry>
+      <termEntry id="beyley_cardellio-22">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>walk</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>pihan</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_cardellio-23">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>passing out</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>fivya</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_cardellio-24">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>empty-handed</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>dahgre</term>
+          </tig>
+        </langSet>
+      </termEntry>
     </body>
   </text>
 </martif>
