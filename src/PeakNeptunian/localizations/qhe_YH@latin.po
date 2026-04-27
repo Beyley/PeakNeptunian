@@ -14,7 +14,7 @@ msgstr ""
 "Language: qhe_YH@latin\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2026-04-16 20:08-0400\n"
+"PO-Revision-Date: 2026-04-27 00:33-0400\n"
 "MIME-Version: 1.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 26.07.70\n"
@@ -1039,9 +1039,11 @@ msgstr "FARHPAIN"
 msgid "CALDERA"
 msgstr "KADERA"
 
+# el firepit
+# https://discord.com/channels/1284943477984989258/1357023724515102920/1498180045347225601
 #. Key: THE KILN
 msgid "THE KILN"
-msgstr ""
+msgstr "KRIKEINE"
 
 #. Key: PEAK
 msgid "PEAK"

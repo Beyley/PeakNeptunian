@@ -306,6 +306,18 @@
           </tig>
         </langSet>
       </termEntry>
+      <termEntry id="beyley_cardellio-25">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>the kiln</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>krikeine</term>
+          </tig>
+        </langSet>
+      </termEntry>
     </body>
   </text>
 </martif>
