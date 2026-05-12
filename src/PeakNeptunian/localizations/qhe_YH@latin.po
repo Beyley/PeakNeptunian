@@ -14,10 +14,10 @@ msgstr ""
 "Language: qhe_YH@latin\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2026-04-27 00:33-0400\n"
+"PO-Revision-Date: 2026-05-12 12:50-0400\n"
 "MIME-Version: 1.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 26.07.70\n"
+"X-Generator: Lokalize 26.04.1\n"
 
 #. Key: CURRENT_LANGUAGE
 msgid "English"
@@ -49,20 +49,21 @@ msgstr "HEN YH DEI"
 
 #. Key: AGAMEMADEBY
 msgid "A GAME MADE BY"
-msgstr ""
+msgstr "FINDEI KRWMYEI SA"
 
+# make+group with
 #. Key: ACOLLABBETWEEN
 msgid "A COLLAB BETWEEN"
-msgstr ""
+msgstr "FING NWPAHDE NIRH"
 
 #. Key: THANKSFORPLAYING
-#, fuzzy
 msgid "THANKS FOR PLAYING!"
-msgstr "KEDAHREKEI!"
+msgstr "KEDAHREKEI HEI PREIMYE!"
 
+# game DEF use chat voice
 #. Key: THISGAMEUSESVOICECHAT
 msgid "THIS GAME USES VOICE CHAT"
-msgstr ""
+msgstr "KRWMYEI HEI HAI SEHSE SEHMAM"
 
 #. Key: PLEASEUSE
 msgid "PLEASE USE HEADPHONES AND A MICROPHONE"
@@ -148,9 +149,10 @@ msgstr "PINGWV / PIHE (DEIN PREIHEPPIHE)"
 msgid "PING LOCATION"
 msgstr ""
 
+# "dance"
 #. Key: EMOTE
 msgid "EMOTE"
-msgstr ""
+msgstr "NEBYAGENG"
 
 #. Key: BACK
 msgid "BACK"
@@ -427,7 +429,7 @@ msgstr ""
 
 #. Key: BADGELOCKED
 msgid "You don't have this badge yet!"
-msgstr ""
+msgstr "Serahgre nwnahveng hei seinni!"
 
 #. Key: NAME_AIRLINE FOOD
 msgid "AIRLINE FOOD"
@@ -787,11 +789,11 @@ msgstr "nyei"
 msgid "use"
 msgstr "hai"
 
-# This doesn't appear to be used in-game anywhere, so i'm unsure about what context it is used in to translate it. hai should be general enough to still work.
+# This doesn't appear to be used in-game anywhere, so i'm unsure about what context it is used in to translate it.
 #. Key: PLAY
 #, fuzzy
 msgid "play"
-msgstr "hai"
+msgstr "preimye"
 
 #. Key: SHOOT
 msgid "shoot"
@@ -995,13 +997,15 @@ msgstr "HECHIN:"
 msgid "TO:"
 msgstr "KRIREIKE:"
 
+# reward:
 #. Key: REWARD
 msgid "REWARD:"
-msgstr ""
+msgstr "NANEME:"
 
+# With challenge+past every(abstract thing)
 #. Key: ANDALLOTHER
 msgid "And all previous modifiers."
-msgstr ""
+msgstr "Nirh yahf sei fanivas."
 
 #. Key: START
 msgid "START"
@@ -1106,8 +1110,9 @@ msgid "YOUR BODY WAS<br><size=125%>NEVER FOUND"
 msgstr "PADA SHRE<br><size=125%>SEINGISEGRH"
 
 #. Key: SCOUTINGREPORT
+#, fuzzy
 msgid "SCOUTING REPORT"
-msgstr ""
+msgstr "NENYARI PADANYEI"
 
 #. Key: TIME
 msgid "TIME"
@@ -1117,9 +1122,10 @@ msgstr "SEIPE"
 msgid "TIMELINE"
 msgstr "SAIMERAIN"
 
+# badge+new
 #. Key: NEWBADGES
 msgid "NEW BADGES"
-msgstr ""
+msgstr "NWNENAHVENG YH"
 
 #. Key: NEXT
 msgid "NEXT"
@@ -1127,15 +1133,15 @@ msgstr "FAHEICHE"
 
 #. Key: NEWHAT
 msgid "NEW HAT!"
-msgstr ""
+msgstr "PYAIFRI YH!"
 
 #. Key: NEWLOOK
 msgid "NEW LOOK!"
-msgstr ""
+msgstr "NYEI YH!"
 
 #. Key: NEWFIT
 msgid "NEW FIT!"
-msgstr ""
+msgstr "PYAI YH!"
 
 #. Key: UNLOCKED
 msgid "# UNLOCKED"
@@ -1145,12 +1151,20 @@ msgstr "# SEINGISE"
 msgid "ASCENTS UNLOCKED"
 msgstr "PRABEIHE SEINGISE"
 
+# want.2nd (question) challenge great=COMPARATIVE? ascent.PL add challenge.PL (implied relative clause) make climbing challenge=COMPARATIVE toward PEAK.
+# Change challenges at the gate kiosk!
+# 
+# marked as "not approved" cus it uses adjecitve suffixes that idk for sure
 #. Key: ASCENTSUNLOCKEDTEXT
+#, fuzzy
 msgid ""
 "Ready for a greater challenge? Ascents add modifiers that make summiting the P"
 "EAK more "
 "difficult.<br><br>Set your Ascent Level at the Airport Kiosk!"
 msgstr ""
+"Sahnwng pyei yahf dwregrem? Prabeihe ni fhyef fing preiheppihe yahfkkrem hei H"
+"EIKE.<br><br>"
+"Yh fhyef chwm Kisahk Nwvei hei!"
 
 # raised toward:
 #. Key: PROMOTEDTO
@@ -1271,11 +1285,11 @@ msgstr "PADA SHRE"
 
 #. Key: WAITINGFORALL
 msgid "waiting for all players..."
-msgstr ""
+msgstr "chai hei fanivap"
 
 #. Key: BOARDFLIGHT
 msgid "board flight"
-msgstr ""
+msgstr "piri pikrinnw"
 
 #. Key: GATEKIOSK
 msgid "GATE KIOSK"
@@ -1443,7 +1457,7 @@ msgid ""
 "he nearest peak, "
 "and start making your way there."
 msgstr ""
-"\tNifh: peifaht sahnwng mw seingise, chav pi krireike HEN HEI. "
+"\tNifh: peifaht sahnwng mw seingide, chav pi krireike HEN HEI. "
 "Pada fahmwkaikredei hechin hen frahf sa chai chwm ye hei. "
 "Dei, chav seingi heike nivniv hei, ni myh pihen krireike ka."
 
@@ -1784,13 +1798,15 @@ msgid ""
 "Myres, if you're reading this... We couldn't find you!! I'm sorry!"
 msgstr ""
 
+# many(generic things)
 #. Key: GENERAL
 msgid "GENERAL"
-msgstr ""
+msgstr "FAVAN"
 
+# look
 #. Key: GRAPHICS
 msgid "GRAPHICS"
-msgstr ""
+msgstr "NYEI"
 
 #. Key: AUDIO
 msgid "AUDIO"
@@ -1818,11 +1834,11 @@ msgstr ""
 
 #. Key: ON
 msgid "ON"
-msgstr "FI"
+msgstr "MWN"
 
 #. Key: OFF
 msgid "OFF"
-msgstr "KRH"
+msgstr "KRAFIN"
 
 #. Key: WINDOW MODE
 msgid "WINDOW MODE"
@@ -1858,7 +1874,7 @@ msgstr "NIKRH"
 
 #. Key: ENABLED
 msgid "ENABLED"
-msgstr "FI"
+msgstr "MWN"
 
 #. Key: RENDER SCALE
 msgid "RENDER SCALE"
@@ -2056,7 +2072,7 @@ msgstr "# dise ka hei pihen"
 
 #. Key: LEFTTHEEXPEDITION
 msgid "# left the expedition."
-msgstr "# pipise hechin pihen"
+msgstr "# pipise pihen hei"
 
 #. Key: NAME_SCOUT CANNON
 msgid "SCOUT CANNON"
@@ -2568,13 +2584,15 @@ msgstr "FRAIHMWKAI"
 msgid "PURPLE SHROOMBERRY"
 msgstr "KREIPREV HANAIYHNGPWN"
 
+# gem (as) activate=PAST
 #. Key: GEM_ACTIVATED
 msgid "Gem Activated"
-msgstr "HANGNWV DAREINWCHI"
+msgstr "HANGNWV SA FHRWNDEI"
 
+# gem (as) deactivate=PAST
 #. Key: GEM_DEACTIVATED
 msgid "Gem Deactivated"
-msgstr "HANGNWV DAREINWCHIKRH"
+msgstr "HANGNWV SA FEFFISSEI"
 
 #. Key: NAME_THEBOOKOFBONES
 msgid "THE BOOK OF BONES"
@@ -2896,13 +2914,14 @@ msgstr ""
 msgid "EXPEDITION TYPE"
 msgstr ""
 
+# historic
 #. Key: EXPEDITIONTYPECLASSIC
 msgid "CLASSIC"
-msgstr ""
+msgstr "SEISE"
 
 #. Key: MINIRUN
 msgid "MINI RUN"
-msgstr ""
+msgstr "PRAIHE CHI"
 
 #. Key: MINIRUNBIOME
 msgid "MINI RUN BIOME"
@@ -2936,9 +2955,10 @@ msgstr ""
 msgid "Progress towards earning Badges is disabled in Custom Expeditions."
 msgstr ""
 
+# win.2nd
 #. Key: YOUWIN
 msgid "YOU WIN"
-msgstr ""
+msgstr "SEYAHMNYE"
 
 #. Key: ZOMBIEPHOBIAMODE
 msgid "ZOMBIE PHOBIA MODE"

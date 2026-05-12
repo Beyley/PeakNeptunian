@@ -318,6 +318,126 @@
           </tig>
         </langSet>
       </termEntry>
+      <termEntry id="beyley_cardellio-26">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>play</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>preimye</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_cardellio-27">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>badge</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>nwnahveng</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_cardellio-28">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>ascents</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>prabeihe</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_cardellio-29">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>modifiers</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>fhyef</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_cardellio-30">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>challenge</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>yahf</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_cardellio-31">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>peak</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>heike</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_cardellio-32">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>kiosk</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>kisahk</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_cardellio-33">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>gate</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>nwvei</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_cardellio-34">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>new</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>yh</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_cardellio-35">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>hat</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>pyaifri</term>
+          </tig>
+        </langSet>
+      </termEntry>
     </body>
   </text>
 </martif>
