@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Peak Neptunian\n"
 "Report-Msgid-Bugs-To: <littlegreenmantis@gmail.com>\n"
-"POT-Creation-Date: 2026-04-08 20:55+0000\n"
+"POT-Creation-Date: 2026-10-18 06:02+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>, YEAR\n"
 "Language-Team: LANGUAGE\n"
 "Language: LANGUAGE_REGION@VARIANT\n"
@@ -406,7 +406,7 @@ msgid "BOOKWORM BADGE"
 msgstr ""
 
 #. Key: DESC_BOOKWORM
-msgid "Read all of Scoutmaster Myres's journal entries."
+msgid "Read the Scoutmaster’s final journal entry."
 msgstr ""
 
 #. Key: NAME_ENDURANCE
@@ -1179,6 +1179,10 @@ msgstr ""
 msgid "ASCENT 7"
 msgstr ""
 
+#. Key: ASCENT 8
+msgid "ASCENT 8"
+msgstr ""
+
 #. Key: SCOUT
 msgid "SCOUT"
 msgstr ""
@@ -1248,7 +1252,11 @@ msgid "CLIMBING TAKES ADDITIONAL STAMINA."
 msgstr ""
 
 #. Key: DESC_ASCENT 7
-msgid "YOU CANNOT REVIVE THE DEAD."
+msgid "START CURSED. GAIN EXTRA CURSE WITH EACH REVIVAL."
+msgstr ""
+
+#. Key: DESC_ASCENT 8
+msgid "YOU MUST FREE THE SCOUTMASTER'S SOUL TO WIN."
 msgstr ""
 
 #. Key: YOURSELF
@@ -2112,7 +2120,7 @@ msgid "ACCESSIBILITY"
 msgstr ""
 
 #. Key: THELAVARISES
-msgid "THE LAVA RISES"
+msgid "THE LAVA RISES..."
 msgstr ""
 
 #. Key: NAME_SCORPION
@@ -2889,6 +2897,684 @@ msgstr ""
 
 #. Key: SCORPIONS
 msgid "SCORPIONS"
+msgstr ""
+
+#. Key: NAME_FANNYPACK
+msgid "FANNY PACK"
+msgstr ""
+
+#. Key: WEAR
+msgid "wear<br>#"
+msgstr ""
+
+#. Key: SOMEONESPACK
+msgid "#'s @"
+msgstr ""
+
+#. Key: NAME_JETPACK
+msgid "JETPACK"
+msgstr ""
+
+#. Key: NAME_ROCKETPACK
+msgid "ROCKETPACK"
+msgstr ""
+
+#. Key: CONVERTITEM
+msgid "convert<br>#<br>to fuel"
+msgstr ""
+
+#. Key: BELLTOWER
+msgid "BELLTOWER"
+msgstr ""
+
+#. Key: NAME_ARROW
+msgid "ARROW"
+msgstr ""
+
+#. Key: NAME_RITUALDAGGER
+msgid "RITUAL DAGGER"
+msgstr ""
+
+#. Key: ACTION_SACRIFICE
+msgid "SACRIFICE #targetchar"
+msgstr ""
+
+#. Key: NAME_FROG
+msgid "FROG"
+msgstr ""
+
+#. Key: NAME_CANDLESTICK
+msgid "CANDLESTICK"
+msgstr ""
+
+#. Key: NAME_WARP FUNGUS
+msgid "WARP FUNGUS"
+msgstr ""
+
+#. Key: NAME_GLIDER
+msgid "GLIDER"
+msgstr ""
+
+#. Key: NAME_AUTOPARACHUTE
+msgid "AUTO-PARACHUTE"
+msgstr ""
+
+#. Key: NAME_SMALL EGG
+msgid "SMALL EGG"
+msgstr ""
+
+#. Key: GLOOM
+msgid "GLOOM"
+msgstr ""
+
+#. Key: THE CITADEL
+msgid "THE CITADEL"
+msgstr ""
+
+#. Key: NAME_AMULET_CLONE
+msgid "SCOUT'S GENEROSITY"
+msgstr ""
+
+#. Key: NAME_AMULET_INFINITESTAM
+msgid "SCOUT'S AMBITION"
+msgstr ""
+
+#. Key: NAME_AMULET_DOUBLEJUMP
+msgid "SCOUT'S INITIATIVE"
+msgstr ""
+
+#. Key: NAME_AMULET_HEALING
+msgid "SCOUT’S TENACITY"
+msgstr ""
+
+#. Key: NAME_SCOUTSTATUE
+msgid "STONE SCOUT"
+msgstr ""
+
+#. Key: ACTION_INSERTBADGE
+msgid "bestow"
+msgstr ""
+
+#. Key: NAME_SCOUTSHONOR
+msgid "SCOUT’S HONOR"
+msgstr ""
+
+#. Key: CLOWN LUGGAGE
+msgid "CLOWN LUGGAGE"
+msgstr ""
+
+#. Key: NAME_EARLYWORM
+msgid "THE EARLY WORM"
+msgstr ""
+
+#. Key: ACTION_RING
+msgid "RING"
+msgstr ""
+
+#. Key: NAME_RULE ZERO
+msgid "RULE ZERO BADGE"
+msgstr ""
+
+#. Key: DESC_RULE ZERO
+msgid "Free the Scoutmaster's soul."
+msgstr ""
+
+#. Key: NAME_WELL RESTED
+msgid "WELL RESTED BADGE"
+msgstr ""
+
+#. Key: DESC_WELL RESTED
+msgid "Consume The Early Worm."
+msgstr ""
+
+#. Key: NAME_WANDERER
+msgid "WANDERER BADGE"
+msgstr ""
+
+#. Key: DESC_WANDERER
+msgid "Climb past the GLOOM."
+msgstr ""
+
+#. Key: NAME_LAST RESORT
+msgid "LAST RESORT BADGE"
+msgstr ""
+
+#. Key: DESC_LAST RESORT
+msgid "Heal over 75% damage at once by using the Ritual Dagger."
+msgstr ""
+
+#. Key: NAME_BELLRINGER
+msgid "BELLRINGER BADGE"
+msgstr ""
+
+#. Key: DESC_BELLRINGER
+msgid "Ring 5 Belltowers in the GLOOM in a single expedition."
+msgstr ""
+
+#. Key: NAME_ARCHERY
+msgid "ARCHERY BADGE"
+msgstr ""
+
+#. Key: DESC_ARCHERY
+msgid "Remove 10 arrows from yourself in a single expedition."
+msgstr ""
+
+#. Key: NAME_MEDIEVAL HISTORY
+msgid "MEDIEVAL HISTORY BADGE"
+msgstr ""
+
+#. Key: DESC_MEDIEVAL HISTORY
+msgid "Climb past THE CITADEL without being hit by any traps."
+msgstr ""
+
+#. Key: NAME_JESTER
+msgid "JESTER BADGE"
+msgstr ""
+
+#. Key: DESC_JESTER
+msgid "Open 2 Clown Luggage in a single expedition."
+msgstr ""
+
+#. Key: NAME_EXORCIST
+msgid "EXORCIST BADGE"
+msgstr ""
+
+#. Key: DESC_EXORCIST
+msgid "Burn up the Big Ghost in the GLOOM."
+msgstr ""
+
+#. Key: NAME_HANG GLIDING
+msgid "HANG GLIDING BADGE"
+msgstr ""
+
+#. Key: DESC_HANG GLIDING
+msgid "Fly 100m with the Glider without touching the ground."
+msgstr ""
+
+#. Key: THEGLOOMRISES
+msgid "THE GLOOM RISES..."
+msgstr ""
+
+#. Key: NAME_FROGLEGS
+msgid "FROG LEGS"
+msgstr ""
+
+#. Key: HAZARD_SLEEPYGLOOM
+msgid "SLEEPY GLOOM"
+msgstr ""
+
+#. Key: HAZARD_FROGTONGUES
+msgid "FROG TONGUES"
+msgstr ""
+
+#. Key: HAZARD_RAVENS
+msgid "TRICKY RAVENS"
+msgstr ""
+
+#. Key: HAZARD_BIGGHOST
+msgid "BIG GHOST"
+msgstr ""
+
+#. Key: HAZARD_FLYTRAPS
+msgid "FLYTRAPS"
+msgstr ""
+
+#. Key: HAZARD_ARROWTRAPS
+msgid "ARROW TRAPS"
+msgstr ""
+
+#. Key: HAZARD_ETCTRAPS
+msgid "ETC TRAPS"
+msgstr ""
+
+#. Key: HAZARD_PETRIFYINGSTONES
+msgid "PETRIFYING STONES"
+msgstr ""
+
+#. Key: HAZARD_TRAPCHEST
+msgid "LUGGAGE TRAPS"
+msgstr ""
+
+#. Key: JOINGAMESESSION
+msgid "JOIN GAME SESSION"
+msgstr ""
+
+#. Key: SPECIFYROOMCODE
+msgid "SPECIFY A ROOM CODE"
+msgstr ""
+
+#. Key: INVALIDROOMCODE
+msgid "Invalid Room Code."
+msgstr ""
+
+#. Key: SHORTROOMCODE
+msgid "The code is too short."
+msgstr ""
+
+#. Key: ENTERROOMCODE
+msgid "ENTER ROOM CODE"
+msgstr ""
+
+#. Key: JOINGAME
+msgid "JOIN GAME"
+msgstr ""
+
+#. Key: JOIN
+msgid "JOIN"
+msgstr ""
+
+#. Key: LOBBYFAILEDTOJOIN
+msgid "FAILED TO JOIN ROOM"
+msgstr ""
+
+#. Key: LOBBYFULL
+msgid "Lobby is currently full."
+msgstr ""
+
+#. Key: LOBBYERRORUNKNOWN
+msgid "Unknown error occurred."
+msgstr ""
+
+#. Key: LOBBYDOESNOTEXIST
+msgid "Lobby does not exist."
+msgstr ""
+
+#. Key: HIDEROOMCODE
+msgid "HIDE ROOM CODE"
+msgstr ""
+
+#. Key: BLOCKLIST
+msgid "BLOCKLIST"
+msgstr ""
+
+#. Key: BLOCKEDPLAYERS
+msgid "BLOCKED PLAYERS"
+msgstr ""
+
+#. Key: NOBLOCKEDPLAYERS
+msgid "You have not blocked any players yet..."
+msgstr ""
+
+#. Key: PLATFORMBLOCKLIST
+msgid "PLATFORM BLOCKLIST"
+msgstr ""
+
+#. Key: INFO
+msgid "INFO"
+msgstr ""
+
+#. Key: SELECTACTION
+msgid "SELECT ACTION"
+msgstr ""
+
+#. Key: ACTIONS
+msgid "ACTIONS"
+msgstr ""
+
+#. Key: BLOCK
+msgid "BLOCK"
+msgstr ""
+
+#. Key: UNBLOCK
+msgid "UNBLOCK"
+msgstr ""
+
+#. Key: BLOCKCONFIRM
+msgid "Do you want to block #?"
+msgstr ""
+
+#. Key: UNBLOCKCONFIRM
+msgid "Do you want to unblock #?"
+msgstr ""
+
+#. Key: REPORT
+msgid "REPORT"
+msgstr ""
+
+#. Key: REPORTPLAYER
+msgid "Report Player"
+msgstr ""
+
+#. Key: REPORTPLAYERNAME
+msgid "Report #?"
+msgstr ""
+
+#. Key: REPORTCONFIRM
+msgid "Are you sure?"
+msgstr ""
+
+#. Key: REPORTFORMINVALID
+msgid "INVALID REPORT FORM"
+msgstr ""
+
+#. Key: REPORTINVALID
+msgid "Your report is insufficient. Please add more info."
+msgstr ""
+
+#. Key: HATESPEECH
+msgid "Hate Speech"
+msgstr ""
+
+#. Key: VERBALABUSE
+msgid "Verbal Abuse"
+msgstr ""
+
+#. Key: THREATS
+msgid "Threats"
+msgstr ""
+
+#. Key: SCAMMING
+msgid "Scamming"
+msgstr ""
+
+#. Key: GRIEFING
+msgid "Griefing"
+msgstr ""
+
+#. Key: CHEATING
+msgid "Cheating"
+msgstr ""
+
+#. Key: OFFENSIVENAME
+msgid "Offensive Name"
+msgstr ""
+
+#. Key: LEAVINGAFK
+msgid "Leaving / AFK"
+msgstr ""
+
+#. Key: SEND
+msgid "SEND"
+msgstr ""
+
+#. Key: MUTE
+msgid "MUTE"
+msgstr ""
+
+#. Key: UNMUTE
+msgid "UNMUTE"
+msgstr ""
+
+#. Key: YES
+msgid "YES"
+msgstr ""
+
+#. Key: CROSSPLAY
+msgid "CROSSPLAY"
+msgstr ""
+
+#. Key: CANTCROSSPLAY
+msgid "Can't play with players from other platforms."
+msgstr ""
+
+#. Key: CROSSPLAYKICK
+msgid "Kicking players..."
+msgstr ""
+
+#. Key: CROSSPLAYLEAVE
+msgid "Leaving the game..."
+msgstr ""
+
+#. Key: COPYCODE
+msgid "COPY CODE"
+msgstr ""
+
+#. Key: GLOOM_OPTION
+msgid "THE GLOOM RISES"
+msgstr ""
+
+#. Key: TITLE_BONUSRULE6
+msgid "BEAT THE HEAT!"
+msgstr ""
+
+#. Key: BODY_BONUSRULE6
+msgid ""
+"At first, I was excited to get my tan on in this desert...but it's way too hot to be out in the sun "
+"for long! I started getting burned almost instantly!!!"
+msgstr ""
+
+#. Key: BODY_BONUSRULE6_1
+msgid ""
+"      Better stay in the shade, or wait to move until nightfall...but finding an umbrella or "
+"something would be even better."
+msgstr ""
+
+#. Key: TITLE_BONUSRULE7
+msgid "HOLD YOUR BREATH..."
+msgstr ""
+
+#. Key: BODY_BONUSRULE7
+msgid ""
+"This may be the freakiest place we've found so far... just breathing around here makes my lungs "
+"itchy."
+msgstr ""
+
+#. Key: BODY_BONUSRULE7_1
+msgid ""
+"      The mushrooms seem to subtly move on their own. Something tells me if anyone succumbs to "
+"their spores, it might be a fate worse than death..."
+msgstr ""
+
+#. Key: TITLE_BONUSRULE8
+msgid "POISON IS BAD!"
+msgstr ""
+
+#. Key: BODY_BONUSRULE8
+msgid ""
+"      In this jungle, everything seems to be out to get us! Just touching some of these plants "
+"causes painful, itchy sores."
+msgstr ""
+
+#. Key: BODY_BONUSRULE8_1
+msgid ""
+"      But don't worry! If you don't have an antidote on hand, certain herbs growing on the mountain "
+"can help you deal with poison, too!"
+msgstr ""
+
+#. Key: TITLE_BONUSRULE9
+msgid "OUT OF THE FRYING PAN..."
+msgstr ""
+
+#. Key: BODY_BONUSRULE9
+msgid ""
+"      This is getting ridiculous! A single misstep, and I'll be a crispy scoutmaster! Did the rest "
+"of the troop really make it through this?"
+msgstr ""
+
+#. Key: BODY_BONUSRULE9_1
+msgid "      On the bright side, I might not even need a campfire to make a home-cooked meal here..."
+msgstr ""
+
+#. Key: TITLE_BONUSRULE10
+msgid "KEEP YOUR HEAD UP!"
+msgstr ""
+
+#. Key: BODY_BONUSRULE10
+msgid ""
+"      Something about this special fog is making me sleepy... I've gotta remember to get some fresh "
+"air, or it could be lights out!"
+msgstr ""
+
+#. Key: BODY_BONUSRULE10_1
+msgid ""
+"It looks like these towers have magical flame in them that burns the fog away. If only I could take "
+"some of it with me..."
+msgstr ""
+
+#. Key: AREA_VOID
+msgid "NADIR"
+msgstr ""
+
+#. Key: THEGHOSTSRISE
+msgid "THE LOST SOULS ARE RISING..."
+msgstr ""
+
+#. Key: ACTION_ENTER
+msgid "ENTER"
+msgstr ""
+
+#. Key: NAME_PEAKPORTAL
+msgid "GATE"
+msgstr ""
+
+#. Key: NAME_VOIDLAUNCHER
+msgid "ANTI-ZOOKA"
+msgstr ""
+
+#. Key: CONTROLLER SENSITIVITY_PS
+msgid "CONTROLLER SENSITIVITY"
+msgstr ""
+
+#. Key: SCOUTMASTER_RANK
+msgid "SCOUTMASTER"
+msgstr ""
+
+#. Key: CONDORS
+msgid "CONDORS"
+msgstr ""
+
+#. Key: SOULLINKMODE
+msgid "SOUL LINK MODE"
+msgstr ""
+
+#. Key: TOOLTIP_SOULLINK
+msgid "Any damage received is split among all scouts."
+msgstr ""
+
+#. Key: ACTIVATE
+msgid "activate"
+msgstr ""
+
+#. Key: ADDFUEL_NOITEM
+msgid "add fuel<br>(need item)"
+msgstr ""
+
+#. Key: ACTIVATEONPLAYER
+msgid "activate on #targetchar"
+msgstr ""
+
+#. Key: NAME_SCOUTMASTERSOUL
+msgid "SCOUTMASTER'S SOUL"
+msgstr ""
+
+#. Key: ROOMCODE
+msgid "ROOM CODE"
+msgstr ""
+
+#. Key: THEGLOOMRISES2
+msgid "THE GLOOM RISES"
+msgstr ""
+
+#. Key: EXPLOITING
+msgid "Exploiting"
+msgstr ""
+
+#. Key: OFFENSIVEPROFILE
+msgid "Offensive Profile"
+msgstr ""
+
+#. Key: SPAMMING
+msgid "Spamming"
+msgstr ""
+
+#. Key: OTHER
+msgid "Other"
+msgstr ""
+
+#. Key: WRITEREPORTREASON
+msgid "WRITE REPORT REASON "
+msgstr ""
+
+#. Key: SANCTION_GAMEACCESS_TITLE
+msgid "GAME ACCESS BAN"
+msgstr ""
+
+#. Key: SANCTION_GAMEACCESS_SUBTITLE
+msgid "Due to your recent actions your account has been suspended from this game."
+msgstr ""
+
+#. Key: SANCTION_MATCHMAKING_TITLE
+msgid "ONLINE GAME BAN"
+msgstr ""
+
+#. Key: SANCTION_MATCHMAKING_SUBTITLE
+msgid "Due to your recent actions you have been suspended from playing any online games."
+msgstr ""
+
+#. Key: SANCTION_BANNEDUNTIL
+msgid "BANNED UNTIL: "
+msgstr ""
+
+#. Key: SANCTION_PERMANENT
+msgid "PERMANENT"
+msgstr ""
+
+#. Key: APPEAL
+msgid "APPEAL"
+msgstr ""
+
+#. Key: APPEAL_SEND_TITLE
+msgid "SEND APPEAL"
+msgstr ""
+
+#. Key: APPEAL_SEND_SUBTITLE
+msgid "Choose appeal reason."
+msgstr ""
+
+#. Key: APPEAL_INCORRECT_SANCTION
+msgid "INCORRECT SANCTION"
+msgstr ""
+
+#. Key: APPEAL_FOR_FORGIVENESS
+msgid "APPEAL FOR FORGIVENESS"
+msgstr ""
+
+#. Key: APPEAL_COMPROMISED_ACCOUNT
+msgid "COMPROMISED ACCOUNT"
+msgstr ""
+
+#. Key: APPEAL_UNFAIR_PUNISHMENT
+msgid "UNFAIR PUNISHMENT"
+msgstr ""
+
+#. Key: CONTROLLER SENSITIVITY_XB
+msgid "CONTROLLER SENSITIVITY"
+msgstr ""
+
+#. Key: PRESSANYBUTTON_XB
+msgid "PRESS ANY BUTTON TO CONTINUE"
+msgstr ""
+
+#. Key: PRESSANYBUTTON_PS
+msgid "PRESS ANY BUTTON TO CONTINUE"
+msgstr ""
+
+#. Key: PRESSANYBUTTON_SW
+msgid "PRESS ANY BUTTON TO CONTINUE"
+msgstr ""
+
+#. Key: CONTROLLER SENSITIVITY_SW
+msgid "CAMERA SENSITIVITY"
+msgstr ""
+
+#. Key: MODDEDGAME
+msgid "MODDED GAME"
+msgstr ""
+
+#. Key: MODWARNING
+msgid ""
+"Warning! You are joining a modded game. If you are not using the same mods as the host, your "
+"experience might become unstable."
+msgstr ""
+
+#. Key: USINGMODS
+msgid ""
+"Warning! You are using mods which can impact the game experience heavily. If other players don't "
+"have the same set of mods, the game might become unstable."
+msgstr ""
+
+#. Key: ROOMCODEHIDDEN
+msgid "ROOM CODE HIDDEN"
 msgstr ""
 
 #. Key: BB_MAYNEPTUNEBLESSUSALL
