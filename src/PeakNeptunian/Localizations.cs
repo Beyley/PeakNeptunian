@@ -48,21 +48,7 @@ public static class Localizations
                 continue;
             }
 
-            if (entry.Comments.FirstOrDefault(c => c is POExtractedComment) is not POExtractedComment key)
-            {
-                Plugin.Log.LogWarning(
-                    $"Skipping entry with id {id} in language {language} because it has no extracted comment");
-                continue;
-            }
-
-            const string KEY_PREFIX = "Key: ";
-
-            if (!key.Text.StartsWith(KEY_PREFIX))
-            {
-                Plugin.Log.LogWarning(
-                    $"Skipping entry with id {id} in language {language} because its extracted comment does not start with '{KEY_PREFIX}'");
-                continue;
-            }
+            var key = id.ContextId;
 
             string originalTranslation = singularEntry.Translation;
 
@@ -80,8 +66,7 @@ public static class Localizations
             }
             string translation = Encoding.UTF32.GetString(utf32);
 
-            localizations[key.Text.Substring(KEY_PREFIX.Length)] =
-                new Localization(key.Text, translation);
+            localizations[key] = new Localization(key, translation);
         }
 
         LoadedLocalizations[language] = localizations;

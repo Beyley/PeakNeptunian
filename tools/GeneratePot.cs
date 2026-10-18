@@ -91,7 +91,7 @@ internal class Program
 
         foreach (var (key, record) in records)
         {
-            poLines.Add($"#. Key: {key}"); // Extracted comment. We're using the key as a reference here, since we need to include it somewhere for the mod to know which string to replace.
+            poLines.Add($"msgctxt \"{EscapePoString(key)}\""); // Extracted comment. We're using the key as a reference here, since we need to include it somewhere for the mod to know which string to replace.
 
             string english = record[0];
 
@@ -112,6 +112,6 @@ internal class Program
             poLines.Add("");
         }
 
-        File.WriteAllLines("src/PeakNeptunian/localizations/peak.pot", poLines);
+        File.WriteAllLines("templates/peak.pot", poLines);
     }
 }
