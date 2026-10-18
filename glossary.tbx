@@ -438,6 +438,30 @@
           </tig>
         </langSet>
       </termEntry>
+      <termEntry id="beyley_cardellio-36">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>expedition</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>pihen</term>
+          </tig>
+        </langSet>
+      </termEntry>
+      <termEntry id="beyley_cardellio-37">
+        <langSet xml:lang="en-US">
+          <tig>
+            <term>stamina</term>
+          </tig>
+        </langSet>
+        <langSet xml:lang="xh">
+          <tig>
+            <term>nwsev</term>
+          </tig>
+        </langSet>
+      </termEntry>
     </body>
   </text>
 </martif>

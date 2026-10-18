@@ -14,7 +14,7 @@ msgstr ""
 "Language: qhe_YH@latin\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2026-05-12 12:50-0400\n"
+"PO-Revision-Date: 2026-06-18 21:21-0700\n"
 "MIME-Version: 1.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 26.04.1\n"
@@ -166,7 +166,7 @@ msgstr ""
 
 #. Key: PEAKSSUMMITTTED
 msgid "PEAKS SUMMITTED: #"
-msgstr "HEKEIKE PIPIRISE: #"
+msgstr "PIPIRISE SA HEKEIKE: #"
 
 #. Key: NAME_PARTICIPATION
 msgid "PARTICIPATION BADGE"
@@ -1153,7 +1153,7 @@ msgstr "PRABEIHE SEINGISE"
 
 # want.2nd (question) challenge great=COMPARATIVE? ascent.PL add challenge.PL (implied relative clause) make climbing challenge=COMPARATIVE toward PEAK.
 # Change challenges at the gate kiosk!
-# 
+#
 # marked as "not approved" cus it uses adjecitve suffixes that idk for sure
 #. Key: ASCENTSUNLOCKEDTEXT
 #, fuzzy
@@ -1606,12 +1606,14 @@ msgstr ""
 msgid "STAY HUNGRY"
 msgstr "KRICHA NWNGNIFWM"
 
+# against this, do.NEG
 #. Key: TITLE_RULE6_1
 #, fuzzy
 msgid "<BR><SIZE=30>(ACTUALLY, DON'T!)"
 msgstr "<BR><SIZE=30>(KRAHGEI HEI, PRAIKRH!)"
 
 #. Key: BODY_RULE6
+#, fuzzy
 msgid ""
 "\tGetting hurt isn't the only way for your <color=#0f7f00>Stamina</color> to g"
 "o downhill fast. As "
@@ -1623,6 +1625,13 @@ msgid ""
 " packaged snack "
 "from a corporation you trust!"
 msgstr ""
+"\tMwvaht kreim mwken faht fringvah hei ya <color=#0f7f00>Nwsev</color> shre. "
+"As you climb, you'll find yourself experiencing <color=#b58200>Hunger</color>,"
+" "
+"for which 10/10 experts recommend eating food.<br><br> "
+"\tBe cautious of eating plants from the wilderness! "
+"They could poison you and really mess up your day. "
+"If you have the option, choose a packaged snack from a corporation you trust!"
 
 #. Key: TITLE_RULE7
 msgid "DON'T OVERPACK!"
@@ -2914,10 +2923,10 @@ msgstr ""
 msgid "EXPEDITION TYPE"
 msgstr ""
 
-# historic
+# normal
 #. Key: EXPEDITIONTYPECLASSIC
 msgid "CLASSIC"
-msgstr "SEISE"
+msgstr "FRING"
 
 #. Key: MINIRUN
 msgid "MINI RUN"
@@ -2925,23 +2934,23 @@ msgstr "PRAIHE CHI"
 
 #. Key: MINIRUNBIOME
 msgid "MINI RUN BIOME"
-msgstr ""
+msgstr "KRI PRAIHE CHI"
 
 #. Key: BIOME1
 msgid "BIOME 1"
-msgstr ""
+msgstr "KRI FA"
 
 #. Key: BIOME2
 msgid "BIOME 2"
-msgstr ""
+msgstr "KRI CHA"
 
 #. Key: BIOME3
 msgid "BIOME 3"
-msgstr ""
+msgstr "KRI CHEI"
 
 #. Key: BIOME4
 msgid "BIOME 4"
-msgstr ""
+msgstr "KRI HEI"
 
 #. Key: TOOLTIP_NORMAL
 msgid "Climb all the way to the PEAK."
