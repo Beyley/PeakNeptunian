@@ -64,7 +64,7 @@ For this translation, new words had to be coined, and words loaned in from Engli
 - \[nwnah\]\[vahnye\] - Bandage (paper+heal)
 - \[krei\]\[chi\] - Berry (fruit+small)
 - \[fri\]\[krav\] - Skull (head+dead)
-- frinyemyh\[gre\] - Cursed (bless.NEG)
+- finyemyh\[gre\] - Cursed (bless.NEG)
 - \[yehram\]\[grem\] - Dynamite (stick+destroy)
 - \[mwngrav\]\[chi\] - Faerie (spirit+small)
 - \[hanai\]\[yhngpwn\] - Purple (dark+blue-violet)

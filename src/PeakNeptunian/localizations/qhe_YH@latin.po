@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Peak Neptunian\n"
 "Report-Msgid-Bugs-To: <littlegreenmantis@gmail.com>\n"
 "POT-Creation-Date: 2026-10-18 06:18+0000\n"
-"PO-Revision-Date: 2026-10-17 23:21-0700\n"
+"PO-Revision-Date: 2026-10-18 00:02-0700\n"
 "Last-Translator: Beyley Cardellio <littlegreenmantis@gmail.com>\n"
 "Language-Team: English <>\n"
 "Language: qhe_YH@latin\n"
@@ -19,88 +19,60 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.9\n"
 
-#, fuzzy
-#| msgid "English"
 msgctxt "CURRENT_LANGUAGE"
 msgid "English"
 msgstr "Shpre Yhng"
 
-#, fuzzy
-#| msgid "HOST GAME"
 msgctxt "HOSTGAME"
 msgid "HOST GAME"
 msgstr "MYH FEIFFH"
 
-#, fuzzy
-#| msgid "PLAY OFFLINE"
 msgctxt "PLAYOFFLINE"
 msgid "PLAY OFFLINE"
 msgstr "MYH NIKRHKEI"
 
-#, fuzzy
-#| msgid "SETTINGS"
 msgctxt "SETTINGS"
 msgid "SETTINGS"
 msgstr "NWNENG"
 
-#, fuzzy
-#| msgid "CREDITS"
 msgctxt "CREDITS"
 msgid "CREDITS"
 msgstr "PAHBEDENE"
 
-#, fuzzy
-#| msgid "QUIT"
 msgctxt "QUIT"
 msgid "QUIT"
 msgstr "PIPI"
 
-#, fuzzy
-#| msgid "NEW ISLAND IN"
 msgctxt "NEWISLANDIN"
 msgid "NEW ISLAND IN"
 msgstr "HEN YH DEI"
 
-#, fuzzy
-#| msgid "A GAME MADE BY"
 msgctxt "AGAMEMADEBY"
 msgid "A GAME MADE BY"
 msgstr "FINDEI KRWMYEI SA"
 
 # make+group with
-#, fuzzy
-#| msgid "A COLLAB BETWEEN"
 msgctxt "ACOLLABBETWEEN"
 msgid "A COLLAB BETWEEN"
 msgstr "FING NWPAHDE NIRH"
 
-#, fuzzy
-#| msgid "THANKS FOR PLAYING!"
 msgctxt "THANKSFORPLAYING"
 msgid "THANKS FOR PLAYING!"
 msgstr "KEDAHREKEI HEI PREIMYE!"
 
 # game DEF use chat voice
-#, fuzzy
-#| msgid "THIS GAME USES VOICE CHAT"
 msgctxt "THISGAMEUSESVOICECHAT"
 msgid "THIS GAME USES VOICE CHAT"
 msgstr "KRWMYEI HEI HAI SEHSE SEHMAM"
 
-#, fuzzy
-#| msgid "PLEASE USE HEADPHONES AND A MICROPHONE"
 msgctxt "PLEASEUSE"
 msgid "PLEASE USE HEADPHONES AND A MICROPHONE"
 msgstr "CHAV HAI HEKWDVWN NI MAIK"
 
-#, fuzzy
-#| msgid "SELECT MICROPHONE"
 msgctxt "SELECTMIC"
 msgid "SELECT MICROPHONE"
 msgstr "CHEV MAIK"
 
-#, fuzzy
-#| msgid "CONTINUE"
 msgctxt "CONTINUE"
 msgid "CONTINUE"
 msgstr "KRICHA"
@@ -113,109 +85,75 @@ msgctxt "CLOSETHEGAME"
 msgid "Close and update the game."
 msgstr ""
 
-#, fuzzy
-#| msgid "OK"
 msgctxt "OK"
 msgid "OK"
 msgstr "NYAI"
 
-#, fuzzy
-#| msgid "RESUME"
 msgctxt "RESUME"
 msgid "RESUME"
 msgstr "HEYE"
 
-#, fuzzy
-#| msgid "INVITE FRIENDS"
 msgctxt "INVITEFRIENDS"
 msgid "INVITE FRIENDS"
-msgstr "CHAV PAHDENG DI"
+msgstr "CHAV DI PAHDENG"
 
-#, fuzzy
-#| msgid "ACCOLADES"
 msgctxt "ACCOLADES"
 msgid "ACCOLADES"
 msgstr "NWNENAHVENG"
 
-#, fuzzy
-#| msgid "CONTROLS"
 msgctxt "CONTROLS"
 msgid "CONTROLS"
 msgstr "HAKEINISE"
 
-#, fuzzy
-#| msgid "LEAVE GAME"
 msgctxt "LEAVEGAME"
 msgid "LEAVE GAME"
 msgstr "PIPI"
 
-#, fuzzy
-#| msgid "MOVE"
 msgctxt "MOVE"
 msgid "MOVE"
 msgstr "PI"
 
-#, fuzzy
-#| msgid "AIM"
 msgctxt "AIM"
 msgid "AIM"
 msgstr "NYEI"
 
-#, fuzzy
-#| msgid "CLIMB"
 msgctxt "CLIMB"
 msgid "CLIMB"
 msgstr "PREIHEPPIHE"
 
-#, fuzzy
-#| msgid "HELPING HAND"
 msgctxt "HELPINGHAND"
 msgid "HELPING HAND"
 msgstr "YHHAI"
 
-#, fuzzy
-#| msgid "INTERACT"
 msgctxt "INTERACT"
 msgid "INTERACT"
 msgstr "HAI"
 
-#, fuzzy
-#| msgid "DROP / THROW (HOLD)"
 msgctxt "DROPTHROW"
 msgid "DROP / THROW (HOLD)"
 msgstr "YA / DEHEIPI (DAH)"
 
-#, fuzzy
-#| msgid "JUMP"
 msgctxt "JUMP"
 msgid "JUMP"
 msgstr "PIHE"
 
-#, fuzzy
-#| msgid "[CROUCH]CROUCH"
 msgctxt "CROUCH"
 msgid "CROUCH"
 msgstr "[CROUCH]YA"
 
-#, fuzzy
-#| msgid "SPRINT / LEAP (WHILE CLIMBING)"
 msgctxt "SPRINTLEAP"
 msgid "SPRINT / LEAP (WHILE CLIMBING)"
 msgstr "PINGWV / PIHE (DEIN PREIHEPPIHE)"
 
 msgctxt "PING"
 msgid "PING LOCATION"
-msgstr ""
+msgstr "FENNYAHEI"
 
 # "dance"
-#, fuzzy
-#| msgid "EMOTE"
 msgctxt "EMOTE"
 msgid "EMOTE"
 msgstr "NEBYAGENG"
 
-#, fuzzy
-#| msgid "BACK"
 msgctxt "BACK"
 msgid "BACK"
 msgstr "HEYA"
@@ -226,11 +164,9 @@ msgid ""
 "You can use Steam Input to remap gamepads."
 msgstr ""
 
-#, fuzzy
-#| msgid "PEAKS SUMMITTED: #"
 msgctxt "PEAKSSUMMITTTED"
 msgid "PEAKS SUMMITTED: #"
-msgstr "PIPIRISE SA HEKEIKE: #"
+msgstr "PIPIRISE CHWM HEKEIKE: #"
 
 msgctxt "NAME_PARTICIPATION"
 msgid "PARTICIPATION BADGE"
@@ -256,8 +192,6 @@ msgctxt "DESC_TRAILBLAZER"
 msgid "Climb past the TROPICS."
 msgstr ""
 
-#, fuzzy
-#| msgid "ALPINE"
 msgctxt "NAME_ALPINIST"
 msgid "ALPINIST BADGE"
 msgstr "FARHPAIN"
@@ -275,24 +209,17 @@ msgid "Climb past the CALDERA."
 msgstr ""
 
 # badge+new
-#, fuzzy
-#| msgid "NEW BADGES"
 msgctxt "NAME_PEAKBADGE"
 msgid "PEAK BADGE"
-msgstr "NWNENAHVENG YH"
+msgstr "NWNAHVENG HEIKE"
 
-#, fuzzy
-#| msgid "Reach the PEAK."
 msgctxt "DESC_PEAKBADGE"
 msgid "Reach the PEAK."
 msgstr "Piri chwm HEIKE."
 
-# badge+new
-#, fuzzy
-#| msgid "NEW BADGES"
 msgctxt "NAME_COOKING"
 msgid "COOKING BADGE"
-msgstr "NWNENAHVENG YH"
+msgstr ""
 
 msgctxt "DESC_COOKING"
 msgid "Cook 20 meals at campfires."
@@ -338,12 +265,9 @@ msgctxt "DESC_ESOTERICA"
 msgid "Obtain a mystical item."
 msgstr ""
 
-# badge+new
-#, fuzzy
-#| msgid "NEW BADGES"
 msgctxt "NAME_LONE WOLF"
 msgid "LONE WOLF BADGE"
-msgstr "NWNENAHVENG YH"
+msgstr ""
 
 msgctxt "DESC_LONE WOLF"
 msgid "Escape the island in a solo expedition."
@@ -357,8 +281,6 @@ msgctxt "DESC_CLUTCH"
 msgid "Resurrect 3 scouts in a single expedition."
 msgstr ""
 
-#, fuzzy
-#| msgid "BALLOON"
 msgctxt "NAME_BALLOONBADGE"
 msgid "BALLOON BADGE"
 msgstr "PARWN"
@@ -383,11 +305,9 @@ msgctxt "DESC_HASTY"
 msgid "Escape the island in under an hour."
 msgstr ""
 
-#, fuzzy
-#| msgid "BING BONG"
 msgctxt "NAME_BINGBONGBADGE"
 msgid "BING BONG BADGE"
-msgstr "PING PANG"
+msgstr "NWNAHVENG PING PANG"
 
 msgctxt "DESC_BINGBONGBADGE"
 msgid "Help Bing Bong escape the island."
@@ -417,11 +337,9 @@ msgctxt "DESC_MYCOLOGY"
 msgid "Eat four different non-toxic mushrooms in a single expedition."
 msgstr ""
 
-#, fuzzy
-#| msgid "FIRST AID KIT"
 msgctxt "NAME_FIRST AID"
 msgid "FIRST AID BADGE"
-msgstr "NWHEINYE SA FAHNYE HWN"
+msgstr ""
 
 msgctxt "DESC_FIRST AID"
 msgid "Heal your friends for 100 points of injury in a single expedition."
@@ -483,12 +401,9 @@ msgctxt "DESC_HIGH ALTITUDE"
 msgid "Climb 5000m total."
 msgstr ""
 
-# badge+new
-#, fuzzy
-#| msgid "NEW BADGES"
 msgctxt "NAME_PLUNDERER"
 msgid "PLUNDERER BADGE"
-msgstr "NWNENAHVENG YH"
+msgstr ""
 
 msgctxt "DESC_PLUNDERER"
 msgid "Open 15 luggages in a single expedition."
@@ -502,1095 +417,736 @@ msgctxt "DESC_BOOKWORM"
 msgid "Read the Scoutmaster’s final journal entry."
 msgstr ""
 
-# badge+new
-#, fuzzy
-#| msgid "NEW BADGES"
 msgctxt "NAME_ENDURANCE"
 msgid "ENDURANCE BADGE"
-msgstr "NWNENAHVENG YH"
+msgstr ""
 
 msgctxt "DESC_ENDURANCE"
 msgid "Climb 50m upwards without touching the ground."
 msgstr ""
 
-#, fuzzy
-#| msgid "You don't have this badge yet!"
 msgctxt "BADGELOCKED"
 msgid "You don't have this badge yet!"
-msgstr "Serahgre nwnahveng hei seinni!"
+msgstr "Shregre nwnahveng hei seinni!"
 
-#, fuzzy
-#| msgid "AIRLINE FOOD"
 msgctxt "NAME_AIRLINE FOOD"
 msgid "AIRLINE FOOD"
 msgstr "NIFWM FEYARAIN"
 
-#, fuzzy
-#| msgid "ANTI-ROPE SPOOL"
 msgctxt "NAME_ANTI-ROPE SPOOL"
 msgid "ANTI-ROPE SPOOL"
 msgstr "DEV NYEMWN SA YAGRH"
 
-#, fuzzy
-#| msgid "ANTIDOTE"
 msgctxt "NAME_ANTIDOTE"
 msgid "ANTIDOTE"
 msgstr "NYEMVAHNYE"
 
-#, fuzzy
-#| msgid "GREEN CRISPBERRY"
 msgctxt "NAME_GREEN CRISPBERRY"
 msgid "GREEN CRISPBERRY"
 msgstr "FAFAKREI CHIN"
 
-#, fuzzy
-#| msgid "RED CRISPBERRY"
 msgctxt "NAME_RED CRISPBERRY"
 msgid "RED CRISPBERRY"
 msgstr "FAFAKREI NANGPWN"
 
-#, fuzzy
-#| msgid "YELLOW CRISPBERRY"
 msgctxt "NAME_YELLOW CRISPBERRY"
 msgid "YELLOW CRISPBERRY"
 msgstr "FAFAKREI KEIPWN"
 
-#, fuzzy
-#| msgid "BACKPACK"
 msgctxt "NAME_BACKPACK"
 msgid "BACKPACK"
-msgstr "CHHKHNGSEI"
+msgstr "CHHKENGSEI"
 
-#, fuzzy
-#| msgid "BANDAGES"
 msgctxt "NAME_BANDAGES"
 msgid "BANDAGES"
-msgstr "NWNAHVAHNYE"
+msgstr "NWNAHVENYE"
 
-#, fuzzy
-#| msgid "BEEHIVE"
 msgctxt "NAME_BEEHIVE"
 msgid "BEEHIVE"
 msgstr "KRWMYANEI"
 
-#, fuzzy
-#| msgid "BLUE BERRYNANA"
 msgctxt "NAME_BLUE BERRYNANA"
 msgid "BLUE BERRYNANA"
 msgstr "MAIKRE NYEIPWN"
 
-#, fuzzy
-#| msgid "BROWN BERRYNANA"
 msgctxt "NAME_BROWN BERRYNANA"
 msgid "BROWN BERRYNANA"
 msgstr "MAIKRE NA"
 
-#, fuzzy
-#| msgid "BERRYNANA PEEL"
 msgctxt "NAME_BERRYNANA PEEL"
 msgid "BERRYNANA PEEL"
 msgstr "PYAI MAIKRE"
 
-#, fuzzy
-#| msgid "PINK BERRYNANA"
 msgctxt "NAME_PINK BERRYNANA"
 msgid "PINK BERRYNANA"
 msgstr "MAIKRE PE"
 
-#, fuzzy
-#| msgid "YELLOW BERRYNANA"
 msgctxt "NAME_YELLOW BERRYNANA"
 msgid "YELLOW BERRYNANA"
 msgstr "MAIKRE KEIPWN"
 
-#, fuzzy
-#| msgid "BING BONG"
 msgctxt "NAME_BING BONG"
 msgid "BING BONG"
 msgstr "PING PANG"
 
-#, fuzzy
-#| msgid "BINOCULARS"
 msgctxt "NAME_BINOCULARS"
 msgid "BINOCULARS"
 msgstr "NWHEINYE NYEI FIN"
 
-#, fuzzy
-#| msgid "BOUNCE FUNGUS"
 msgctxt "NAME_BOUNCE FUNGUS"
 msgid "BOUNCE FUNGUS"
 msgstr "PREVPIHE"
 
-#, fuzzy
-#| msgid "TICK"
 msgctxt "NAME_TICK"
 msgid "TICK"
 msgstr "HANING"
 
-#, fuzzy
-#| msgid "BUGLE"
 msgctxt "NAME_BUGLE"
 msgid "BUGLE"
 msgstr "PWGRE"
 
-#, fuzzy
-#| msgid "BUGLE OF FRIENDSHIP"
 msgctxt "NAME_BUGLE OF FRIENDSHIP"
 msgid "BUGLE OF FRIENDSHIP"
 msgstr "PWGRE PAHDENG"
 
-#, fuzzy
-#| msgid "SCOUTMASTER'S BUGLE"
 msgctxt "NAME_SCOUTMASTER'S BUGLE"
 msgid "SCOUTMASTER'S BUGLE"
 msgstr "PAHDEP PADANYEI DAH PWGRE"
 
-#, fuzzy
-#| msgid "CHAIN LAUNCHER"
 msgctxt "NAME_CHAIN LAUNCHER"
 msgid "CHAIN LAUNCHER"
 msgstr "NWHEINYE SA FAHT DEVHANNAI"
 
-#, fuzzy
-#| msgid "PITON"
 msgctxt "NAME_PITON"
 msgid "PITON"
 msgstr "PIPAN"
 
-#, fuzzy
-#| msgid "BLACK CLUSTERBERRY"
 msgctxt "NAME_BLACK CLUSTERBERRY"
 msgid "BLACK CLUSTERBERRY"
 msgstr "NIFWMEPHP HANAI"
 
-#, fuzzy
-#| msgid "RED CLUSTERBERRY"
 msgctxt "NAME_RED CLUSTERBERRY"
 msgid "RED CLUSTERBERRY"
 msgstr "NIFWMEPHP NANGPWN"
 
-#, fuzzy
-#| msgid "YELLOW CLUSTERBERRY"
 msgctxt "NAME_YELLOW CLUSTERBERRY"
 msgid "YELLOW CLUSTERBERRY"
 msgstr "NIFWMEPHP KEIPWN"
 
-#, fuzzy
-#| msgid "GREEN CLUSTERBERRY"
 msgctxt "NAME_GREEN CLUSTERBERRY"
 msgid "GREEN CLUSTERBERRY"
 msgstr "NIFWMEPHP CHIN"
 
-#, fuzzy
-#| msgid "COMPASS"
 msgctxt "NAME_COMPASS"
 msgid "COMPASS"
 msgstr "KAMPAS"
 
-#, fuzzy
-#| msgid "CURE-ALL"
 msgctxt "NAME_CURE-ALL"
 msgid "CURE-ALL"
 msgstr "FAHNYE-FANIVAS"
 
-#, fuzzy
-#| msgid "CURSED SKULL"
 msgctxt "NAME_CURSED SKULL"
 msgid "CURSED SKULL"
-msgstr "FRIKRAV SA FRINYEMYHGRE"
+msgstr "FRIKRAV SA FINYEMYHGRE"
 
-#, fuzzy
-#| msgid "EGG"
 msgctxt "NAME_EGG"
 msgid "EGG"
 msgstr "NYE"
 
-#, fuzzy
-#| msgid "ENERGY DRINK"
 msgctxt "NAME_ENERGY DRINK"
 msgid "ENERGY DRINK"
 msgstr "NYEM NWSEV"
 
-#, fuzzy
-#| msgid "STICK"
 msgctxt "NAME_STICK"
 msgid "STICK"
 msgstr "YEHRAM"
 
-#, fuzzy
-#| msgid "FIRST AID KIT"
 msgctxt "NAME_FIRST AID KIT"
 msgid "FIRST AID KIT"
-msgstr "NWHEINYE SA FAHNYE HWN"
+msgstr "FAHNYE NGWV"
 
-#, fuzzy
-#| msgid "FLARE"
 msgctxt "NAME_FLARE"
 msgid "FLARE"
 msgstr "NYA SA FENNYAHEI"
 
-#, fuzzy
-#| msgid "GRANOLA BAR"
 msgctxt "NAME_GRANOLA BAR"
 msgid "GRANOLA BAR"
 msgstr "KRANWNABA"
 
-#, fuzzy
-#| msgid "GUIDEBOOK"
 msgctxt "NAME_GUIDEBOOK"
 msgid "GUIDEBOOK"
 msgstr "NWRAN SA PIHAKKEI"
 
-#, fuzzy
-#| msgid "TORN PAGE"
 msgctxt "NAME_TORN PAGE"
 msgid "TORN PAGE"
 msgstr "NWNAH SA KREM"
 
-#, fuzzy
-#| msgid "SCROLL"
 msgctxt "NAME_SCROLL"
 msgid "SCROLL"
 msgstr "NWNAH"
 
-#, fuzzy
-#| msgid "BLOWGUN"
 msgctxt "NAME_BLOWGUN"
 msgid "BLOWGUN"
 msgstr "DAHKEIFW"
 
-#, fuzzy
-#| msgid "REMEDY FUNGUS"
 msgctxt "NAME_REMEDY FUNGUS"
 msgid "REMEDY FUNGUS"
 msgstr "PREVVAHNYE"
 
-#, fuzzy
-#| msgid "HEAT PACK"
 msgctxt "NAME_HEAT PACK"
 msgid "HEAT PACK"
 msgstr "SAYEV CHI"
 
-#, fuzzy
-#| msgid "COCONUT"
 msgctxt "NAME_COCONUT"
 msgid "COCONUT"
 msgstr "KWKANAHT"
 
-#, fuzzy
-#| msgid "COCONUT HALF"
 msgctxt "NAME_COCONUT HALF"
 msgid "COCONUT HALF"
 msgstr "KWKANAHT SA YAHT"
 
-#, fuzzy
-#| msgid "HONEYCOMB"
 msgctxt "NAME_HONEYCOMB"
 msgid "HONEYCOMB"
 msgstr "KRWNYEMNEI"
 
-#, fuzzy
-#| msgid "GREEN KINGBERRY"
 msgctxt "NAME_GREEN KINGBERRY"
 msgid "GREEN KINGBERRY"
 msgstr "NYANIVWM CHIN"
 
-#, fuzzy
-#| msgid "PURPLE KINGBERRY"
 msgctxt "NAME_PURPLE KINGBERRY"
 msgid "PURPLE KINGBERRY"
 msgstr "NYANIVWM HANAIYHNGPWN"
 
-#, fuzzy
-#| msgid "YELLOW KINGBERRY"
 msgctxt "NAME_YELLOW KINGBERRY"
 msgid "YELLOW KINGBERRY"
 msgstr "NYANIVWM KEIPWN"
 
-#, fuzzy
-#| msgid "LANTERN"
 msgctxt "NAME_LANTERN"
 msgid "LANTERN"
 msgstr "CHAHNYA"
 
-#, fuzzy
-#| msgid "FAERIE LANTERN"
 msgctxt "NAME_FAERIE LANTERN"
 msgid "FAERIE LANTERN"
-msgstr "NWHEINYE NYA MWNGRAVCHI"
+msgstr "CHAHNYA MWNGRAVCHI"
 
-#, fuzzy
-#| msgid "BIG LOLLIPOP"
 msgctxt "NAME_BIG LOLLIPOP"
 msgid "BIG LOLLIPOP"
 msgstr "FRARIPAP DW"
 
-#, fuzzy
-#| msgid "MAGIC BEAN"
 msgctxt "NAME_MAGIC BEAN"
 msgid "MAGIC BEAN"
 msgstr "PIN NWSEV"
 
-#, fuzzy
-#| msgid "MARSHMALLOW"
 msgctxt "NAME_MARSHMALLOW"
 msgid "MARSHMALLOW"
-msgstr "MASWMERW"
+msgstr "MASMERW"
 
-#, fuzzy
-#| msgid "MEDICINAL ROOT"
 msgctxt "NAME_MEDICINAL ROOT"
 msgid "MEDICINAL ROOT"
-msgstr "HERAM SA FAHNYE"
+msgstr "HERAM FAHNYE"
 
-#, fuzzy
-#| msgid "MEGAPHONE"
 msgctxt "NAME_MEGAPHONE"
 msgid "MEGAPHONE"
 msgstr "NWHEINYE PREIFRAV"
 
-#, fuzzy
-#| msgid "CHUBBY SHROOM"
 msgctxt "NAME_CHUBBY SHROOM"
 msgid "CHUBBY SHROOM"
 msgstr "PREVMEIV"
 
-#, fuzzy
-#| msgid "CLUSTER SHROOM"
 msgctxt "NAME_CLUSTER SHROOM"
 msgid "CLUSTER SHROOM"
 msgstr "PREVMWMEPHP"
 
-#, fuzzy
-#| msgid "WEIRD SHROOM"
 msgctxt "NAME_WEIRD SHROOM"
 msgid "WEIRD SHROOM"
 msgstr "PREV FRAHF"
 
-#, fuzzy
-#| msgid "BUGLE SHROOM"
 msgctxt "NAME_BUGLE SHROOM"
 msgid "BUGLE SHROOM"
 msgstr "PREV PWGRE"
 
-#, fuzzy
-#| msgid "BUTTON SHROOM"
 msgctxt "NAME_BUTTON SHROOM"
 msgid "BUTTON SHROOM"
 msgstr "PREVKREK"
 
-#, fuzzy
-#| msgid "NAPBERRY"
 msgctxt "NAME_NAPBERRY"
 msgid "NAPBERRY"
 msgstr "KREIHANAI"
 
-#, fuzzy
-#| msgid "BIG EGG"
 msgctxt "NAME_BIG EGG"
 msgid "BIG EGG"
 msgstr "NYE DW"
 
-#, fuzzy
-#| msgid "PANDORA'S LUNCHBOX"
 msgctxt "NAME_PANDORA'S LUNCHBOX"
 msgid "PANDORA'S LUNCHBOX"
 msgstr "PRANG DAH PINIRH"
 
-#, fuzzy
-#| msgid "PASSPORT"
 msgctxt "NAME_PASSPORT"
 msgid "PASSPORT"
 msgstr "NWRAMBIHEN"
 
-#, fuzzy
-#| msgid "SCORCHBERRY"
 msgctxt "NAME_SCORCHBERRY"
 msgid "SCORCHBERRY"
 msgstr "KREINKREIN"
 
-#, fuzzy
-#| msgid "PIRATE'S COMPASS"
 msgctxt "NAME_PIRATE'S COMPASS"
 msgid "PIRATE'S COMPASS"
-msgstr "KAMPAS NGWNYAV"
+msgstr "NGWNYAV DAH KAMPAS"
 
-#, fuzzy
-#| msgid "PORTABLE STOVE"
 msgctxt "NAME_PORTABLE STOVE"
 msgid "PORTABLE STOVE"
 msgstr "CHAHFINGVWM CHI"
 
-#, fuzzy
-#| msgid "ROPE CANNON"
 msgctxt "NAME_ROPE CANNON"
 msgid "ROPE CANNON"
-msgstr "NWNAN DEV"
+msgstr "KWNAN DEV"
 
-#, fuzzy
-#| msgid "ANTI-ROPE CANNON"
 msgctxt "NAME_ANTI-ROPE CANNON"
 msgid "ANTI-ROPE CANNON"
 msgstr "KWNAN DEV SA YAGRH"
 
-#, fuzzy
-#| msgid "ROPE SPOOL"
 msgctxt "NAME_ROPE SPOOL"
 msgid "ROPE SPOOL"
 msgstr "DEV NYEMWN"
 
-#, fuzzy
-#| msgid "SCOUT COOKIES"
 msgctxt "NAME_SCOUT COOKIES"
 msgid "SCOUT COOKIES"
 msgstr "KWGEKI PADANYEI"
 
 # small ancient statue
-#, fuzzy
-#| msgid "SCOUT EFFIGY"
 msgctxt "NAME_SCOUT EFFIGY"
 msgid "SCOUT EFFIGY"
 msgstr "PADAHANG SEISE CHI"
 
-#, fuzzy
-#| msgid "SHELF FUNGUS"
 msgctxt "NAME_SHELF FUNGUS"
 msgid "SHELF FUNGUS"
 msgstr "PREVVRAM"
 
-#, fuzzy
-#| msgid "CONCH"
 msgctxt "NAME_CONCH"
 msgid "CONCH"
 msgstr "PYEN"
 
-#, fuzzy
-#| msgid "SPORTS DRINK"
 msgctxt "NAME_SPORTS DRINK"
 msgid "SPORTS DRINK"
 msgstr "NYEMGREI PINGWV"
 
-#, fuzzy
-#| msgid "STONE"
 msgctxt "NAME_STONE"
 msgid "STONE"
 msgstr "HANGKEN"
 
-#, fuzzy
-#| msgid "TRAIL MIX"
 msgctxt "NAME_TRAIL MIX"
 msgid "TRAIL MIX"
 msgstr "NIFWM DIVING PIHEN"
 
-#, fuzzy
-#| msgid "WARP COMPASS"
 msgctxt "NAME_WARP COMPASS"
 msgid "WARP COMPASS"
 msgstr "KAMPAS PAIDEN"
 
-#, fuzzy
-#| msgid "ORANGE WINTERBERRY"
 msgctxt "NAME_ORANGE WINTERBERRY"
 msgid "ORANGE WINTERBERRY"
 msgstr "KREYYW HANAIKEIPWN"
 
-#, fuzzy
-#| msgid "YELLOW WINTERBERRY"
 msgctxt "NAME_YELLOW WINTERBERRY"
 msgid "YELLOW WINTERBERRY"
 msgstr "KREYYW KEIPWN"
 
-#, fuzzy
-#| msgid "eat"
 msgctxt "EAT"
 msgid "eat"
 msgstr "fwm"
 
-#, fuzzy
-#| msgid "feed to #targetchar"
 msgctxt "FEED TO #TARGETCHAR"
 msgid "feed to #targetchar"
 msgstr "chav #targetchar fwm hei"
 
-#, fuzzy
-#| msgid "tie knot"
 msgctxt "TIE KNOT"
 msgid "tie knot"
 msgstr "di"
 
 # pull
-#, fuzzy
-#| msgid "spool"
 msgctxt "SPOOL"
 msgid "spool"
 msgstr "dahke"
 
-#, fuzzy
-#| msgid "drink"
 msgctxt "DRINK"
 msgid "drink"
 msgstr "fwm"
 
-#, fuzzy
-#| msgid "heal injuries"
 msgctxt "HEAL INJURIES"
 msgid "heal injuries"
 msgstr "fahnye pada"
 
-#, fuzzy
-#| msgid "heal #targetchar"
 msgctxt "HEAL #TARGETCHAR"
 msgid "heal #targetchar"
 msgstr "fahnye #targetchar"
 
-#, fuzzy
-#| msgid "look"
 msgctxt "LOOK"
 msgid "look"
 msgstr "nyei"
 
-#, fuzzy
-#| msgid "use"
 msgctxt "USE"
 msgid "use"
 msgstr "hai"
 
 # This doesn't appear to be used in-game anywhere, so i'm unsure about what context it is used in to translate it.
-#, fuzzy
 msgctxt "PLAY"
 msgid "play"
 msgstr "preimye"
 
-#, fuzzy
-#| msgid "shoot"
 msgctxt "SHOOT"
 msgid "shoot"
 msgstr "dahkei"
 
-#, fuzzy
-#| msgid "set"
 msgctxt "SET"
 msgid "set"
 msgstr "kri"
 
-#, fuzzy
-#| msgid "commune"
 msgctxt "COMMUNE"
 msgid "commune"
-msgstr "shnw"
+msgstr ""
 
-#, fuzzy
-#| msgid "plant"
 msgctxt "PLANT"
 msgid "plant"
 msgstr "kri"
 
-#, fuzzy
-#| msgid "light"
 msgctxt "LIGHT"
 msgid "light"
 msgstr "nya"
 
-#, fuzzy
-#| msgid "open/close"
 msgctxt "OPEN/CLOSE"
 msgid "open/close"
 msgstr "fei/yahf"
 
-#, fuzzy
-#| msgid "flip page"
 msgctxt "FLIP PAGE"
 msgid "flip page"
 msgstr "yh nwnah"
 
-#, fuzzy
-#| msgid "inspect"
 msgctxt "INSPECT"
 msgid "inspect"
 msgstr "nyei hi"
 
-#, fuzzy
-#| msgid "open"
 msgctxt "OPEN"
 msgid "open"
 msgstr "fei"
 
-#, fuzzy
-#| msgid "fire"
 msgctxt "FIRE"
 msgid "fire"
 msgstr "kein"
 
-#, fuzzy
-#| msgid "heat up"
 msgctxt "HEAT UP"
 msgid "heat up"
 msgstr "ha"
 
-#, fuzzy
-#| msgid "heat up #targetchar"
 msgctxt "HEAT UP #TARGETCHAR"
 msgid "heat up #targetchar"
 msgstr "ha #targetchar"
 
-#, fuzzy
-#| msgid "lick"
 msgctxt "LICK"
 msgid "lick"
 msgstr "fwm chi"
 
-#, fuzzy
-#| msgid "open?"
 msgctxt "OPEN?"
 msgid "open?"
 msgstr "fei pyei?"
 
-#, fuzzy
-#| msgid "place"
 msgctxt "PLACE"
 msgid "place"
 msgstr "kri"
 
-#, fuzzy
-#| msgid "revive"
 msgctxt "REVIVE"
 msgid "revive"
 msgstr "krahvengre"
 
-#, fuzzy
-#| msgid "warp"
 msgctxt "WARP"
 msgid "warp"
 msgstr "paiden"
 
-#, fuzzy
-#| msgid "use on #targetchar"
 msgctxt "USE ON #TARGETCHAR"
 msgid "use on #targetchar"
 msgstr "hai krahgei #targetchar"
 
-#, fuzzy
-#| msgid "drop"
 msgctxt "DROP"
 msgid "drop"
 msgstr "ya"
 
-#, fuzzy
-#| msgid "throw"
 msgctxt "THROW"
 msgid "throw"
 msgstr "deheipi"
 
-#, fuzzy
-#| msgid "hold"
 msgctxt "HOLD"
 msgid "hold"
 msgstr "dah"
 
-#, fuzzy
-#| msgid "lunge"
 msgctxt "LUNGE"
 msgid "lunge"
 msgstr "pihe"
 
-#, fuzzy
-#| msgid "set piton"
 msgctxt "SETPITON"
 msgid "set piton"
 msgstr "kri pipan"
 
-#, fuzzy
-#| msgid "MORALE BOOST!!"
 msgctxt "MORALEBOOST"
 msgid "MORALE BOOST!!"
-msgstr "CHWMNYH HEI"
+msgstr "CHWMNYH HEI!!"
 
 # push away life
-#, fuzzy
-#| msgid "give up"
 msgctxt "GIVEUP"
 msgid "give up"
 msgstr "dahkei mwm"
 
-#, fuzzy
-#| msgid "DEAD"
 msgctxt "DEAD"
 msgid "DEAD"
 msgstr "DEGRAFEISE"
 
-#, fuzzy
-#| msgid "you are a ghost"
 msgctxt "GHOSTMESSAGE"
 msgid "you are a ghost"
-msgstr "SHPW MWNGRAV"
+msgstr "shpw mwngrav"
 
-#, fuzzy
-#| msgid "get resurrected at the statue!"
 msgctxt "RESURRECTMESSAGE"
 msgid "get resurrected at the statue!"
 msgstr "chav krahvengre nirh padahang!"
 
-#, fuzzy
-#| msgid "spectating:"
 msgctxt "SPECTATING"
 msgid "spectating:"
 msgstr "nyeimwngrav:"
 
-#, fuzzy
-#| msgid "crossed arms"
 msgctxt "CROSSED ARMS"
 msgid "crossed arms"
 msgstr "fevw sa di"
 
-#, fuzzy
-#| msgid "dance"
 msgctxt "DANCE"
 msgid "dance"
 msgstr "nebyageng"
 
-#, fuzzy
-#| msgid "play dead"
 msgctxt "PLAY DEAD"
 msgid "play dead"
 msgstr "degrafei sa pa"
 
-#, fuzzy
-#| msgid "no-no"
 msgctxt "NO-NO"
 msgid "no-no"
 msgstr "krahgegre"
 
-#, fuzzy
-#| msgid "salute"
 msgctxt "SALUTE"
 msgid "salute"
 msgstr "yessen"
 
-#, fuzzy
-#| msgid "shrug"
 msgctxt "SHRUG"
 msgid "shrug"
 msgstr "phchwkre"
 
-#, fuzzy
-#| msgid "think"
 msgctxt "THINK"
 msgid "think"
 msgstr "chw"
 
-#, fuzzy
-#| msgid "thumbs up"
 msgctxt "THUMBS UP"
 msgid "thumbs up"
 msgstr "faha"
 
-#, fuzzy
-#| msgid "wear backpack"
 msgctxt "WEARBACKPACK"
 msgid "wear backpack"
 msgstr "pyai chhkhngsei"
 
-#, fuzzy
-#| msgid "stash<br>#"
 msgctxt "STASHITEM"
 msgid "stash<br>#"
 msgstr "kri<br>#"
 
-#, fuzzy
-#| msgid "take<br>#"
 msgctxt "TAKEITEM"
 msgid "take<br>#"
 msgstr "dahf<br>#"
 
-#, fuzzy
-#| msgid "COOKED #"
 msgctxt "COOKED_COOKED"
 msgid "COOKED #"
 msgstr "# SA FINGVWM"
 
-#, fuzzy
-#| msgid "WELL-DONE #"
 msgctxt "COOKED_WELLDONE"
 msgid "WELL-DONE #"
 msgstr "# SA FINGVWMFFAN"
 
-#, fuzzy
-#| msgid "BURNT #"
 msgctxt "COOKED_BURNT"
 msgid "BURNT #"
 msgstr "# SA FINGVWMCCHWV"
 
-#, fuzzy
-#| msgid "INCINERATED #"
 msgctxt "COOKED_INCINERATED"
 msgid "INCINERATED #"
 msgstr "# SA FINGVWMNIV"
 
-#, fuzzy
-#| msgid "THE FOG RISES..."
 msgctxt "THEFOGRISES"
 msgid "THE FOG RISES..."
 msgstr "NW PRAIHE..."
 
-#, fuzzy
-#| msgid "BOARDING PASS"
 msgctxt "BOARDINGPASS"
 msgid "BOARDING PASS"
 msgstr "NWHANEING PIRI"
 
 # person
-#, fuzzy
-#| msgid "PASSENGER:"
 msgctxt "PASSENGER"
 msgid "PASSENGER:"
 msgstr "PADA:"
 
-#, fuzzy
-#| msgid "GATE:"
 msgctxt "GATE"
 msgid "GATE:"
 msgstr "NWVEI:"
 
-#, fuzzy
-#| msgid "FROM:"
 msgctxt "FROM"
 msgid "FROM:"
 msgstr "HECHIN:"
 
-#, fuzzy
-#| msgid "TO:"
 msgctxt "TO"
 msgid "TO:"
 msgstr "KRIREIKE:"
 
 # reward:
-#, fuzzy
-#| msgid "REWARD:"
 msgctxt "REWARD"
 msgid "REWARD:"
 msgstr "NANEME:"
 
 # With challenge+past every(abstract thing)
-#, fuzzy
-#| msgid "And all previous modifiers."
 msgctxt "ANDALLOTHER"
 msgid "And all previous modifiers."
 msgstr "Nirh yahf sei fanivas."
 
-#, fuzzy
-#| msgid "START"
 msgctxt "START"
 msgid "START"
 msgstr "MYH"
 
-#, fuzzy
-#| msgid "LOADING"
 msgctxt "LOADING"
 msgid "LOADING"
 msgstr "SEINGI"
 
-#, fuzzy
-#| msgid "PASSPORT"
 msgctxt "PASSPORT"
 msgid "PASSPORT"
 msgstr "NWRAMBIHEN"
 
-#, fuzzy
-#| msgid "Nationality"
 msgctxt "NATIONALITY"
 msgid "Nationality"
 msgstr "Henmwvaht"
 
-#, fuzzy
-#| msgid "Name"
 msgctxt "NAME"
 msgid "Name"
 msgstr "Prennai"
 
-#, fuzzy
-#| msgid "Passport no."
 msgctxt "PASSPORTNO"
 msgid "Passport no."
 msgstr "Fachachi nwrambihen"
 
-#, fuzzy
-#| msgid "SHORE"
 msgctxt "SHORE"
 msgid "SHORE"
 msgstr "YEHEN"
 
-#, fuzzy
-#| msgid "TROPICS"
 msgctxt "TROPICS"
 msgid "TROPICS"
 msgstr "CHAPIKA"
 
-#, fuzzy
-#| msgid "ALPINE"
 msgctxt "ALPINE"
 msgid "ALPINE"
 msgstr "FARHPAIN"
 
-#, fuzzy
-#| msgid "CALDERA"
 msgctxt "CALDERA"
 msgid "CALDERA"
 msgstr "KADERA"
 
 # el firepit
 # https://discord.com/channels/1284943477984989258/1357023724515102920/1498180045347225601
-#, fuzzy
-#| msgid "THE KILN"
 msgctxt "THE KILN"
 msgid "THE KILN"
 msgstr "KRIKEINE"
 
-#, fuzzy
-#| msgid "PEAK"
 msgctxt "PEAK"
 msgid "PEAK"
 msgstr "HEIKE"
 
-#, fuzzy
-#| msgid "Day #"
 msgctxt "DAY"
 msgid "Day #"
 msgstr "Nyari #"
 
-#, fuzzy
-#| msgid "One"
 msgctxt "ONE"
 msgid "One"
 msgstr "Fa"
 
-#, fuzzy
-#| msgid "Two"
 msgctxt "TWO"
 msgid "Two"
 msgstr "Cha"
 
-#, fuzzy
-#| msgid "Three"
 msgctxt "THREE"
 msgid "Three"
 msgstr "Chei"
 
-#, fuzzy
-#| msgid "Four"
 msgctxt "FOUR"
 msgid "Four"
 msgstr "Hei"
 
-#, fuzzy
-#| msgid "Five"
 msgctxt "FIVE"
 msgid "Five"
 msgstr "Heinah"
 
-#, fuzzy
-#| msgid "Six"
 msgctxt "SIX"
 msgid "Six"
 msgstr "Heinchh"
 
-#, fuzzy
-#| msgid "Seven"
 msgctxt "SEVEN"
 msgid "Seven"
 msgstr "Heindi"
 
-#, fuzzy
-#| msgid "Eight"
 msgctxt "EIGHT"
 msgid "Eight"
 msgstr "Heichh"
 
-#, fuzzy
-#| msgid "Nine"
 msgctxt "NINE"
 msgid "Nine"
 msgstr "Heichav"
 
-#, fuzzy
-#| msgid "Ten"
 msgctxt "TEN"
 msgid "Ten"
 msgstr "Cha sa heinah"
 
-#, fuzzy
-#| msgid "YOU PEAKED"
 msgctxt "YOUPEAKED"
 msgid "YOU PEAKED"
 msgstr "SAHBIRISE CHWM HEIKE"
 
-#, fuzzy
-#| msgid "<size=125%>YOUR FRIENDS<br>LEFT YOU TO DIE"
 msgctxt "LEFTTODIE"
 msgid "<size=125%>YOUR FRIENDS<br>LEFT YOU TO DIE"
 msgstr "<size=125%>PAHBEDENG SHRE<br>PIPI SA KRAV"
 
-#, fuzzy
-#| msgid "YOUR BODY WAS<br><size=125%>NEVER FOUND"
 msgctxt "BODYNEVERFOUND"
 msgid "YOUR BODY WAS<br><size=125%>NEVER FOUND"
 msgstr "PADA SHRE<br><size=125%>SEINGISEGRH"
 
-#, fuzzy
 msgctxt "SCOUTINGREPORT"
 msgid "SCOUTING REPORT"
 msgstr "NENYARI PADANYEI"
 
-#, fuzzy
-#| msgid "TIME"
 msgctxt "TIME"
 msgid "TIME"
 msgstr "SEIPE"
 
-#, fuzzy
-#| msgid "TIMELINE"
 msgctxt "TIMELINE"
 msgid "TIMELINE"
 msgstr "SAIMERAIN"
 
 # badge+new
-#, fuzzy
-#| msgid "NEW BADGES"
 msgctxt "NEWBADGES"
 msgid "NEW BADGES"
 msgstr "NWNENAHVENG YH"
 
-#, fuzzy
-#| msgid "NEXT"
 msgctxt "NEXT"
 msgid "NEXT"
 msgstr "FAHEICHE"
 
-#, fuzzy
-#| msgid "NEW HAT!"
 msgctxt "NEWHAT"
 msgid "NEW HAT!"
 msgstr "PYAIFRI YH!"
 
-#, fuzzy
-#| msgid "NEW LOOK!"
 msgctxt "NEWLOOK"
 msgid "NEW LOOK!"
 msgstr "NYEI YH!"
 
-#, fuzzy
-#| msgid "NEW FIT!"
 msgctxt "NEWFIT"
 msgid "NEW FIT!"
 msgstr "PYAI YH!"
 
-#, fuzzy
-#| msgid "# UNLOCKED"
 msgctxt "UNLOCKED"
 msgid "# UNLOCKED"
 msgstr "# SEINGISE"
 
-#, fuzzy
-#| msgid "ASCENTS UNLOCKED"
 msgctxt "ASCENTSUNLOCKED"
 msgid "ASCENTS UNLOCKED"
 msgstr "PRABEIHE SEINGISE"
@@ -1599,131 +1155,90 @@ msgstr "PRABEIHE SEINGISE"
 # Change challenges at the gate kiosk!
 #
 # marked as "not approved" cus it uses adjecitve suffixes that idk for sure
-#, fuzzy
 msgctxt "ASCENTSUNLOCKEDTEXT"
 msgid "Ready for a greater challenge? Ascents add modifiers that make summiting the PEAK more difficult.<br><br>Set your Ascent Level at the Airport Kiosk!"
 msgstr "Sahnwng pyei yahf dwregrem? Prabeihe ni fhyef fing preiheppihe yahfkkrem hei HEIKE.<br><br>Yh fhyef chwm Kisahk Nwvei hei!"
 
 # raised toward:
-#, fuzzy
-#| msgid "PROMOTED TO:"
 msgctxt "PROMOTEDTO"
 msgid "PROMOTED TO:"
 msgstr "PRAIHE HEI:"
 
-#, fuzzy
-#| msgid "NEW HAT!"
 msgctxt "NEWSASH"
 msgid "NEW SASH!"
-msgstr "PYAIFRI YH!"
+msgstr "PYAICHWMEHPES YH!"
 
-#, fuzzy
-#| msgid "TENDERFOOT"
 msgctxt "TENDERFOOT"
 msgid "TENDERFOOT"
 msgstr "HAN KRAHF"
 
-#, fuzzy
-#| msgid "ASCENT 1"
 msgctxt "ASCENT 1"
 msgid "ASCENT 1"
 msgstr "PRAIHE FA"
 
-#, fuzzy
-#| msgid "ASCENT 2"
 msgctxt "ASCENT 2"
 msgid "ASCENT 2"
 msgstr "PRAIHE CHA"
 
-#, fuzzy
-#| msgid "ASCENT 3"
 msgctxt "ASCENT 3"
 msgid "ASCENT 3"
 msgstr "PRAIHE CHEI"
 
-#, fuzzy
-#| msgid "ASCENT 4"
 msgctxt "ASCENT 4"
 msgid "ASCENT 4"
 msgstr "PRAIHE HEI"
 
-#, fuzzy
-#| msgid "ASCENT 5"
 msgctxt "ASCENT 5"
 msgid "ASCENT 5"
 msgstr "PRAIHE HEINAH"
 
-#, fuzzy
-#| msgid "ASCENT 6"
 msgctxt "ASCENT 6"
 msgid "ASCENT 6"
 msgstr "PRAIHE HEINCHH"
 
-#, fuzzy
-#| msgid "ASCENT 7"
 msgctxt "ASCENT 7"
 msgid "ASCENT 7"
 msgstr "PRAIHE HEINDI"
 
-#, fuzzy
-#| msgid "ASCENT 1"
 msgctxt "ASCENT 8"
 msgid "ASCENT 8"
-msgstr "PRAIHE FA"
+msgstr "PRAIHE HEICHH"
 
-#, fuzzy
-#| msgid "SCOUT"
 msgctxt "SCOUT"
 msgid "SCOUT"
 msgstr "PADANYEI"
 
-#, fuzzy
-#| msgid "TADPOLE SCOUT"
 msgctxt "TADPOLE SCOUT"
 msgid "TADPOLE SCOUT"
 msgstr "PADANYEI PABAYA"
 
-#, fuzzy
-#| msgid "RACCOON SCOUT"
 msgctxt "RABBIT SCOUT"
 msgid "RABBIT SCOUT"
-msgstr "PADANYEI FAS"
+msgstr ""
 
-#, fuzzy
-#| msgid "RACCOON SCOUT"
 msgctxt "RACCOON SCOUT"
 msgid "RACCOON SCOUT"
 msgstr "PADANYEI FAS"
 
-#, fuzzy
-#| msgid "OWL SCOUT"
 msgctxt "MULE SCOUT"
 msgid "MULE SCOUT"
-msgstr "PADANYEI FAYAN"
+msgstr ""
 
-#, fuzzy
-#| msgid "KANGAROO SCOUT"
 msgctxt "KANGAROO SCOUT"
 msgid "KANGAROO SCOUT"
 msgstr "PADANYEI PHPENYE"
 
-#, fuzzy
-#| msgid "OWL SCOUT"
 msgctxt "OWL SCOUT"
 msgid "OWL SCOUT"
 msgstr "PADANYEI FAYAN"
 
-#, fuzzy
-#| msgid "OWL SCOUT"
 msgctxt "WOLF SCOUT"
 msgid "WOLF SCOUT"
-msgstr "PADANYEI FAYAN"
+msgstr ""
 
-#, fuzzy
-#| msgid "OWL SCOUT"
 msgctxt "GOAT SCOUT"
 msgid "GOAT SCOUT"
-msgstr "PADANYEI FAYAN"
+msgstr ""
 
 msgctxt "DESC_TENDERFOOT"
 msgid "CLIMBING TAKES LESS STAMINA. HUNGER GROWS MORE SLOWLY. NO TIME LIMIT."
@@ -1765,17 +1280,14 @@ msgctxt "DESC_ASCENT 8"
 msgid "YOU MUST FREE THE SCOUTMASTER'S SOUL TO WIN."
 msgstr ""
 
-#, fuzzy
-#| msgid "YOURSELF"
+# your body
 msgctxt "YOURSELF"
 msgid "YOURSELF"
 msgstr "PADA SHRE"
 
-#, fuzzy
-#| msgid "waiting for all players..."
 msgctxt "WAITINGFORALL"
 msgid "waiting for all players..."
-msgstr "chai hei fanivap"
+msgstr "chai hei fanivap..."
 
 #, fuzzy
 #| msgid "board flight"
@@ -2775,12 +2287,9 @@ msgctxt "NAME_THORN"
 msgid "THORN"
 msgstr "YEHRAMCHI"
 
-# badge+new
-#, fuzzy
-#| msgid "NEW BADGES"
 msgctxt "NAME_NOMAD"
 msgid "NOMAD BADGE"
-msgstr "NWNENAHVENG YH"
+msgstr ""
 
 msgctxt "DESC_NOMAD"
 msgid "Climb past the MESA."
@@ -3152,12 +2661,9 @@ msgctxt "PROMPT_REBIND"
 msgid "PRESS AN INPUT TO ASSIGN TO<br><size=125%><color=#DDBE55>@</color></size>"
 msgstr ""
 
-# badge+new
-#, fuzzy
-#| msgid "NEW BADGES"
 msgctxt "NAME_BUNDLED UP"
 msgid "BUNDLED UP BADGE"
-msgstr "NWNENAHVENG YH"
+msgstr ""
 
 msgctxt "DESC_BUNDLED UP"
 msgid "Climb past the ALPINE without ever having more than 20% Cold."
@@ -4045,12 +3551,9 @@ msgctxt "DESC_WELL RESTED"
 msgid "Consume The Early Worm."
 msgstr ""
 
-# badge+new
-#, fuzzy
-#| msgid "NEW BADGES"
 msgctxt "NAME_WANDERER"
 msgid "WANDERER BADGE"
-msgstr "NWNENAHVENG YH"
+msgstr ""
 
 msgctxt "DESC_WANDERER"
 msgid "Climb past the GLOOM."
@@ -4064,23 +3567,17 @@ msgctxt "DESC_LAST RESORT"
 msgid "Heal over 75% damage at once by using the Ritual Dagger."
 msgstr ""
 
-# badge+new
-#, fuzzy
-#| msgid "NEW BADGES"
 msgctxt "NAME_BELLRINGER"
 msgid "BELLRINGER BADGE"
-msgstr "NWNENAHVENG YH"
+msgstr ""
 
 msgctxt "DESC_BELLRINGER"
 msgid "Ring 5 Belltowers in the GLOOM in a single expedition."
 msgstr ""
 
-# badge+new
-#, fuzzy
-#| msgid "NEW BADGES"
 msgctxt "NAME_ARCHERY"
 msgid "ARCHERY BADGE"
-msgstr "NWNENAHVENG YH"
+msgstr ""
 
 msgctxt "DESC_ARCHERY"
 msgid "Remove 10 arrows from yourself in a single expedition."
@@ -4094,12 +3591,9 @@ msgctxt "DESC_MEDIEVAL HISTORY"
 msgid "Climb past THE CITADEL without being hit by any traps."
 msgstr ""
 
-# badge+new
-#, fuzzy
-#| msgid "NEW BADGES"
 msgctxt "NAME_JESTER"
 msgid "JESTER BADGE"
-msgstr "NWNENAHVENG YH"
+msgstr ""
 
 msgctxt "DESC_JESTER"
 msgid "Open 2 Clown Luggage in a single expedition."
